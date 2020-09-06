@@ -69,7 +69,10 @@ header li {
 
 .smalldropdown {
   display:none;
-  color: black;
+}
+
+.smalldropdown a {
+  color:black;
 }
 
 @media only screen and (max-width: 534px) {
