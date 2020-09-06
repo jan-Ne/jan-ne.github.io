@@ -20,16 +20,23 @@ body {
 header {
   padding: 25px;
   background-color: #6393F9;
-  text-decoration:none;
-  color: white;
-  font-size: 20px;
-  font-weight: 600;
 }
 
 header.home {
   display:inline-block;
   float:left;
   font-size: 25px;
+  text-decoration:none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+header li {
+  text-decoration:none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 nav {
