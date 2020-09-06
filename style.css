@@ -18,8 +18,11 @@ body {
 }
 
 @media only screen and (max-width: 534px) {
-  header img {
+  header li {
     display:none;
+  }
+  .settings {
+    display:inline;
   }
 }
 
