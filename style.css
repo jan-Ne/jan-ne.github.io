@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=OpenSans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 
 * {
   font-family: "Open Sans";
@@ -9,7 +9,8 @@ body {
 }
 
 header {
-  width: 100%
+  width: 100%;
+  padding: 0px 20px;
 }
 
 header.home {
