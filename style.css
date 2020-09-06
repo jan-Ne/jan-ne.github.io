@@ -12,7 +12,6 @@ header {
   width: 100%;
   padding: 25px;
   background-color: #6393F9;
-  display: inline-block;
 }
 
 header.home {
@@ -20,6 +19,7 @@ header.home {
 }
 
 header a {
+  display: block;
   text-decoration:none;
   color: white;
   font-size: 25px;
