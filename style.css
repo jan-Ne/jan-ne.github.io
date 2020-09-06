@@ -60,12 +60,8 @@ header li {
   cursor: default;
 }
 
-#settings:hover .dropdown {
+.dropdown:hover .bigdropdown {
   display: block !important;
-}
-
-#settings:hover #settings {
-  color:black;
 }
 
 .dropdown {
@@ -93,11 +89,11 @@ header li {
   #settings {
     display:inline;
   }
-  #settings:hover .smalldropdown {
+  .dropdown:hover .smalldropdown {
     display: block;
   }
 
-  #settings:hover .bigdropdown {
+  .dropdown:hover .bigdropdown {
     display: block;
   }
 }
