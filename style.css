@@ -16,7 +16,9 @@ header.home {
   float:left;
 }
 
-
+header.a {
+  text-decoration:none;
+  color: black;
 
 h1 {
   color: #000099;
