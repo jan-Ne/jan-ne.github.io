@@ -59,6 +59,13 @@ header li {
   font-weight: 600;
 }
 
+.dropdown {
+  background-color:WhiteSmoke;
+  color:black;
+  position:relative;
+  top: 26px;
+}
+
 .content {
   padding-left: 25px;
 }
