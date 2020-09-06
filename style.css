@@ -54,10 +54,10 @@ header li {
   padding: 0px 10px;
 }
 
-#settings {
-  font-size: 30px;
-  font-weight: 600;
-  cursor: default;
+header button {
+  background:none;
+  border:none;
+  color: white;
 }
 
 .dropdown:hover .dropdownmenu {
