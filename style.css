@@ -59,8 +59,12 @@ header li {
   font-weight: 600;
 }
 
+#settings:hover .dropdown {
+  display: block;
+}
+
 .dropdown {
-  display:block;
+  display:none;
   background-color:WhiteSmoke;
   color:black;
   position:absolute;
