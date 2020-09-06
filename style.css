@@ -10,7 +10,7 @@ body {
 
 header {
   width: 100%;
-  padding: 0px 20px;
+  padding: 20px;
 }
 
 header.home {
@@ -20,6 +20,8 @@ header.home {
 header.a {
   text-decoration:none;
   color: black;
+  font-size: 20px;
+}
 
 h1 {
   color: #000099;
