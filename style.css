@@ -68,7 +68,7 @@ header li {
 }
 
 .smalldropdown {
-  display:none !important;
+  display:none;
   color: black;
 }
 
@@ -80,7 +80,7 @@ header li {
     display:inline;
   }
   .smalldropdown {
-    display:block !important;
+    display:block;
   }
 }
 
