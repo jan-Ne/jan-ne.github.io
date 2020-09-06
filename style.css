@@ -11,6 +11,7 @@ body {
 header {
   width: 100%;
   padding: 20px;
+  display: inline-flex;
 }
 
 header.home {
@@ -22,6 +23,9 @@ header.a {
   color: black;
   font-size: 20px;
 }
+
+header.li {
+  display:inline-flex;
 
 h1 {
   color: #000099;
