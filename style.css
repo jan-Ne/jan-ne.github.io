@@ -57,6 +57,7 @@ header li {
 #settings {
   font-size: 30px;
   font-weight: 600;
+  cursor: default;
 }
 
 #settings:hover .dropdown {
