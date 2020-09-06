@@ -59,6 +59,8 @@ header button {
   background:none;
   border:none;
   color: white;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .dropdown:hover .dropdownmenu {
