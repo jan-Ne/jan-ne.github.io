@@ -63,17 +63,18 @@ header li {
   display:block;
   background-color:WhiteSmoke;
   color:black;
-  position:relative;
-  top: 21px;
+  position:absolute;
+  margin-top: 21px;
+  right: 0;
+}
+
+.dropdown li {
+  padding: 0px 48px;
 }
 
 .smalldropdown {
   display:none;
-}
-
-.smalldropdown a {
-  color:black;
-  font-weight: 400;
+  background-color: #6393F9;
 }
 
 @media only screen and (max-width: 534px) {
