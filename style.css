@@ -69,7 +69,7 @@ header button:focus {
 }
 
 .dropdown:hover .dropdownmenu {
-  display: block;
+  display: block !important;
 }
 
 .bigdropdown {
