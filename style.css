@@ -17,6 +17,12 @@ body {
   margin: 0px;
 }
 
+@media only screen and (max-width: 534px) {
+  header img {
+    display:none;
+  }
+}
+
 header {
   padding: 25px;
   background-color: #6393F9;
