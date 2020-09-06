@@ -11,8 +11,9 @@ body {
 header {
   width: 100%;
   padding: 25px;
+  background-color: #6393F9;
   display: inline-flex;
-  background-color: #6393F9
+  justify-content: space-between;
 }
 
 header.home {
@@ -29,6 +30,10 @@ header a {
 header li {
   display:inline-flex;
   padding: 0px 10px;
+}
+
+header ul {
+  margin: 0px;
 }
 
 .content {
