@@ -18,13 +18,13 @@ header.home {
   float:left;
 }
 
-header.a {
+header a {
   text-decoration:none;
   color: black;
   font-size: 25px;
 }
 
-header.li {
+header li {
   display:inline-flex;
   padding: 0px 10px;
 }
