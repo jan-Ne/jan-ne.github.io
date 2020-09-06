@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+@font-face {
+  font-family:"linja pona";
+  src: url('https://github.com/janSame/linja-pona/blob/master/linja-pona-4.2.otf')  format('opentype');
+}
 
 * {
   font-family: "Open Sans";
@@ -46,5 +50,6 @@ header li {
 }
 
 h1 {
+  font-family: "linja pona";
   color: #000099;
 }
