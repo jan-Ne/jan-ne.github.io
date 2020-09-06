@@ -17,18 +17,6 @@ body {
   margin: 0px;
 }
 
-@media only screen and (max-width: 534px) {
-  header li {
-    display:none;
-  }
-  .settings {
-    display:inline !important;
-  }
-  .smalldropdown {
-    display:block !important;
-  }
-}
-
 header {
   padding: 25px;
   background-color: #6393F9;
@@ -82,6 +70,18 @@ header li {
 .smalldropdown {
   display:none;
   color: black;
+}
+
+@media only screen and (max-width: 534px) {
+  header li {
+    display:none;
+  }
+  .settings {
+    display:inline;
+  }
+  .smalldropdown {
+    display:block;
+  }
 }
 
 .content {
