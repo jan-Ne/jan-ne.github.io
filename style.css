@@ -12,8 +12,7 @@ header {
   width: 100%;
   padding: 25px;
   background-color: #6393F9;
-  display: inline-flex;
-  justify-content: space-between;
+  display: inline-block;
 }
 
 header.home {
@@ -27,13 +26,18 @@ header a {
   font-weight: 600;
 }
 
-header li {
-  display:inline-flex;
-  padding: 0px 10px;
+nav {
+  float:right;
 }
 
 header ul {
   margin: 0px;
+  list-style-type:none;
+}
+
+header li {
+  display:inline;
+  padding: 0px 10px;
 }
 
 .content {
