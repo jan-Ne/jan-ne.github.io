@@ -64,6 +64,10 @@ header li {
   display: block !important;
 }
 
+#settings:hover #settings {
+  color:black;
+}
+
 .dropdown {
   display:none;
   background-color:WhiteSmoke;
