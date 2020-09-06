@@ -64,7 +64,7 @@ header li {
   display: block !important;
 }
 
-.dropdown {
+.bigdropdown {
   display:none;
   background-color:WhiteSmoke;
   color:black;
