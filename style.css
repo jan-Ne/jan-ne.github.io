@@ -26,9 +26,12 @@ header.a {
 
 header.li {
   display:inline-flex;
-  
+  padding: 0px 10px;
+}
+
 .content {
   padding-left: 25px;
+}
 
 h1 {
   color: #000099;
