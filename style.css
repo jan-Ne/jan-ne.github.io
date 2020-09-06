@@ -19,13 +19,13 @@ body {
 
 @media only screen and (max-width: 534px) {
   header li {
-    display:none;
+    display:none !important;
   }
   .settings {
-    display:inline;
+    display:inline !important;
   }
   .smalldropdown {
-    display:block;
+    display:block !important;
   }
 }
 
