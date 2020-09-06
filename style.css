@@ -73,6 +73,7 @@ header li {
 
 .smalldropdown a {
   color:black;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 534px) {
