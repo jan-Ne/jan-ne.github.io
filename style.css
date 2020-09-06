@@ -88,11 +88,12 @@ header li {
   #settings {
     display:inline;
   }
-  .smalldropdown {
-    display:block;
+  #settings:hover .smalldropdown {
+    display: block;
   }
-  .bigdropdown {
-    display:block;
+
+  #settings:hover .bigdropdown {
+    display: block;
   }
 }
 
