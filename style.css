@@ -61,7 +61,7 @@ header li {
 }
 
 #settings:hover .dropdown {
-  display: block;
+  display: block !important;
 }
 
 .dropdown {
