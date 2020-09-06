@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=OpenSans');
+
+* {
+  font-family: "Open Sans";
+}
+
+body {
+  margin: 0px;
+}
+
+header {
+  width: 100%
+}
+
+header.home {
+  float:left;
+}
+
+
+
 h1 {
   color: #000099;
 }
