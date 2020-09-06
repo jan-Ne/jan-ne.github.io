@@ -63,6 +63,11 @@ header button {
   font-weight: 600;
 }
 
+header button:focus {
+    border: none;
+    outline: none;
+}
+
 .dropdown:hover .dropdownmenu {
   display: block;
 }
