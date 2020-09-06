@@ -9,6 +9,10 @@
   font-family: "Open Sans";
 }
 
+.linjapona {
+  font-family:"linja pona";
+}
+
 body {
   margin: 0px;
 }
@@ -52,6 +56,5 @@ header li {
 }
 
 h1 {
-  font-family: "linja pona";
   color: #000099;
 }
