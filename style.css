@@ -10,7 +10,7 @@ body {
 
 header {
   width: 100%;
-  padding: 30px;
+  padding: 25px;
   display: inline-flex;
 }
 
@@ -21,14 +21,14 @@ header.home {
 header.a {
   text-decoration:none;
   color: black;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 header.li {
   display:inline-flex;
   
 .content {
-  padding-left: 30px;
+  padding-left: 25px;
 
 h1 {
   color: #000099;
