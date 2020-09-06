@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 @font-face {
   font-family:"linja pona";
-  src: url('https://github.com/jan-Ne/jan-ne.github.io/raw/master/linja-pona-4.2.otf')  format('opentype');
+  src: url('https://jan-ne.github.io/linja-pona-4.2.otf')  format('opentype');
 }
 
 * {
