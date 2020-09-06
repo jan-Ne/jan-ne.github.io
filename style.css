@@ -15,11 +15,11 @@ header {
 }
 
 header.home {
+  display:inline-block;
   float:left;
 }
 
 header a {
-  display: block;
   text-decoration:none;
   color: white;
   font-size: 25px;
@@ -27,11 +27,13 @@ header a {
 }
 
 nav {
+  display:inline-block;
   float:right;
 }
 
 header ul {
   margin: 0px;
+  padding: 0px;
   list-style-type:none;
 }
 
