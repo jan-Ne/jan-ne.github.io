@@ -136,15 +136,15 @@ header button:focus {
 }
 
 .content {
-  display:inline-block;
   margin:auto;
-  padding: 25px;
+  padding: 96px;
+  min-height: calc(100vh - 269px);
   background-color: white;
 }
 
-@media only screen and (min-width: 880px) {
+@media only screen and (min-width: 844px) {
   .content {
-    width: 840px;
+    width: 634px;
   }
 }
 
