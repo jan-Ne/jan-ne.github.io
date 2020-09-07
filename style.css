@@ -71,11 +71,6 @@ header button {
   padding-bottom: 28px;
 }
 
-header button:focus {
-  border:none;
-  outline:none;
-}
-
 .bigdropdown {
   display:none;
   background-color:WhiteSmoke;
@@ -88,8 +83,13 @@ header button:focus {
   }
 }
 
-.dropdown:focus .bigdropdown {
-    display:block;
+header button:focus .bigdropdown {
+  display:block;
+}
+
+header button:focus {
+  border:none;
+  outline:none;
 }
 
 .dropdownmenu li {
@@ -126,10 +126,10 @@ header button:focus {
     }
   }  
  
-  .dropdown:focus .smalldropdown {
+  header button:focus .smalldropdown {
     display: block;
   }
-  .dropdown:focus .bigdropdown {
+  header button:focus .bigdropdown {
     display: block;
   }
   
