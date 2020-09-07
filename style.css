@@ -148,6 +148,30 @@ header button:focus {
   }
 }
 
-h1 {
-  color: #000099;
+/*Dark Mode*/
+@media (prefers-color-scheme: dark) {
+  .header {
+    background-color: #050506;
+  }
+  
+  .header a {
+    color: #dedede;
+  }
+  
+  .header button {
+    color: #dedede;
+  }
+  
+  .body {
+    background-color: #0d0d0d;
+  }
+  
+  .content {
+    background-color: #141414;
+    color: #dedede;
+  }
+  
+  h1 {
+    color: #dedede;
+  }
 }
