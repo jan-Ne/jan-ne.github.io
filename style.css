@@ -136,6 +136,8 @@ header button:focus {
 }
 
 .content {
+  display:inline-block;
+  margin:auto;
   padding: 25px;
   background-color: white;
 }
