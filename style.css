@@ -84,6 +84,9 @@ header button:focus {
 
 .dropdownmenu li {
   padding: 0px 48px;
+}
+
+.dropdownmenu {
   position:absolute;
   right:0;
   margin-top:22;
