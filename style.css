@@ -138,7 +138,7 @@ header button:focus {
 .content {
   margin:auto;
   padding: 96px;
-  min-height: calc(100vh - 269px);
+  min-height: 59vh;
   background-color: white;
 }
 
