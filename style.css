@@ -18,11 +18,15 @@ body {
 }
 
 header {
-  padding: 25px;
   background-color: #6393F9;
   color: white;
   font-size: 20px;
   font-weight: 400;
+}
+
+header img {
+  padding: 0px 15px;
+   vertical-align: middle;
 }
 
 header.home {
@@ -41,6 +45,7 @@ header a {
 nav {
   display:inline-block;
   float:right;
+  margin: 18px 25px;
 }
 
 header ul {
@@ -61,7 +66,7 @@ header button {
   color: white;
   font-size: 30px;
   font-weight: 600;
-  padding-bottom: 21px;
+  padding-bottom: 28px;
 }
 
 header button:focus {
@@ -95,7 +100,7 @@ header button:focus {
   background-color: #6393F9;
 }
 
-@media only screen and (max-width: 534px) {
+@media only screen and (max-width: 593px) {
   header li {
     display:none;
   }
