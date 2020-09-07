@@ -81,6 +81,7 @@ header button:focus {
 
 .dropdownmenu li {
   padding: 0px 48px;
+  text-align: center;
 }
 
 .dropdownmenu {
