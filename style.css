@@ -61,6 +61,7 @@ header button {
   color: white;
   font-size: 30px;
   font-weight: 600;
+  padding-bottom: 21px;
 }
 
 header button:focus {
