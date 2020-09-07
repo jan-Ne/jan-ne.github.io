@@ -89,7 +89,7 @@ header button:focus {
 }
 
 @media not all and (hover: none) {
-  .dropdown:focus .bigdropdown {
+  .dropdown:active .bigdropdown {
     display:block;
   }
 }
@@ -114,12 +114,12 @@ header button:focus {
   header li {
     display:none;
   }
+  
   #settings {
     display:inline;
   }
-}
-
-@media(hover: hover) {
+  
+  @media(hover: hover) {
     .dropdown:hover .smalldropdown {
       display: block;
     }
@@ -128,7 +128,7 @@ header button:focus {
     }
   }  
  
-@media not all and (hover: none) {
+  @media not all and (hover: none) {
     .dropdown:active .smalldropdown {
       display: block;
     }
@@ -136,6 +136,7 @@ header button:focus {
       display: block;
     }
   }
+}
 
 .content {
   margin:auto;
