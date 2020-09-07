@@ -68,11 +68,6 @@ header button:focus {
   outline:none;
 }
 
-
-.dropdown:hover .dropdownmenu, .bigdropdown {
-  display: block;
-}
-
 .bigdropdown {
   display:none;
   background-color:WhiteSmoke;
@@ -80,6 +75,10 @@ header button:focus {
   position:absolute;
   margin-top: 21px;
   right: 0;
+}
+
+.dropdown:hover .dropdownmenu, .bigdropdown {
+  display: block;
 }
 
 .dropdownmenu li {
