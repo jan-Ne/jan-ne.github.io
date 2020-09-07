@@ -45,7 +45,8 @@ header a {
 nav {
   display:inline-block;
   float:right;
-  margin: 18px 25px;
+  margin: 18px 0px;
+  margin-right: 25px;
 }
 
 header ul {
