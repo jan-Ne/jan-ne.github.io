@@ -117,7 +117,9 @@ header button:focus {
   #settings {
     display:inline;
   }
-  @media(hover: hover) {
+}
+
+@media(hover: hover) {
     .dropdown:hover .smalldropdown {
       display: block;
     }
@@ -125,15 +127,15 @@ header button:focus {
       display: block;
     }
   }  
-  @media not all and (hover: none) {
-    .dropdown:hover .smalldropdown {
+ 
+@media not all and (hover: none) {
+    .dropdown:active .smalldropdown {
       display: block;
     }
-    .dropdown:hover .bigdropdown {
+    .dropdown:active .bigdropdown {
       display: block;
     }
   }
-}
 
 .content {
   margin:auto;
