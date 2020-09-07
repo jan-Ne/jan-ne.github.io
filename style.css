@@ -80,9 +80,10 @@ header button:focus {
   background-color:WhiteSmoke;
   color:black;
 }
-
-.dropdown:hover .bigdropdown {
-  display: block;
+@media(hover: hover) {
+  .dropdown:hover .bigdropdown {
+    display: block;
+  }
 }
 
 .dropdownmenu li {
@@ -108,12 +109,13 @@ header button:focus {
   #settings {
     display:inline;
   }
-  .dropdown:hover .smalldropdown {
-    display: block;
-  }
-
-  .dropdown:hover .bigdropdown {
-    display: block;
+  @media(hover: hover) {
+    .dropdown:hover .smalldropdown {
+      display: block;
+    }
+    .dropdown:hover .bigdropdown {
+      display: block;
+    }
   }
 }
 
