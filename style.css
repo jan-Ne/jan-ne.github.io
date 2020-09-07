@@ -73,8 +73,6 @@ header button:focus {
   display:none;
   background-color:WhiteSmoke;
   color:black;
-  position:absolute;
-  right: 0;
 }
 
 .dropdown:hover .bigdropdown {
