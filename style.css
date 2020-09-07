@@ -82,16 +82,14 @@ header button:focus {
   color:black;
 }
 
-@media(hover: hover) {
+@media(hover: hover) and (pointer:fine) {
   .dropdown:hover .bigdropdown {
     display: block;
   }
 }
 
-@media not all and (hover: none) {
-  .dropdown:active .bigdropdown {
+.dropdown:focus .bigdropdown {
     display:block;
-  }
 }
 
 .dropdownmenu li {
@@ -119,7 +117,7 @@ header button:focus {
     display:inline;
   }
   
-  @media(hover: hover) {
+  @media(hover: hover) and (pointer:fine) {
     .dropdown:hover .smalldropdown {
       display: block;
     }
@@ -128,14 +126,13 @@ header button:focus {
     }
   }  
  
-  @media not all and (hover: none) {
-    .dropdown:active .smalldropdown {
-      display: block;
-    }
-    .dropdown:active .bigdropdown {
-      display: block;
-    }
+  .dropdown:focus .smalldropdown {
+    display: block;
   }
+  .dropdown:focus .bigdropdown {
+    display: block;
+  }
+  
 }
 
 .content {
