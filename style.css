@@ -151,7 +151,7 @@ header button:focus {
 /*Dark Mode*/
 @media (prefers-color-scheme: dark) {
   header {
-    background-color: #050506;
+    background-color: #08090c;
   }
   
   header a {
@@ -163,11 +163,11 @@ header button:focus {
   }
   
   .body {
-    background-color: #0d0d0d;
+    background-color: #131316;
   }
   
   .content {
-    background-color: #141414;
+    background-color: #1e1e20;
     color: #dedede;
   }
   
