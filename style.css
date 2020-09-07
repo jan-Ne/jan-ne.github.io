@@ -15,6 +15,7 @@
 
 body {
   margin: 0px;
+  background-color: LightGray;
 }
 
 header {
@@ -137,7 +138,12 @@ header button:focus {
 }
 
 .content {
-  padding-left: 25px;
+  padding: 25px;
+  background-color: white;
+}
+
+@media only screen and (min-width: 880px) .content {
+    width: 880px;
 }
 
 h1 {
