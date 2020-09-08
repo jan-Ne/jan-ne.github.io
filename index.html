@@ -31,5 +31,25 @@
   <div class="content">
     <h1 class="linjapona">toki</h1>
   </div>
+
+<script>
+function myFunction() {
+  document.getElementsByClassName("bigdropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('#settings')) {
+    var dropdowns = document.getElementsByClassName("dropdownmenu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
 </body>
 </html>
