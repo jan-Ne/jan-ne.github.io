@@ -134,21 +134,20 @@ header button:focus .bigdropdown {
 .content {
   margin:auto;
   padding: 96px;
-  min-height: 59vh;
+  min-height: calc(100vh - 77px);
+  box-sizing: border-box;
   background-color: white;
 }
 
-@media only screen and (min-width: 828px) {
+@media only screen and (min-width: 826px) {
   .content {
-    width: 634px;
+    width: 826px;
   }
 }
 
 @media only screen and (max-width: 828px) {
   .content {
     padding: 9.7%;
-    box-sizing: border-box;
-    height: calc(100vh - 77px);
   }
 }
 
