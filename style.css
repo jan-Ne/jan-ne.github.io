@@ -77,15 +77,17 @@ header button {
   color:black;
 }
 
-@media(hover: hover) and (pointer:fine) {
-  .dropdown:hover .bigdropdown {
+.dropdown:hover .bigdropdown {
     display: block;
   }
-}
 
 header button:focus {
   border: none;
-  outline:none;
+  outline: none;
+}
+
+header button:focus .bigdropdown {
+  display: block;
 }
 
 .dropdownmenu li {
@@ -113,14 +115,12 @@ header button:focus {
     display:inline;
   }
   
-  @media(hover: hover) and (pointer:fine) {
-    .dropdown:hover .smalldropdown {
+  .dropdown:hover .smalldropdown {
       display: block;
     }
     .dropdown:hover .bigdropdown {
       display: block;
-    }
-  }  
+    } 
  
 }
 
