@@ -141,6 +141,7 @@ header button:focus .bigdropdown {
 @media only screen and (min-width: 828px) {
   .content {
     width: 634px;
+    padding: 9.7%;
   }
 }
 
