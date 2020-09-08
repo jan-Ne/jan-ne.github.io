@@ -83,13 +83,8 @@ header button {
   }
 }
 
-header button:active .bigdropdown {
-  display:block;
-}
-
 header button:focus {
   border: none;
-  border-top: solid white;
   outline:none;
 }
 
@@ -127,14 +122,9 @@ header button:focus {
     }
   }  
  
-  header button:focus .smalldropdown {
-    display: block;
-  }
-  header button:focus .bigdropdown {
-    display: block;
-  }
-  
 }
+
+.show {display: block;}
 
 .content {
   margin:auto;
