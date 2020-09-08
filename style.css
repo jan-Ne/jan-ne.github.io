@@ -88,8 +88,9 @@ header button:active .bigdropdown {
 }
 
 header button:focus {
-  border: solid white;
-  border-radius: 15px;
+  border: none;
+  border-top: solid white;
+  outline:none;
 }
 
 .dropdownmenu li {
