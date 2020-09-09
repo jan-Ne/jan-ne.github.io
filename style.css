@@ -93,15 +93,6 @@ header button {
   padding-bottom: 28px;
 }
 
-header li button {
-  background:none;
-  border: none;
-  color: var(--text-color);
-  font-size: 20px;
-  font-weight; 400;
-  padding: 0px 10px;
-}
-
 .bigdropdown {
   display:none;
   background-color: var(--dropdown-color);
