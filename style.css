@@ -139,6 +139,16 @@ header button:focus .bigdropdown {
   background-color: white;
 }
 
+hr.pagebreak {
+    width: 130%;
+    height: 6px;
+    background-color: lightgray;
+    border: solid 1px lightgray;
+    position: relative;
+    right: 15%;
+    margin: 96px 0px;  
+  }
+
 @media only screen and (min-width: 826px) {
   .content {
     width: 826px;
@@ -148,6 +158,9 @@ header button:focus .bigdropdown {
 @media only screen and (max-width: 826px) {
   .content {
     padding: 11.622%;
+  }
+  hr.pagebreak {
+    padding: 11.622% 0px;
   }
 }
 
@@ -172,6 +185,11 @@ header button:focus .bigdropdown {
   .content {
     background-color: #1e1e20;
     color: #dedede;
+  }
+  
+  hr.pagebreak {
+    background-color:#131316;
+    border: #131316;
   }
   
   h1 {
