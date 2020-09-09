@@ -36,10 +36,13 @@ function modeToggle() {
   const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
   if (prefersDarkScheme.matches) {
     document.body.classList.toggle("light-mode");
-    document.getElementById("modeBtn").innerHTML = "pimeja";
   } else {
     document.body.classList.toggle("dark-mode");
+  }
+  if (document.getElementById("modeBtn").innerHTML == "pimeja") {
     document.getElementById("modeBtn").innerHTML = "walo";
+  } else {
+    document.getElementById("modeBtn").innerHTML = "pimeja";
   }
 }
 </script>
