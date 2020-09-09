@@ -23,7 +23,7 @@
           <li class="smalldropdown"><a href="tokipona">toki pona</a></li>
           <li class="smalldropdown"><a href="lipu">lipu</a></li>
           <li class="smalldropdown"><a href="sitelen">sitelen</a></li>
-          <li class="bigdropdown">pimeja</li>
+          <li class="bigdropdown"><button onclick="modeToggle()">pimeja</button></li>
         </ul>
       </span>
     </nav>
@@ -31,5 +31,14 @@
   <div class="content">
     <h1 class="linjapona">toki</h1>
   </div>
+<script>
+function modeToggle() {
+  if (prefersDarkScheme.matches) {
+    document.body.classList.toggle("light-mode");
+  } else {
+    document.body.classList.toggle("dark-mode");
+  }
+}
+</script>
 </body>
 </html>
