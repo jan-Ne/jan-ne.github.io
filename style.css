@@ -14,12 +14,34 @@
 }
 
 body {
+  --text-color: black;
+  --bg-color: LightGray;
+  --dropdown-color: WhiteSmoke;
+  --header-color: #6393F9;
+  --content-color: white;
   margin: 0px;
-  background-color: LightGray;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+body.light-mode {
+  --text-color: black;
+  --bg-color: LightGray;
+  --dropdown-color: WhiteSmoke;
+  --header-color: #6393F9;
+  --content-color: white;
+}
+
+body.dark-mode {
+  --text-color: #dedede;
+  --bg-color: #131316;
+  --dropdown-color: #0A0A0A;
+  --header-color: #08090c;
+  --content-color: #1e1e20;
 }
 
 header {
-  background-color: #6393F9;
+  background-color: var(--header-color);
   color: white;
   font-size: 20px;
   font-weight: 400;
@@ -73,8 +95,8 @@ header button {
 
 .bigdropdown {
   display:none;
-  background-color:WhiteSmoke;
-  color:black;
+  background-color: var(--dropdown-color);
+  color: var(--text-color);
 }
 
 .dropdown:hover .bigdropdown {
@@ -103,7 +125,7 @@ header button:focus .bigdropdown {
 
 .smalldropdown {
   display:none;
-  background-color: #6393F9;
+  background-color: var(--header-color);
 }
 
 @media only screen and (max-width: 593px) {
@@ -136,14 +158,14 @@ header button:focus .bigdropdown {
   padding: 96px;
   min-height: calc(100vh - 77px);
   box-sizing: border-box;
-  background-color: white;
+  background-color: var(--content-color);
 }
 
 hr.pagebreak {
     width: 130%;
     height: 6px;
-    background-color: lightgray;
-    border: solid 1px lightgray;
+    background-color: var(--bg-color);
+    border: solid 1px var(--bg-color);
     position: relative;
     right: 15%;
     margin: 96px 0px;  
@@ -188,7 +210,7 @@ hr.pagebreak {
   }
   
   hr.pagebreak {
-    background-color:#131316;
+    background-color: #131316;
     border: #131316;
   }
   
