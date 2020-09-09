@@ -22,6 +22,8 @@ body {
   margin: 0px;
   color: var(--text-color);
   background-color: var(--bg-color);
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
 }
 
 body.light-mode {
@@ -30,6 +32,8 @@ body.light-mode {
   --dropdown-color: WhiteSmoke;
   --header-color: #6393F9;
   --content-color: white;
+  transition-property: background-color, color;
+   transition-duration: 0.3s;
 }
 
 body.dark-mode {
@@ -38,6 +42,8 @@ body.dark-mode {
   --dropdown-color: #0A0A0A;
   --header-color: #08090c;
   --content-color: #1e1e20;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
 }
 
 header {
@@ -45,6 +51,7 @@ header {
   color: white;
   font-size: 20px;
   font-weight: 400;
+  transition: background-color 0.3s;
 }
 
 header img {
@@ -98,6 +105,8 @@ header button {
   display:none;
   background-color: var(--dropdown-color);
   color: var(--text-color);
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
 }
 
 .dropdown:hover .bigdropdown {
@@ -127,6 +136,7 @@ header button:focus .bigdropdown {
 .smalldropdown {
   display:none;
   background-color: var(--header-color);
+  transition-property: background-color 0.3s;
 }
 
 @media only screen and (max-width: 593px) {
@@ -160,6 +170,7 @@ header button:focus .bigdropdown {
   min-height: calc(100vh - 77px);
   box-sizing: border-box;
   background-color: var(--content-color);
+  transition-property: background-color 0.3s;
 }
 
 hr.pagebreak {
@@ -170,6 +181,8 @@ hr.pagebreak {
     position: relative;
     right: 15%;
     margin: 96px 0px;  
+    transition-property: background-color, border-color;
+    transition-duration: 0.3s;
   }
 
 @media only screen and (min-width: 826px) {
@@ -187,7 +200,7 @@ hr.pagebreak {
   }
 }
 
-/*Dark Mode*/
+/*Default Dark Mode*/
 @media (prefers-color-scheme: dark) {
   header {
     background-color: #08090c;
