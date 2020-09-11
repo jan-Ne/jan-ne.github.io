@@ -164,6 +164,13 @@ header button:focus .bigdropdown {
  
 }
 
+.shelf {
+  background-color: var(--content-color);
+  padding: 10px;
+  padding-left: 10%;
+  margin-bottom: 10px;
+}
+
 .content {
   margin:auto;
   padding: 96px;
@@ -174,16 +181,16 @@ header button:focus .bigdropdown {
 }
 
 hr.pagebreak {
-    width: 130%;
-    height: 6px;
-    background-color: var(--bg-color);
-    border: solid 1px var(--bg-color);
-    position: relative;
-    right: 15%;
-    margin: 96px 0px;  
-    transition-property: background-color, border-color;
-    transition-duration: 0.3s;
-  }
+  width: 130%;
+  height: 6px;
+  background-color: var(--bg-color);
+  border: solid 1px var(--bg-color);
+  position: relative;
+  right: 15%;
+  margin: 96px 0px;  
+  transition-property: background-color, border-color;
+  transition-duration: 0.3s;
+}
 
 @media only screen and (min-width: 826px) {
   .content {
@@ -216,13 +223,6 @@ hr.pagebreak {
   
   .body {
     background-color: #131316;
-  }
-  
-  .shelf {
-    background-color: var(--content-color);
-    padding: 10px;
-    padding-left: 10%;
-    margin-bottom: 10px;
   }
   
   .content {
