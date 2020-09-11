@@ -33,8 +33,7 @@
   </div>
 <script>
 $(document).ready(function(){
-        $(".content").css("min-height", "calc(100vh - 77px - " + $(".shelf").outerHeight() + "px)");
-    });
+  $(".content").css("min-height", "calc(100vh - 77px - " + $(".shelf").outerHeight() + "px)");
 });
 function modeToggle() {
   const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
