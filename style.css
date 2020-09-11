@@ -218,6 +218,13 @@ hr.pagebreak {
     background-color: #131316;
   }
   
+  .shelf {
+    background-color: var(--content-color);
+    padding: 10px;
+    padding-left: 10%;
+    margin-bottom: 10px;
+  }
+  
   .content {
     background-color: #1e1e20;
     color: #dedede;
