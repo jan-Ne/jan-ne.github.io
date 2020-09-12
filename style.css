@@ -75,7 +75,7 @@ header a {
 nav {
   display:inline-block;
   float:right;
-  margin: 18px 0px;
+  margin-top: 18px;
   margin-right: 25px;
 }
 
@@ -161,14 +161,18 @@ header button:focus .bigdropdown {
       top: 20px;
     }
   }
- 
+  .shelf {
+    display:block;
+  }
 }
 
 .shelf {
   background-color: var(--content-color);
-  padding: 10px;
-  padding-left: 10%;
+  padding: 10px 0px;
+  width: 100%;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .content {
