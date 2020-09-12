@@ -118,10 +118,6 @@ header button:focus {
   outline: none;
 }
 
-header button:focus .bigdropdown {
-  display: block;
-}
-
 .dropdownmenu li {
   padding: 5px 48px;
   text-align: center;
@@ -245,6 +241,7 @@ hr.pagebreak {
   
   .bigdropdown {
     background-color: #0e0e11;
+    color: #dedede;
   }
   
   .smalldropdown {
