@@ -182,7 +182,7 @@ header button:focus .bigdropdown {
   justify-content: space-evenly;
 }
 
-.shelf.ul{
+.shelf ul {
   list-style-type: none;
   padding: 12px;
   margin: 0px;
