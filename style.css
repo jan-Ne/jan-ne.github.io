@@ -56,7 +56,7 @@ header {
 
 header img {
   padding: 0px 15px;
-   vertical-align: middle;
+  vertical-align: middle;
 }
 
 header.home {
@@ -103,7 +103,7 @@ header button {
 }
 
 .bigdropdown {
-  visibility: hidden;
+  display: none;
   background-color: var(--dropdown-color);
   color: var(--text-color);
   transition-property: background-color, color;
@@ -127,7 +127,7 @@ header button:focus {
 }
 
 .smalldropdown {
-  visibility: hidden;
+  display: none;
   background-color: var(--header-color);
   transition-property: background-color 0.3s;
 }
