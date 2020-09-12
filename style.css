@@ -243,6 +243,10 @@ hr.pagebreak {
     color: #dedede;
   }
   
+  .bigdropdown {
+    background-color: #0e0e11;
+  }
+  
   .smalldropdown {
     background-color: #08090c;
   }
