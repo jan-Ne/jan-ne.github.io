@@ -39,17 +39,9 @@ $(document).ready(function() {
   }
 });
 function menuClick() {
-  if ($(".bigdropdown").css("display") == "none") {
-    $(".bigdropdown").css("display", "block");
-  } else {
-    $(".bigdropdown").css("display", "none");
-  }
+  $(".bigdropdown").toggle();
   if (screen.width <= 593) {
-    if ($(".smalldropdown").css("display") == "none") {
-      $(".smalldropdown").css("display", "block");
-    } else {
-      $(".smalldropdown").css("display", "none");
-    }
+    $(".smalldropdown").toggle();
   }
 }
 function modeToggle() {
