@@ -188,6 +188,11 @@ header button:focus .bigdropdown {
   margin: 0px;
 }
 
+.shelf a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 .content {
   margin:auto;
   padding: 96px;
