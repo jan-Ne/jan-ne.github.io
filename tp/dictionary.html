@@ -18,7 +18,7 @@
         <li><a href="../sitelen">sitelen</a></li>
       </ul>
       <span class="dropdown">
-        <button id="settings" class="linjapona">ante</button>
+        <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
         <ul class="dropdownmenu">
           <li class="smalldropdown"><a href="../tp">toki pona</a></li>
           <li class="smalldropdown"><a href="../lipu">lipu</a></li>
@@ -48,7 +48,15 @@
   <div class="content" style="min-height: calc(100vh - 207px)">
     <h1>Official Dictionary</h1>
   </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+function menuClick() {
+  if (window.innerWidth <= 593) {
+    $(".smalldropdown").toggle();
+  }
+  $(".bigdropdown").toggle();
+}
 function modeToggle() {
   const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
   if (prefersDarkScheme.matches) {
