@@ -33,7 +33,7 @@
   </div>
 <script>
 $(document).ready(function() {
-  const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
   if (prefersDarkScheme.matches) {
     document.getElementById("modeBtn").innerHTML = "walo";
   }
