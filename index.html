@@ -42,7 +42,7 @@ $(document).ready(function() {
 });
 function menuClick() {
   $(".bigdropdown").toggle();
-  if (screen.width <= 593) {
+  if ($(window).width <= 593) {
     $(".smalldropdown").toggle();
   }
 }
