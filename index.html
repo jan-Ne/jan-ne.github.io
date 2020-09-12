@@ -32,6 +32,12 @@
     <h1 class="linjapona">toki</h1>
   </div>
 <script>
+$(document).ready(function() {
+  const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  if (prefersDarkScheme.matches) {
+    document.getElementById("modeBtn").innerHTML = "walo";
+  }
+});
 function modeToggle() {
   const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
   if (prefersDarkScheme.matches) {
