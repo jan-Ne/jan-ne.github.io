@@ -41,10 +41,10 @@ $(document).ready(function() {
   }
 });
 function menuClick() {
-  $(".bigdropdown").toggle();
   if (window.innerWidth <= 593) {
     $(".smalldropdown").toggle();
   }
+  $(".bigdropdown").toggle();
 }
 function modeToggle() {
   const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
