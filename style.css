@@ -109,10 +109,6 @@ header button {
   transition-duration: 0.3s;
 }
 
-.dropdown:hover .bigdropdown {
-    display: block;
-  }
-
 header button:focus {
   border: none;
   outline: none;
@@ -143,20 +139,6 @@ header button:focus {
   #settings {
     display:inline;
   }
-  
-  body:hover .smalldropdown {
-    display:none
-  }
-  body:hover .bigdropdown {
-    display:none
-  }
-  
-  .dropdown:hover .smalldropdown {
-    display: block;
-  }
-  .dropdown:hover .bigdropdown {
-    display: block;
-  } 
   
   @media hover:none {
     .dropdown {
