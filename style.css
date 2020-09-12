@@ -141,14 +141,15 @@ header button:focus {
     display:inline;
   }
   
+  .shelf {
+    display:block;
+  }
+  
   @media hover:none {
     .dropdown {
       position:relative;
       top: 20px;
     }
-  }
-  .shelf {
-    display:block;
   }
 }
 
