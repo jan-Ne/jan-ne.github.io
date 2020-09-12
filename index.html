@@ -47,7 +47,7 @@ function menuClick() {
   $(".bigdropdown").toggle();
 }
 function modeToggle() {
-  const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
   if (prefersDarkScheme.matches) {
     document.body.classList.toggle("light-mode");
   } else {
