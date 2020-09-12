@@ -132,27 +132,6 @@ header button:focus {
   transition-property: background-color 0.3s;
 }
 
-@media only screen and (max-width: 593px) {
-  header li {
-    display:none;
-  }
-  
-  #settings {
-    display:inline;
-  }
-  
-  .shelf {
-    display:block;
-  }
-  
-  @media hover:none {
-    .dropdown {
-      position:relative;
-      top: 20px;
-    }
-  }
-}
-
 .shelf {
   background-color: var(--content-color);
   padding: 10px 0px;
@@ -206,6 +185,27 @@ hr.pagebreak {
   }
   hr.pagebreak {
     padding: 11.622% 0px;
+  }
+}
+
+@media only screen and (max-width: 593px) {
+  header li {
+    display:none;
+  }
+  
+  #settings {
+    display:inline;
+  }
+  
+  .shelf {
+    display:block;
+  }
+  
+  @media hover:none {
+    .dropdown {
+      position:relative;
+      top: 20px;
+    }
   }
 }
 
