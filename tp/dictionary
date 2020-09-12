@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>lipu pi jan Ne</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="toki pona, jan Ne, lipu">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="shortcut icon" href="../janNe.png">
+<body>
+  <header>
+      <a href=".."><img src="../janNe.png" alt="jan Ne" height="77"></a>
+      <a class="home" href="..">lipu pi jan Ne</a>
+    <nav>
+      <ul>
+        <li><a href="../tokipona">toki pona</a></li>
+        <li><a href="../lipu">lipu</a></li>
+        <li><a href="../sitelen">sitelen</a></li>
+      </ul>
+      <span class="dropdown">
+        <button id="settings" class="linjapona">ante</button>
+        <ul class="dropdownmenu">
+          <li class="smalldropdown"><a href="../tokipona">toki pona</a></li>
+          <li class="smalldropdown"><a href="../lipu">lipu</a></li>
+          <li class="smalldropdown"><a href="../sitelen">sitelen</a></li>
+          <li class="bigdropdown" onclick="modeToggle()" id="modeBtn">pimeja</li>
+        </ul>
+      </span>
+    </nav>
+  </header>
+  <div class="shelf">
+    <ul>
+      <li><a href="dictionary">Official Dictionary</a></li>
+      <li><a href="etymology">Etymology</a></li>
+      <li><a href="otherwords">Other Words</a></li>
+    </ul>
+    <ul>
+      <li><a href="phonology">Phonology</a></li>
+      <li><a href="tpize">Phonetic Guidelines</a></li>
+      <li><a href="names">Place Names and Language Names</a></li>
+    </ul>
+    <ul>
+      <li><a href="sp">sitelen pona</a></li>
+      <li><a href="ss">sitelen sitelen</a></li>
+      <li><a href="tpl">toki pona luka</a></li>
+    </ul>
+  </div>
+  <div class="content" style="min-height: calc(100vh - 207px)">
+    <h1>Official Dictionary</h1>
+  </div>
+<script>
+function modeToggle() {
+  const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  if (prefersDarkScheme.matches) {
+    document.body.classList.toggle("light-mode");
+  } else {
+    document.body.classList.toggle("dark-mode");
+  }
+  if (document.getElementById("modeBtn").innerHTML == "pimeja") {
+    document.getElementById("modeBtn").innerHTML = "walo";
+  } else {
+    document.getElementById("modeBtn").innerHTML = "pimeja";
+  }
+}
+</script>
+</body>
+</html>
