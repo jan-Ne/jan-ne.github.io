@@ -148,12 +148,19 @@ header button:focus .bigdropdown {
     display:inline;
   }
   
+  body:hover .smalldropdown {
+    display:none
+  }
+  body:hover .bigdropdown {
+    display:none
+  }
+  
   .dropdown:hover .smalldropdown {
-      display: block;
-    }
-   .dropdown:hover .bigdropdown {
-      display: block;
-    } 
+    display: block;
+  }
+  .dropdown:hover .bigdropdown {
+    display: block;
+  } 
   
   @media hover:none {
     .dropdown {
