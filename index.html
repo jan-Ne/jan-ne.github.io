@@ -13,14 +13,14 @@
       <a class="home" href="..">lipu pi jan Ne</a>
     <nav>
       <ul>
-        <li><a href="tokipona">toki pona</a></li>
+        <li><a href="tp">toki pona</a></li>
         <li><a href="lipu">lipu</a></li>
         <li><a href="sitelen">sitelen</a></li>
       </ul>
       <span class="dropdown">
         <button id="settings" class="linjapona">ante</button>
         <ul class="dropdownmenu">
-          <li class="smalldropdown"><a href="tokipona">toki pona</a></li>
+          <li class="smalldropdown"><a href="tp">toki pona</a></li>
           <li class="smalldropdown"><a href="lipu">lipu</a></li>
           <li class="smalldropdown"><a href="sitelen">sitelen</a></li>
           <li class="bigdropdown" onclick="modeToggle()" id="modeBtn">pimeja</li>
@@ -32,9 +32,6 @@
     <h1 class="linjapona">toki</h1>
   </div>
 <script>
-$(document).ready(function(){
-  $(".content").css("min-height", "calc(100vh - 77px - " + $(".shelf").outerHeight() + "px)");
-});
 function modeToggle() {
   const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
   if (prefersDarkScheme.matches) {
