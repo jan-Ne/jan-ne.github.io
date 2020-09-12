@@ -103,7 +103,7 @@ header button {
 }
 
 .bigdropdown {
-  display:none;
+  visibility: hidden;
   background-color: var(--dropdown-color);
   color: var(--text-color);
   transition-property: background-color, color;
@@ -127,7 +127,7 @@ header button:focus {
 }
 
 .smalldropdown {
-  display:none;
+  visibility: hidden;
   background-color: var(--header-color);
   transition-property: background-color 0.3s;
 }
