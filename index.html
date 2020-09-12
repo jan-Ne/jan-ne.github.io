@@ -42,17 +42,25 @@ $(document).ready(function() {
       document.body.classList.toggle("light-mode");
       document.getElementById("modeBtn").innerHTML = "pimeja";
     }
+    if (localStorage.getItem("mode") == "dark") {
+      document.body.classList.toggle("light-mode");
+      document.getElementById("modeBtn").innerHTML = "walo";
+    }
   }
   if (localStorage.getItem("mode") == "dark") {
     document.body.classList.toggle("dark-mode");
     document.getElementById("modeBtn").innerHTML = "walo";
   }
+  if (localStorage.getItem("mode") == "light") {
+    document.body.classList.toggle("dark-mode");
+    document.getElementById("modeBtn").innerHTML = "pimeja";
+  }
 });
 function menuClick() {
   if (window.innerWidth <= 593) {
-    $(".smalldropdown").toggle();
+    $(".smalldropdown").toggle(30);
   }
-  $(".bigdropdown").toggle();
+  $(".bigdropdown").toggle(30);
 }
 function modeToggle() {
   var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
