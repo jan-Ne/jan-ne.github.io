@@ -141,6 +141,10 @@ header button:focus {
     display:inline;
   }
   
+  .bigdropdown {
+    display:none; 
+  }
+  
   @media hover:none {
     .dropdown {
       position:relative;
