@@ -45,13 +45,10 @@
       <li>toki pona luka</li>
     </ul>
   </div>
-  <div class="content">
+  <div class="content" style="min-height: calc(100vh - 207px)">
     <h1 class="linjapona">toki-pona</h1>
   </div>
 <script>
-$(document).ready(function(){
-  $(".content").css({"min-height": "calc(100vh - 77px - " + $(".shelf").outerHeight() + "px)"});
-});
 function modeToggle() {
   const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
   if (prefersDarkScheme.matches) {
