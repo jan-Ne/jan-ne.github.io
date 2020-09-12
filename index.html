@@ -18,7 +18,7 @@
         <li><a href="sitelen">sitelen</a></li>
       </ul>
       <span class="dropdown">
-        <button id="settings" class="linjapona" onclick="menuClick()">ante</button>
+        <button id="settings" class="linjapona">ante</button>
         <ul class="dropdownmenu">
           <li class="smalldropdown"><a href="tp">toki pona</a></li>
           <li class="smalldropdown"><a href="lipu">lipu</a></li>
@@ -38,20 +38,6 @@ $(document).ready(function() {
     document.getElementById("modeBtn").innerHTML = "walo";
   }
 });
-function menuClick() {
-  if ($(".bigdropdown").css("display") == "none") {
-    $(".bigdropdown").css("display", "block");
-  } else {
-    $(".bigdropdown").css("display", "none");
-  }
-  if (screen.width <= 593) {
-    if ($(".smalldropdown").css("display") == "none") {
-      $(".smalldropdown").css("display", "block");
-    } else {
-      $(".smalldropdown").css("display", "none");
-    }
-  }
-}
 function modeToggle() {
   const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
   if (prefersDarkScheme.matches) {
