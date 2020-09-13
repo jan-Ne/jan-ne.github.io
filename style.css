@@ -170,6 +170,10 @@ hr.pagebreak {
   margin: 96px 0px;  
 }
 
+.content footer {
+  position:absolute;
+}
+
 @media only screen and (min-width: 826px) {
   .content {
     width: 826px;
