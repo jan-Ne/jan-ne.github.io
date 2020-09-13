@@ -150,6 +150,11 @@ header button:focus {
   background-color: var(--content-color);
 }
 
+x-pos {
+  text-transform: lowercase;
+  font-variant: small-caps;
+}
+
 hr.pagebreak {
   width: 130%;
   height: 6px;
