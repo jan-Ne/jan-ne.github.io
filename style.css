@@ -155,6 +155,11 @@ x-pos {
   font-variant: small-caps;
 }
 
+abbr {
+    text-decoration: none;
+    cursor: default;
+}
+
 hr.pagebreak {
   width: 131%;
   height: 6px;
