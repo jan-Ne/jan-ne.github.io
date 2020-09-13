@@ -156,12 +156,12 @@ x-pos {
 }
 
 hr.pagebreak {
-  width: 130%;
+  width: 131%;
   height: 6px;
   background-color: var(--bg-color);
   border: solid 1px var(--bg-color);
   position: relative;
-  right: 15%;
+  right: 16%;
   margin: 96px 0px;  
 }
 
