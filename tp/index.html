@@ -80,11 +80,21 @@ function menuClick() {
   $(".bigdropdown").toggle();
 }
 function modeToggle() {
-  const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
   if (prefersDarkScheme.matches) {
     document.body.classList.toggle("light-mode");
+    if (localStorage.getItem("mode") == "light") {
+      localStorage.setItem("mode", "dark");
+    } else {
+      localStorage.setItem("mode", "light");
+    }
   } else {
     document.body.classList.toggle("dark-mode");
+    if (localStorage.getItem("mode") == "dark") {
+      localStorage.setItem("mode", "light");
+    } else {
+      localStorage.setItem("mode", "dark");
+    }
   }
   if (document.getElementById("modeBtn").innerHTML == "pimeja") {
     document.getElementById("modeBtn").innerHTML = "walo";
