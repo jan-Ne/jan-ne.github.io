@@ -150,6 +150,10 @@ header button:focus {
   background-color: var(--content-color);
 }
 
+th {
+  padding-right: 20px;
+}
+
 x-pos {
   text-transform: lowercase;
   font-variant: small-caps;
