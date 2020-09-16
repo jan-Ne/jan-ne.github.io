@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>lipu pi jan Ne</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="toki pona, jan Ne, lipu">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="shortcut icon" href="../janNe.png">
+<body>
+  <header>
+      <a href=".."><img src="../janNe.png" alt="jan Ne" height="77"></a>
+      <a class="home" href="..">lipu pi jan Ne</a>
+    <nav>
+      <ul>
+        <li><a href="../tp">toki pona</a></li>
+        <li><a href="../lipu">lipu</a></li>
+        <li><a href="../ijo">ijo</a></li>
+      </ul>
+      <span class="dropdown">
+        <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
+        <ul class="dropdownmenu">
+          <li class="smalldropdown"><a href="../tp">toki pona</a></li>
+          <li class="smalldropdown"><a href="../lipu">lipu</a></li>
+          <li class="smalldropdown"><a href="../ijo">ijo</a></li>
+          <li class="bigdropdown" onclick="modeToggle()" id="modeBtn">pimeja</li>
+        </ul>
+      </span>
+    </nav>
+  </header>
+  <div class="shelf">
+    <ul>
+      <li><a href="dictionary">Official Dictionary</a></li>
+      <li><a href="etymology">Etymology</a></li>
+      <li><a href="otherwords">Other Words</a></li>
+    </ul>
+    <ul>
+      <li><a href="phonology">Phonology</a></li>
+      <li><a href="tpize">Phonetic Guidelines</a></li>
+      <li><a href="names">Place Names and Language Names</a></li>
+    </ul>
+    <ul>
+      <li><a href="sp">sitelen pona</a></li>
+      <li><a href="ss">sitelen sitelen</a></li>
+      <li><a href="tpl">toki pona luka</a></li>
+    </ul>
+  </div>
+  <div class="content" style="min-height: calc(100vh - 207px)">
+    <h1>Place Names</h1>				
+    <hr>				
+    <p>These suggestions are generally based on how the words are pronouned in the local language.</p>				
+    <h3>Continents</h3>				
+    <p>A continent can also be called <i>ma suli</i>.</p>				
+    <i>	ma Amelika	</i><p class="indent">	Americas	</p>
+    <i>	ma Antasika	</i><p class="indent">	Antarctica	</p>
+    <i>	ma Apika	</i><p class="indent">	Africa	</p>
+    <i>	ma Asija	</i><p class="indent">	Asia	</p>
+    <i>	ma Elopa	</i><p class="indent">	Europe	</p>
+    <i>	ma Osejanija	</i><p class="indent">	Oceania	</p>
+
+    <h3>Africa</h3>				
+    <i>	ma Ankola	</i><p class="indent">	Angola	</p>
+    <i>	ma Eliteja	</i><p class="indent">	Eritrea	</p>
+    <i>	ma Isijopija	</i><p class="indent">	Ethiopia	</p>
+    <i>	ma Kamelun	</i><p class="indent">	Cameroon	</p>
+    <i>	ma Kana	</i><p class="indent">	Ghana	</p>
+    <i>	ma Kanpija	</i><p class="indent">	Gambia	</p>
+    <i>	ma Kapon	</i><p class="indent">	Gabon	</p>
+    <i>	ma Kenja	</i><p class="indent">	Kenya	</p>
+    <i>	ma Kilipasi	</i><p class="indent">	Kiribati	</p>
+    <i>	ma Kine	</i><p class="indent">	Guinea	</p>
+    <i>	ma Kinejekatolija	</i><p class="indent">	Equatorial Guinea	</p>
+    <i>	ma Kinepisa	</i><p class="indent">	Guinea-Bissau	</p>
+    <i>	ma Komo	</i><p class="indent">	Comoros	</p>
+    <i>	ma Konko	</i><p class="indent">	Congo	</p>
+    <i>	ma Kosiwa	</i><p class="indent">	Côte d’Ivoire	</p>
+    <i>	ma Lapewija	</i><p class="indent">	Liberia	</p>
+    <i>	ma Lesoto	</i><p class="indent">	Lesotho	</p>
+    <i>	ma Lipija	</i><p class="indent">	Libya	</p>
+    <i>	ma Luwanta	</i><p class="indent">	Rwanda	</p>
+    <i>	ma Malakasi	</i><p class="indent">	Madagascar	</p>
+    <i>	ma Malawi	</i><p class="indent">	Malawi	</p>
+    <i>	ma Mali	</i><p class="indent">	Mali	</p>
+    <i>	ma Malipe	</i><p class="indent">	Morocco	</p>
+    <i>	ma Masu	</i><p class="indent">	Egypt	</p>
+    <i>	ma Mosanpi	</i><p class="indent">	Mozambique	</p>
+    <i>	ma Mowisi	</i><p class="indent">	Mauritius	</p>
+    <i>	ma Mulitanija	</i><p class="indent">	Mauritania	</p>
+    <i>	ma Namipija	</i><p class="indent">	Namibia	</p>
+    <i>	ma Naselija	</i><p class="indent">	Nigeria	</p>
+    <i>	ma Nise	</i><p class="indent">	Niger	</p>
+    <i>	ma Penen	</i><p class="indent">	Benin	</p>
+    <i>	ma Posuwana	</i><p class="indent">	Botswana	</p>
+    <i>	ma Pukinapaso	</i><p class="indent">	Burkina Faso	</p>
+    <i>	ma Sanpija	</i><p class="indent">	Zambia	</p>
+    <i>	ma Santapiken	</i><p class="indent">	Central African Republic	</p>
+    <i>	ma Sasali	</i><p class="indent">	Algeria	</p>
+    <i>	ma Sate	</i><p class="indent">	Chad	</p>
+    <i>	ma Sawasi	</i><p class="indent">	Swaziland	</p>
+    <i>	ma Seneka	</i><p class="indent">	Senegal	</p>
+    <i>	ma Setapika	</i><p class="indent">	South Africa	</p>
+    <i>	ma Sijelalijon	</i><p class="indent">	Sierra Leone	</p>
+    <i>	ma Sinpapuwe	</i><p class="indent">	Zimbabwe	</p>
+    <i>	ma Sipusi	</i><p class="indent">	Djibouti	</p>
+    <i>	ma Somalija	</i><p class="indent">	Somalia	</p>
+    <i>	ma Sutan	</i><p class="indent">	Sudan	</p>
+    <i>	ma Tansanija	</i><p class="indent">	Tanzania	</p>
+    <i>	ma Toko	</i><p class="indent">	Togo	</p>
+    <i>	ma Tunisi	</i><p class="indent">	Tunisia	</p>
+    <i>	ma Ukanta	</i><p class="indent">	Uganda	</p>
+
+    <h3>Americas</h3>				
+    <i>	ma Alensina	</i><p class="indent">	Argentina	</p>
+    <i>	ma Awisi	</i><p class="indent">	Haiti	</p>
+    <i>	ma Ekato	</i><p class="indent">	Ecuador	</p>
+    <i>	ma Kalalinuna	</i><p class="indent">	Greenland	</p>
+    <i>	ma Kanata	</i><p class="indent">	Canada	</p>
+    <i>	ma Katemala	</i><p class="indent">	Guatemala	</p>
+    <i>	ma Kenata	</i><p class="indent">	Grenada	</p>
+    <i>	ma Kosalika	</i><p class="indent">	Costa Rica	</p>
+    <i>	ma Kupa	</i><p class="indent">	Cuba	</p>
+    <i>	ma Mesiko	</i><p class="indent">	Mexico	</p>
+    <i>	ma Mewika	</i><p class="indent">	United States	</p>
+    <i>	ma Ontula	</i><p class="indent">	Honduras	</p>
+    <i>	ma Palakawi	</i><p class="indent">	Paraguay	</p>
+    <i>	ma Panama	</i><p class="indent">	Panama	</p>
+    <i>	ma Papeto	</i><p class="indent">	Barbados	</p>
+    <i>	ma Pasila	</i><p class="indent">	Brasil	</p>
+    <i>	ma Pawama	</i><p class="indent">	Bahamas	</p>
+    <i>	ma Pelu	</i><p class="indent">	Peru	</p>
+    <i>	ma Pemuta	</i><p class="indent">	Bermuda	</p>
+    <i>	ma Penesuwela	</i><p class="indent">	Venezuela	</p>
+    <i>	ma Sameka	</i><p class="indent">	Jamaica	</p>
+    <i>	ma Sile	</i><p class="indent">	Chile	</p>
+    <i>	ma Sinita	</i><p class="indent">	Trinidad and Tobago	</p>
+    <i>	ma Tominika	</i><p class="indent">	Dominican Republic	</p>
+    <i>	ma Ulukawi	</i><p class="indent">	Uruguay	</p>
+
+    <h3>Asia</h3>				
+    <i>	ma Aja	</i><p class="indent">	Armenia	</p>
+    <i>	ma Akanisan	</i><p class="indent">	Afghanistan	</p>
+    <i>	ma Anku	</i><p class="indent">	South Korea	</p>
+    <i>	ma Ilakija	</i><p class="indent">	Iraq	</p>
+    <i>	ma Ilan	</i><p class="indent">	Iran	</p>
+    <i>	ma Intonesija	</i><p class="indent">	Indonesia	</p>
+    <i>	ma Isale	</i><p class="indent">	Israel	</p>
+    <i>	ma Jamanija	</i><p class="indent">	Yemen	</p>
+    <i>	ma Kanpusi	</i><p class="indent">	Cambodia	</p>
+    <i>	ma Katelo	</i><p class="indent">	Georgia	</p>
+    <i>	ma Kuli	</i><p class="indent">	Kurdistan	</p>
+    <i>	ma Kusala	</i><p class="indent">	Gujarat	</p>
+    <i>	ma Kuwasi	</i><p class="indent">	Kuwait	</p>
+    <i>	ma Lanka	</i><p class="indent">	Sri Lanka	</p>
+    <i>	ma Losi	</i><p class="indent">	Russia	</p>
+    <i>	ma Lunpan	</i><p class="indent">	Lebanon	</p>
+    <i>	ma Malasija	</i><p class="indent">	Malaysia	</p>
+    <i>	ma Masu	</i><p class="indent">	Egypt	</p>
+    <i>	ma Mijama	</i><p class="indent">	Myanmar	</p>
+    <i>	ma Nijon	</i><p class="indent">	Japan	</p>
+    <i>	ma Pakisan	</i><p class="indent">	Pakistan	</p>
+    <i>	ma Palani	</i><p class="indent">	Bahrain	</p>
+    <i>	ma Palata	</i><p class="indent">	India	</p>
+    <i>	ma Panla	</i><p class="indent">	Bangladesh	</p>
+    <i>	ma Pilipina	</i><p class="indent">	Philippines	</p>
+    <i>	ma Pilisin	</i><p class="indent">	Palestine	</p>
+    <i>	ma Po	</i><p class="indent">	Tibet	</p>
+    <i>	ma Sawusi	</i><p class="indent">	Saudi Arabia	</p>
+    <i>	ma Sonko	</i><p class="indent">	China	</p>
+    <i>	ma Sulija	</i><p class="indent">	Syria	</p>
+    <i>	ma Tawi	</i><p class="indent">	Thailand	</p>
+    <i>	ma Tuki	</i><p class="indent">	Turkey	</p>
+    <i>	ma Uman	</i><p class="indent">	Oman	</p>
+    <i>	ma Utun	</i><p class="indent">	Jordan	</p>
+    <i>	ma Wije	</i><p class="indent">	Vietnam	</p>
+
+    <h3>Europe</h3>				
+    <i>	ma Alan	</i><p class="indent">	Ireland	</p>
+    <i>	ma Antola	</i><p class="indent">	Andorra	</p>
+    <i>	ma Elena	</i><p class="indent">	Greece	</p>
+    <i>	ma Epanja	</i><p class="indent">	Spain	</p>
+    <i>	ma Esalasi	</i><p class="indent">	Austria	</p>
+    <i>	ma Esi	</i><p class="indent">	Estonia	</p>
+    <i>	ma Esuka	</i><p class="indent">	Basque Country	</p>
+    <i>	ma Inli	</i><p class="indent">	England	</p>
+    <i>	ma Isilan	</i><p class="indent">	Iceland	</p>
+    <i>	ma Italija	</i><p class="indent">	Italy	</p>
+    <i>	ma Juke	</i><p class="indent">	United Kingdom	</p>
+    <i>	ma Kalalinuna	</i><p class="indent">	Greenland	</p>
+    <i>	ma Kanse	</i><p class="indent">	France	</p>
+    <i>	ma Katala	</i><p class="indent">	Catalan Countries	</p>
+    <i>	ma Katelo	</i><p class="indent">	Georgia	</p>
+    <i>	ma Kinla	</i><p class="indent">	Wales	</p>
+    <i>	ma Kiposi	</i><p class="indent">	Cyprus	</p>
+    <i>	ma Lawi	</i><p class="indent">	Latvia	</p>
+    <i>	ma Lijatuwa	</i><p class="indent">	Lithuania	</p>
+    <i>	ma Lisensan	</i><p class="indent">	Liechtenstein	</p>
+    <i>	ma Lomani	</i><p class="indent">	Romania	</p>
+    <i>	ma Losi	</i><p class="indent">	Russia	</p>
+    <i>	ma Lowasi	</i><p class="indent">	Croatia	</p>
+    <i>	ma Lowenki	</i><p class="indent">	Slovakia	</p>
+    <i>	ma Lowensina	</i><p class="indent">	Slovenia	</p>
+    <i>	ma Lusepu	</i><p class="indent">	Luxembourg	</p>
+    <i>	ma Maketonija	</i><p class="indent">	Macedonia	</p>
+    <i>	ma Mosijo	</i><p class="indent">	Hungary	</p>
+    <i>	ma Motowa	</i><p class="indent">	Moldova	</p>
+    <i>	ma Netelan	</i><p class="indent">	Netherlands	</p>
+    <i>	ma Nosiki	</i><p class="indent">	Norway	</p>
+    <i>	ma Pelalusi	</i><p class="indent">	Belarus	</p>
+    <i>	ma Pesije	</i><p class="indent">	Belgium	</p>
+    <i>	ma Peson	</i><p class="indent">	Brittany	</p>
+    <i>	ma Pokasi	</i><p class="indent">	Bulgaria	</p>
+    <i>	ma Posan	</i><p class="indent">	Bosnia	</p>
+    <i>	ma Posuka	</i><p class="indent">	Poland	</p>
+    <i>	ma Potuke	</i><p class="indent">	Portugal	</p>
+    <i>	ma Samalino	</i><p class="indent">	San Marino	</p>
+    <i>	ma Seki	</i><p class="indent">	Czech Republic	</p>
+    <i>	ma Sipe	</i><p class="indent">	Albania	</p>
+    <i>	ma Sopisi	</i><p class="indent">	Serbia	</p>
+    <i>	ma Sukosi	</i><p class="indent">	Scotland	</p>
+    <i>	ma Sumi	</i><p class="indent">	Finland	</p>
+    <i>	ma Suwasi	</i><p class="indent">	Switzerland	</p>
+    <i>	ma Tansi	</i><p class="indent">	Denmark	</p>
+    <i>	ma Tosi	</i><p class="indent">	Germany	</p>
+    <i>	ma Tuki	</i><p class="indent">	Turkey	</p>
+    <i>	ma Ukawina	</i><p class="indent">	Ukraine	</p>
+    <i>	ma Wasikano	</i><p class="indent">	Vatican	</p>
+    <i>	ma Wensa	</i><p class="indent">	Sweden	</p>
+
+    <h3>Oceania</h3>				
+    <i>	ma Intonesija	</i><p class="indent">	Indonesia	</p>
+    <i>	ma Nusilan	</i><p class="indent">	New Zealand	</p>
+    <i>	ma Oselija	</i><p class="indent">	Australia	</p>
+    <i>	ma Papuwanijukini	</i><p class="indent">	Papua New Guinea	</p>
+    <i>	ma Pisi	</i><p class="indent">	Fiji	</p>
+    <i>	ma Samowa	</i><p class="indent">	Samoa	</p>
+    <i>	ma Tona	</i><p class="indent">	Tonga	</p>
+    <i>	ma Tuwalu	</i><p class="indent">	Tuvalu	</p>
+    <i>	ma Wanuwatu	</i><p class="indent">	Vanuatu	</p>
+
+    <hr class="pagebreak">				
+    <h1>Language Names</h1>				
+    <hr>				
+
+    <i>	toki Alapi	</i><p class="indent">	Arabic	</p>
+    <i>	toki Apikan	</i><p class="indent">	Afrikaans	</p>
+    <i>	toki Awasa	</i><p class="indent">	Hausa	</p>
+    <i>	toki Awisi	</i><p class="indent">	Haitian Creole	</p>
+    <i>	toki Elena	</i><p class="indent">	Greek	</p>
+    <i>	toki Epanja	</i><p class="indent">	Spanish	</p>
+    <i>	toki Esi	</i><p class="indent">	Estonian	</p>
+    <i>	toki Esuka	</i><p class="indent">	Basque	</p>
+    <i>	toki Inli	</i><p class="indent">	English	</p>
+    <i>	toki Insi	</i><p class="indent">	Hindi	</p>
+    <i>	toki Intonesija	</i><p class="indent">	Indonesian	</p>
+    <i>	toki Inu	</i><p class="indent">	Inuit languages	</p>
+    <i>	toki Ipo	</i><p class="indent">	Igbo	</p>
+    <i>	toki Isilan	</i><p class="indent">	Icelandic	</p>
+    <i>	toki Italija	</i><p class="indent">	Italian	</p>
+    <i>	toki Iwisi	</i><p class="indent">	Hebrew	</p>
+    <i>	toki Jolupa	</i><p class="indent">	Yoruba	</p>
+    <i>	toki Kalike	</i><p class="indent">	Scottish Gaelic	</p>
+    <i>	toki Kanse	</i><p class="indent">	French	</p>
+    <i>	toki Kantun	</i><p class="indent">	Cantonese	</p>
+    <i>	toki Kinla	</i><p class="indent">	Welsh	</p>
+    <i>	toki Lasina	</i><p class="indent">	Latin	</p>
+    <i>	toki Lomani	</i><p class="indent">	Romanian	</p>
+    <i>	toki Losi	</i><p class="indent">	Russian	</p>
+    <i>	toki Lowasi	</i><p class="indent">	Croatian	</p>
+    <i>	toki Mosijo	</i><p class="indent">	Hungarian	</p>
+    <i>	toki Netelan	</i><p class="indent">	Dutch	</p>
+    <i>	toki Nijon	</i><p class="indent">	Japanese	</p>
+    <i>	toki Nosiki	</i><p class="indent">	Norwegian (Bokmål)	</p>
+    <i>	toki Nosiki sin	</i><p class="indent">	Norwegian Nynorsk	</p>
+    <i>	toki Panla	</i><p class="indent">	Bengali	</p>
+    <i>	toki Peson	</i><p class="indent">	Breton	</p>
+    <i>	toki Pokasi	</i><p class="indent">	Bulgarian	</p>
+    <i>	toki Posan	</i><p class="indent">	Bosnian	</p>
+    <i>	toki Potuke	</i><p class="indent">	Portuguese	</p>
+    <i>	toki Sameka	</i><p class="indent">	Jamaican Patois	</p>
+    <i>	toki Seki	</i><p class="indent">	Czech	</p>
+    <i>	toki Sesi	</i><p class="indent">	Tsez	</p>
+    <i>	toki Sikipe	</i><p class="indent">	Albanian	</p>
+    <i>	toki Sonko	</i><p class="indent">	Chinese	</p>
+    <i>	toki Sopisi	</i><p class="indent">	Serbian	</p>
+    <i>	toki Sumi	</i><p class="indent">	Finnish	</p>
+    <i>	toki Tansi	</i><p class="indent">	Danish	</p>
+    <i>	toki Topisin	</i><p class="indent">	Tok Pisin	</p>
+    <i>	toki Tosi	</i><p class="indent">	German	</p>
+
+    <p>Sign Languages</p>				
+    <p>The linguistic publication Ethnologue lists 121 Deaf sign languages used worldwide. To name a sign language in Toki Pona, simply add the country or region name after toki luka (hand language). Here is an incomplete list:</p>				
+    <i>	toki luka Kanse	</i><p class="indent">	French Sign Language	</p>
+    <i>	toki luka Kepeka	</i><p class="indent">	Quebec Sign Language	</p>
+    <i>	toki luka Mewika	</i><p class="indent">	American Sign Language	</p>
+    <i>	toki luka Oselija	</i><p class="indent">	Australian Sign Language	</p>
+    <i>	toki luka Piten	</i><p class="indent">	British Sign Language	</p>
+    <i>	toki luka Sonko	</i><p class="indent">	Chinese Sign Language	</p>
+    <i>	toki luka Tosi	</i><p class="indent">	German Sign Language	</p>
+    <i>	toki Inli luka	</i><p class="indent">	Manually Coded English	</p>
+
+    <h3>Constructed Languages</h3>				
+    <p>Of course, Toki Pona is not the only constructed language. Other creations include:<p>				
+    <i>	toki Apiwili	</i><p class="indent">	Afrihili	</p>
+    <i>	toki Epelanto	</i><p class="indent">	Esperanto	</p>
+    <i>	toki Inli pona	</i><p class="indent">	Basic English	</p>
+    <i>	toki Inota	</i><p class="indent">	Lingua Ignota	</p>
+    <i>	toki Intelinwa	</i><p class="indent">	Interlingua	</p>
+    <i>	toki Ito	</i><p class="indent">	Ido	</p>
+    <i>	toki Kuwenja	</i><p class="indent">	Quenya	</p>
+    <i>	toki Latan	</i><p class="indent">	Láadan	</p>
+    <i>	toki Losupan	</i><p class="indent">	Lojban	</p>
+    <i>	toki Mansi	</i><p class="indent">	Mänti	</p>
+    <i>	toki Nawi	</i><p class="indent">	Na’vi	</p>
+    <i>	toki Olapi	</i><p class="indent">	Volapük	</p>
+    <i>	toki Palepelen	</i><p class="indent">	Baôleybelen	</p>
+    <i>	toki Pasiki	</i><p class="indent">	Fyksian	</p>
+    <i>	toki pona	</i><p class="indent">	toki pona	</p>
+    <i>	toki Selen	</i><p class="indent">	Seren	</p>
+    <i>	toki Semisi	</i><p class="indent">	Semitish	</p>
+    <i>	toki Sinan	</i><p class="indent">	Klingon	</p>
+    <i>	toki Sintalin	</i><p class="indent">	Sindarin	</p>
+    <i>	toki sitelen Anlasi	</i><p class="indent">	Unker Non-Linear Writing System	</p>
+    <i>	toki sitelen Pisinpo	</i><p class="indent">	Blissymbols	</p>
+    <i>	toki Soleso	</i><p class="indent">	Solresol	</p>
+    <i>	toki Soma	</i><p class="indent">	Somish	</p>
+    <i>	toki Tolome	</i><p class="indent">	Traumae	</p>
+    <i>	toki Tosulaki	</i><p class="indent">	Dothraki	</p>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  if (prefersDarkScheme.matches) {
+    document.getElementById("modeBtn").innerHTML = "walo";
+    if (localStorage.getItem("mode") == "light") {
+      document.body.classList.toggle("light-mode", true);
+      document.getElementById("modeBtn").innerHTML = "pimeja";
+    }
+    if (localStorage.getItem("mode") == "dark") {
+      document.body.classList.toggle("light-mode", false);
+      document.getElementById("modeBtn").innerHTML = "walo";
+    }
+  }
+  if (localStorage.getItem("mode") == "dark") {
+    document.body.classList.toggle("dark-mode", true);
+    document.getElementById("modeBtn").innerHTML = "walo";
+  }
+  if (localStorage.getItem("mode") == "light") {
+    document.body.classList.toggle("dark-mode", false);
+    document.getElementById("modeBtn").innerHTML = "pimeja";
+  }
+});
+function menuClick() {
+  if (window.innerWidth <= 593) {
+    $(".smalldropdown").toggle();
+  }
+  $(".bigdropdown").toggle();
+}
+function modeToggle() {
+  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  if (prefersDarkScheme.matches) {
+    document.body.classList.toggle("light-mode");
+    if (localStorage.getItem("mode") == "light") {
+      localStorage.setItem("mode", "dark");
+    } else {
+      localStorage.setItem("mode", "light");
+    }
+  } else {
+    document.body.classList.toggle("dark-mode");
+    if (localStorage.getItem("mode") == "dark") {
+      localStorage.setItem("mode", "light");
+    } else {
+      localStorage.setItem("mode", "dark");
+    }
+  }
+  if (document.getElementById("modeBtn").innerHTML == "pimeja") {
+    document.getElementById("modeBtn").innerHTML = "walo";
+  } else {
+    document.getElementById("modeBtn").innerHTML = "pimeja";
+  }
+}
+</script>
+</body>
+</html>
