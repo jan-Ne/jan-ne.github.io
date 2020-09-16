@@ -160,8 +160,13 @@ x-pos {
 }
 
 abbr {
-    text-decoration: none;
-    cursor: default;
+  text-decoration: none;
+  cursor: default;
+}
+
+.indent {
+  text-indent: 7ch;
+  margin: 2px 0px;
 }
 
 hr.pagebreak {
