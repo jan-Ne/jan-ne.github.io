@@ -239,6 +239,16 @@ hr.pagebreak {
   }
 }
 
+/*Printed Page*/
+@media print {
+  header, .shelf {
+    display: none;
+  }
+  hr.pagebreak {
+    page-break-after: always;
+  }
+}
+
 /*Default Dark Mode*/
 @media (prefers-color-scheme: dark) {
   header {
