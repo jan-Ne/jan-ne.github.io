@@ -160,7 +160,7 @@ th {
 }
 
 .formatted table {
-  border-spacing: initial;
+  border-spacing: 0px;
 }
 
 .formatted th {
