@@ -158,7 +158,11 @@ th {
   border: solid 1px var(--content-color);
   border-collapse:collapse;
 }
-  
+
+.formatted table {
+  border-spacing: initial;
+}
+
 .formatted th {
   background-color: var(--header-color);
   color: white;
