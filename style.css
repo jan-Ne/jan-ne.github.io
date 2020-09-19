@@ -254,7 +254,7 @@ hr.pagebreak {
     background-color: none;
   }
   .content {
-    margin-top: 0px;
+    padding-top: 0px;
   }
 }
 
