@@ -246,6 +246,11 @@ hr.pagebreak {
   }
   hr.pagebreak {
     page-break-after: always;
+    border: none;
+    background-color: none;
+  }
+  .content {
+    margin-top: 0px;
   }
 }
 
