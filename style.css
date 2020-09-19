@@ -174,6 +174,10 @@ table.formatted, .formatted th, .formatted td {
   padding: 5px 10px;
 }
 
+.center td {
+  text-align: center;
+}
+
 x-pos {
   text-transform: lowercase;
   font-variant: small-caps;
