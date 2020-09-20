@@ -178,6 +178,11 @@ table.formatted, .formatted th, .formatted td {
   text-align: center;
 }
 
+img.center {
+  margin: auto;
+  display: block;
+}
+
 x-pos {
   text-transform: lowercase;
   font-variant: small-caps;
