@@ -150,6 +150,11 @@ header button:focus {
   background-color: var(--content-color);
 }
 
+.content a {
+  color: #4980f8;
+  text-decoration: none;
+}
+
 th {
   padding-right: 20px;
 }
