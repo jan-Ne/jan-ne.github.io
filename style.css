@@ -193,6 +193,10 @@ x-pos {
   font-variant: small-caps;
 }
 
+x-b {
+  font-weight: 400;
+}
+
 abbr {
   text-decoration: none;
   cursor: default;
