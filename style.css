@@ -164,10 +164,6 @@ table.formatted, .formatted th, .formatted td {
   border-collapse:collapse;
 }
 
-.formatted table {
-  border-spacing: 0px;
-}
-
 .formatted th {
   background-color: var(--header-color);
   color: white;
@@ -179,7 +175,7 @@ table.formatted, .formatted th, .formatted td {
   padding: 5px 10px;
 }
 
-.formatted2 table {
+table.formatted2 {
   border-collapse: collapse;
 }
 
