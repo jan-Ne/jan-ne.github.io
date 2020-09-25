@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>lipu pi jan Ne</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="toki pona, jan Ne, lipu">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="shortcut icon" href="../janNe.png">
+<body>
+  <header>
+      <a href=".."><img src="../janNe.png" alt="jan Ne" height="77"></a>
+      <a class="home" href="..">lipu pi jan Ne</a>
+    <nav>
+      <ul>
+        <li><a href="../tp">toki pona</a></li>
+        <li><a href="../lipu">lipu</a></li>
+        <li><a href="../ijo">ijo</a></li>
+      </ul>
+      <span class="dropdown">
+        <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
+        <ul class="dropdownmenu">
+          <li class="smalldropdown"><a href="../tp">toki pona</a></li>
+          <li class="smalldropdown"><a href="../lipu">lipu</a></li>
+          <li class="smalldropdown"><a href="../ijo">ijo</a></li>
+          <li class="bigdropdown" onclick="modeToggle()" id="modeBtn">pimeja</li>
+        </ul>
+      </span>
+    </nav>
+  </header>
+  <div class="shelf">
+    <ul>
+      <li><a href="dictionary">Official Dictionary</a></li>
+      <li><a href="etymology">Etymology</a></li>
+      <li><a href="otherwords">Other Words</a></li>
+    </ul>
+    <ul>
+      <li><a href="phonology">Phonology</a></li>
+      <li><a href="tpize">Phonetic Guidelines</a></li>
+      <li><a href="names">Place Names and Language Names</a></li>
+    </ul>
+    <ul>
+      <li><a href="sp">sitelen pona</a></li>
+      <li><a href="ss">sitelen sitelen</a></li>
+      <li><a href="tpl">toki pona luka</a></li>
+    </ul>
+  </div>
+  <div class="content" style="min-height: calc(100vh - 207px)">
+    <h1>Other words</h1>										
+    <h3>Other uses</h3>										
+    <table>												
+      <tr><th>	kin	</th><td>	also, too, even, indeed	</td><td>		</td><td>		</td><td colspan="2">	https://archive.is/K7fME		</td></tr>	
+      <tr><th>	namako	</th><td>	food additive, accessory, something extra; season, embellish, stimulate	</td><td>		</td><td>		</td><td colspan="2">	https://archive.is/OcYnB		</td></tr>	
+
+      <h3>	Community words	</h3>										
+      <tr><th>	tonsi	</th><td>	non-binary, genderqueer, trans	</td><td>	voted on by the community on Discord	</td><td>		</td><td colspan="2">			</td></tr>	
+    </table>												
+
+    <h3>Old words</h3>										
+    <table>												
+      <tr><th>	apeja	</th><td>	to single out, expose, disgrace, dishonor	</td><td>	*never officially released	</td><td>	ike, pilin ike, weka	</td><td colspan="2">	https://archive.is/VO3ml			</td></tr>
+      <tr><th>	iki	</th><td>	he, she, it, him, her, his, its	</td><td>		</td><td>	replaced by ona	</td><td>	http://forums.tokipona.org/viewtopic.php?f=33&t=30&sid=df13a3420a87b3ffee2a6aa1edd7eb7f	</td><td>	http://forums.tokipona.org/viewtopic.php?f=33&t=17&hilit=ipi&sid=6102f5563f1e833ba011d86abb70e37b	</td></tr>
+      <tr><th>	ipi	</th><td>	he, she, it, him, her, his, its	</td><td colspan="2">	suggested as a replacement for iki but never accepted or used			</td><td colspan="2">	http://forums.tokipona.org/viewtopic.php?f=33&t=17&hilit=ipi&sid=6102f5563f1e833ba011d86abb70e37b			</td></tr>
+      <tr><th>	jalan	</th><td>	foot, leg	</td><td colspan="2">	suggested as a replacement for noka but never accepted or used			</td><td colspan="2">	http://forums.tokipona.org/viewtopic.php?f=33&t=17&hilit=ipi&sid=6102f5563f1e833ba011d86abb70e37b			</td></tr>
+      <tr><th>	kan	</th><td>	with, accompany, among	</td><td>		</td><td>	incorporated into en/kin and lon poka	</td><td>	http://web.archive.bibalex.org/web/20020607095456/http://www.tokipona.org/tp-en.php	</td><td>	http://forums.tokipona.org/viewtopic.php?f=33&t=81&sid=df13a3420a87b3ffee2a6aa1edd7eb7f	</td></tr>
+      <tr><th>	kapesi	</th><td>	brown, grey	</td><td>		</td><td>	incorporated into pimeja	</td><td colspan="2">	https://web.archive.org/web/20200128090358/http://tokipona.net/tp/janpije/originalwords.php			</td></tr>
+      <tr><th>	kapa	</th><td>	hill, mountain, bump, button	</td><td>		</td><td>	replaced by nena	</td><td colspan="2">	https://web.archive.org/web/20200128090358/http://tokipona.net/tp/janpije/originalwords.php			</td></tr>
+      <tr><th>	kipisi	</th><td>	cut	</td><td>		</td><td>	tu/mute, pakala; lili, wan	</td><td colspan="2">	https://archive.is/qTBJc			</td></tr>
+      <tr><th>	leko	</th><td>	block, square object, cube, stairs	</td><td>		</td><td>	selo, poki	</td><td colspan="2">	http://web.archive.bibalex.org/web/20020607095456/http://www.tokipona.org/tp-en.php			</td></tr>
+      <tr><th>	majuna	</th><td>	old	</td><td>		</td><td>	sin ala, suli, ... pi tenpo pini	</td><td colspan="2">				</td></tr>
+      <tr><th>	misikeke	</th><td>	medicine	</td><td>	*never officially released	</td><td>	moku/ilo pi pona sijelo, etc.	</td><td colspan="2">	mentioned by Sonja on Discord			</td></tr>
+      <tr><th>	monsuta	</th><td>	creature that preys on humans; predator a real or imagined threat; danger a source of fear or dread	</td><td>		</td><td>	ike, akesi	</td><td colspan="2">	https://archive.is/NQQ4a			</td></tr>
+      <tr><th>	pasila	</th><td>	good, easy	</td><td>	*never officially released	</td><td>	pona	</td><td colspan="2">	http://forums.tokipona.org/viewtopic.php?f=5&t=1216&hilit=pake&sid=095161ae16f8e0bb4bd5b122d77f00c7			</td></tr>
+      <tr><th>	pake	</th><td>	block the way	</td><td>	*never officially released	</td><td>	pini	</td><td colspan="2">	http://forums.tokipona.org/viewtopic.php?f=5&t=1216&hilit=pake&sid=095161ae16f8e0bb4bd5b122d77f00c7			</td></tr>
+      <tr><th>	pata	</th><td>	sibling, brother, sister, cousin	</td><td>		</td><td>	incorporated into sama	</td><td colspan="2">	http://web.archive.bibalex.org/web/20030304153000/http://www.tokipona.org/tp-en.php			</td></tr>
+      <tr><th>	po	</th><td>	four	</td><td>		</td><td>	tu tu, mute	</td><td colspan="2">	https://web.archive.org/web/20200128090358/http://tokipona.net/tp/janpije/originalwords.php			</td></tr>
+      <tr><th>	powe	</th><td>	metaphor, false, not real, fantasy, imagination, abstract, example	</td><td>	*never officially released	</td><td>	lon ala	</td><td colspan="2">	http://forums.tokipona.org/viewtopic.php?f=33&t=639&p=2337&hilit=powe&sid=6102f5563f1e833ba011d86abb70e37b#p2337			</td></tr>
+      <tr><th>	tuli	</th><td>	three	</td><td>		</td><td>	tu wan, mute	</td><td colspan="2">	https://web.archive.org/web/20200128090358/http://tokipona.net/tp/janpije/originalwords.php			</td></tr>
+    </table>												
+
+    <h3>Joke words</h3>										
+    <table>												
+      <tr><th>	kijetesantakalu	</th><td>	any animal from the Procyonidae family, such as raccoons, coatis, kinkajous, olingos, ringtails and cacomistles	</td><td>	created as an April Fool's joke in the old Yahoo group	</td><td>		</td><td>	http://forums.tokipona.org/viewtopic.php?f=33&t=1033&hilit=kijetesantakalu&sid=df13a3420a87b3ffee2a6aa1edd7eb7f			</td></tr>
+      <tr><th>	mulapisu	</th><td>	pizza	</td><td>	created on Discord	</td><td>		</td><td>	Discord			</td></tr>
+      <tr><th>	yupekosi	</th><td>	to behave like George Lucas and revise your old creative works and actually make them worse	</td><td>	created on Discord	</td><td>		</td><td>	Discord			</td></tr>
+    </table>												
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  if (prefersDarkScheme.matches) {
+    document.getElementById("modeBtn").innerHTML = "walo";
+    if (localStorage.getItem("mode") == "light") {
+      document.body.classList.toggle("light-mode", true);
+      document.getElementById("modeBtn").innerHTML = "pimeja";
+    }
+    if (localStorage.getItem("mode") == "dark") {
+      document.body.classList.toggle("light-mode", false);
+      document.getElementById("modeBtn").innerHTML = "walo";
+    }
+  }
+  if (localStorage.getItem("mode") == "dark") {
+    document.body.classList.toggle("dark-mode", true);
+    document.getElementById("modeBtn").innerHTML = "walo";
+  }
+  if (localStorage.getItem("mode") == "light") {
+    document.body.classList.toggle("dark-mode", false);
+    document.getElementById("modeBtn").innerHTML = "pimeja";
+  }
+});
+function menuClick() {
+  if (window.innerWidth <= 593) {
+    $(".smalldropdown").toggle();
+  }
+  $(".bigdropdown").toggle();
+}
+function modeToggle() {
+  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  if (prefersDarkScheme.matches) {
+    document.body.classList.toggle("light-mode");
+    if (localStorage.getItem("mode") == "light") {
+      localStorage.setItem("mode", "dark");
+    } else {
+      localStorage.setItem("mode", "light");
+    }
+  } else {
+    document.body.classList.toggle("dark-mode");
+    if (localStorage.getItem("mode") == "dark") {
+      localStorage.setItem("mode", "light");
+    } else {
+      localStorage.setItem("mode", "dark");
+    }
+  }
+  if (document.getElementById("modeBtn").innerHTML == "pimeja") {
+    document.getElementById("modeBtn").innerHTML = "walo";
+  } else {
+    document.getElementById("modeBtn").innerHTML = "pimeja";
+  }
+}
+</script>
+</body>
+</html>
