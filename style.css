@@ -224,6 +224,8 @@ hr.pagebreak {
 
 .content footer {
   position:absolute;
+  background-color: var(--content-color);
+  margin-bottom: 8px;
 }
 
 @media only screen and (min-width: 826px) {
