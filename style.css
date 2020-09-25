@@ -179,6 +179,15 @@ table.formatted, .formatted th, .formatted td {
   padding: 5px 10px;
 }
 
+.formatted2 table {
+  border-collapse: collapse;
+}
+
+.formatted2 th, .formatted2 td {
+  border: solid 2px var(--bg-color);
+  padding 5px 10px;
+}
+
 .center td {
   text-align: center;
 }
