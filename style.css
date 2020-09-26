@@ -163,24 +163,22 @@ th {
   overflow-x:auto;
 }
 
-table.formatted, .formatted th, .formatted td { 
+table.formatted, table.formatted2 {
+  border-collapse: collapse;
+}
+
+.formatted th, .formatted td { 
   border: solid 1px var(--content-color);
-  border-collapse:collapse;
+  padding: 5px 10px
 }
 
 .formatted th {
   background-color: var(--header-color);
   color: white;
-  padding: 5px 10px;
 }
  
 .formatted td {
   background-color: var(--dropdown-color);
-  padding: 5px 10px;
-}
-
-table.formatted2 {
-  border-collapse: collapse;
 }
 
 .formatted2 th, .formatted2 td {
