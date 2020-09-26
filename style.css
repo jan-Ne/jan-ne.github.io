@@ -240,6 +240,7 @@ hr.pagebreak {
 @media only screen and (max-width: 826px) {
   .content {
     padding: 11.622%;
+    padding-bottom: 16.7vh;
   }
   hr.pagebreak {
     padding: 11.622% 0px;
