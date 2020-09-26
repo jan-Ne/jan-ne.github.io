@@ -193,6 +193,7 @@ table.formatted, table.formatted2 {
 img.center {
   margin: auto;
   display: block;
+  max-width:100%;
 }
 
 x-pos {
