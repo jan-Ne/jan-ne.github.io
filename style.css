@@ -229,6 +229,7 @@ hr.pagebreak {
   position:absolute;
   background-color: var(--content-color);
   margin-bottom: 8px;
+  word-break: break-all;
 }
 
 @media only screen and (min-width: 826px) {
