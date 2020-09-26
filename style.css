@@ -159,6 +159,10 @@ th {
   padding-right: 20px;
 }
 
+table {
+  overflow-x:auto;
+}
+
 table.formatted, .formatted th, .formatted td { 
   border: solid 1px var(--content-color);
   border-collapse:collapse;
