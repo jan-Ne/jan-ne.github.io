@@ -267,7 +267,7 @@ hr.pagebreak {
   word-break: break-all;
 }
 
-.linjapona * {
+.linjapona, .linjapona * {
   font-family:"linja pona";
 }
 
