@@ -412,7 +412,7 @@ function modeToggle() {
 <script>
   var ToC = 
     "<div class='toc'>" +
-      "<ul>";
+      "<ul style="padding: 0px 20px;">";
   var newLine, el, title, link;
   
   $(".content h1,.content h3").each(function() {
@@ -422,7 +422,7 @@ function modeToggle() {
     
     if (el.is("h1")) {
       newLine =
-        "<li><a href='" + link + "'>" + title + "</a>" + "</li>";
+        "<li style="font-size: larger;"><a href='" + link + "'>" + title + "</a>" + "</li>";
       ToC += newLine;
     }
     if (el.is("h3")) {
