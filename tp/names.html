@@ -45,11 +45,15 @@
       <li><a href="tpl">toki pona luka</a></li>
     </ul>
   </div>
+  <div class="bar">
+    <button class="center linjapona">•••</button>
+    
+  </div>
   <div class="content" style="min-height: calc(100vh - 207px)">
-    <h1>Place Names</h1>				
+    <h1 id="Place_Names">Place Names</h1>				
     <hr>				
     <p>These suggestions are generally based on how the words are pronounced in the local language.</p>				
-    <h3>Continents</h3>				
+    <h3 id="Continents">Continents</h3>				
     <p>A continent can also be called <i>ma suli</i>.</p>				
     <i>	ma Amelika	</i><p class="indent">	Americas	</p>
     <i>	ma Antasika	</i><p class="indent">	Antarctica	</p>
@@ -58,7 +62,7 @@
     <i>	ma Elopa	</i><p class="indent">	Europe	</p>
     <i>	ma Osejanija	</i><p class="indent">	Oceania	</p>
 
-    <h3>Africa</h3>				
+    <h3 id="Africa">Africa</h3>				
     <i>	ma Ankola	</i><p class="indent">	Angola	</p>
     <i>	ma Eliteja	</i><p class="indent">	Eritrea	</p>
     <i>	ma Isijopija	</i><p class="indent">	Ethiopia	</p>
@@ -109,7 +113,7 @@
     <i>	ma Tunisi	</i><p class="indent">	Tunisia	</p>
     <i>	ma Ukanta	</i><p class="indent">	Uganda	</p>
 
-    <h3>Americas</h3>				
+    <h3 id="Americas">Americas</h3>				
     <i>	ma Alensina	</i><p class="indent">	Argentina	</p>
     <i>	ma Awisi	</i><p class="indent">	Haiti	</p>
     <i>	ma Ekato	</i><p class="indent">	Ecuador	</p>
@@ -136,7 +140,7 @@
     <i>	ma Tominika	</i><p class="indent">	Dominican Republic	</p>
     <i>	ma Ulukawi	</i><p class="indent">	Uruguay	</p>
 
-    <h3>Asia</h3>				
+    <h3 id="Asia">Asia</h3>				
     <i>	ma Aja	</i><p class="indent">	Armenia	</p>
     <i>	ma Akanisan	</i><p class="indent">	Afghanistan	</p>
     <i>	ma Anku	</i><p class="indent">	South Korea	</p>
@@ -173,7 +177,7 @@
     <i>	ma Utun	</i><p class="indent">	Jordan	</p>
     <i>	ma Wije	</i><p class="indent">	Vietnam	</p>
 
-    <h3>Europe</h3>				
+    <h3 id="Europe">Europe</h3>				
     <i>	ma Alan	</i><p class="indent">	Ireland	</p>
     <i>	ma Antola	</i><p class="indent">	Andorra	</p>
     <i>	ma Elena	</i><p class="indent">	Greece	</p>
@@ -226,7 +230,7 @@
     <i>	ma Wasikano	</i><p class="indent">	Vatican	</p>
     <i>	ma Wensa	</i><p class="indent">	Sweden	</p>
 
-    <h3>Oceania</h3>				
+    <h3 id="Oceania">Oceania</h3>				
     <i>	ma Intonesija	</i><p class="indent">	Indonesia	</p>
     <i>	ma Nusilan	</i><p class="indent">	New Zealand	</p>
     <i>	ma Oselija	</i><p class="indent">	Australia	</p>
@@ -243,7 +247,7 @@
     </footer>
 
     <hr class="pagebreak">				
-    <h1>Language Names</h1>				
+    <h1 id="Language_Names">Language Names</h1>				
     <hr>				
 
     <i>	toki Alapi	</i><p class="indent">	Arabic	</p>
@@ -292,7 +296,7 @@
     <i>	toki Topisin	</i><p class="indent">	Tok Pisin	</p>
     <i>	toki Tosi	</i><p class="indent">	German	</p>
 
-    <h3>Sign Languages</h3>				
+    <h3 id="Sign_Languages">Sign Languages</h3>				
     <p>The linguistic publication Ethnologue lists 121 Deaf sign languages used worldwide. To name a sign language in Toki Pona, simply add the country or region name after toki luka (hand language). Here is an incomplete list:</p>				
     <i>	toki luka Kanse	</i><p class="indent">	French Sign Language	</p>
     <i>	toki luka Kepeka	</i><p class="indent">	Quebec Sign Language	</p>
@@ -303,7 +307,7 @@
     <i>	toki luka Tosi	</i><p class="indent">	German Sign Language	</p>
     <i>	toki Inli luka	</i><p class="indent">	Manually Coded English	</p>
 
-    <h3>Constructed Languages</h3>				
+    <h3 id="Constructed_Languages">Constructed Languages</h3>				
     <p>Of course, Toki Pona is not the only constructed language. Other creations include:<p>				
     <i>	toki Apiwili	</i><p class="indent">	Afrihili	</p>
     <i>	toki Epelanto	</i><p class="indent">	Esperanto	</p>
@@ -390,6 +394,33 @@ function modeToggle() {
     document.getElementById("modeBtn").innerHTML = "pimeja";
   }
 }
+</script>
+<script>
+  var ToC = 
+    "<div class='toc'>" +
+      "<ul>";
+  var newLine, title, link;
+  
+  $(".content h1").each(function() {
+    title = $(this).text();
+    link = "#" + $(this).attr("id");
+    
+    newLine =
+      "<li>" +
+        "<a href='" + link + "'>" +
+          title +
+        "</a>" +
+      "<li>";
+
+    ToC += newLine;
+  });
+  
+  ToC +=
+    </ul>" +
+  "</div>"
+
+  $("bar").prepend(ToC);
+    
 </script>
 </body>
 </html>
