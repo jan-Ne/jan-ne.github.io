@@ -153,6 +153,17 @@ header button:focus {
   border: none;
 }
 
+.toc {
+  background-color: var(--dropdown-color);
+  display: none;
+  position: absolute;
+  top: 32px;
+  width: fit-content;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 button.center {
   margin: auto;
   display: flex;
