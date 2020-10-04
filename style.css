@@ -142,6 +142,22 @@ header button:focus {
   color: var(--text-color);
 }
 
+.bar {
+  background-color: var(--dropdown-color);
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.bar button {
+  border: none;
+}
+
+button.center {
+  margin: auto;
+  display: flex;
+}
+
 .content {
   margin:auto;
   padding: 96px;
