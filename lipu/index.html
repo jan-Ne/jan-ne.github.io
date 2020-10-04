@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>lipu pi jan Ne</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="toki pona, jan Ne, lipu">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="shortcut icon" href="../janNe.png">
+<body>
+  <header>
+      <a href=".."><img src="../janNe.png" alt="jan Ne" height="77"></a>
+      <a class="home" href="..">lipu pi jan Ne</a>
+    <nav>
+      <ul>
+        <li><a href="../tp">toki pona</a></li>
+        <li><a href="../lipu">lipu</a></li>
+        <li><a href="../ijo">ijo</a></li>
+      </ul>
+      <span class="dropdown">
+        <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
+        <ul class="dropdownmenu">
+          <li class="smalldropdown"><a href="../tp">toki pona</a></li>
+          <li class="smalldropdown"><a href="../lipu">lipu</a></li>
+          <li class="smalldropdown"><a href="../ijo">ijo</a></li>
+          <li class="bigdropdown" onclick="modeToggle()" id="modeBtn">pimeja</li>
+        </ul>
+      </span>
+    </nav>
+  </header>
+  <div class="shelf">
+    <div class="book">
+      <img src="http://sedition.com/img/aesops/aesop-cover.jpg">
+      <a href="toki_musi/Esopo">toki musi pi jan Esopo</a>
+    </div>
+  </div>
+  <div class="content" style="min-height: calc(100vh - 207px)">
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  if (prefersDarkScheme.matches) {
+    document.getElementById("modeBtn").innerHTML = "walo";
+    if (localStorage.getItem("mode") == "light") {
+      document.body.classList.toggle("light-mode", true);
+      document.getElementById("modeBtn").innerHTML = "pimeja";
+    }
+    if (localStorage.getItem("mode") == "dark") {
+      document.body.classList.toggle("light-mode", false);
+      document.getElementById("modeBtn").innerHTML = "walo";
+    }
+  }
+  if (localStorage.getItem("mode") == "dark") {
+    document.body.classList.toggle("dark-mode", true);
+    document.getElementById("modeBtn").innerHTML = "walo";
+  }
+  if (localStorage.getItem("mode") == "light") {
+    document.body.classList.toggle("dark-mode", false);
+    document.getElementById("modeBtn").innerHTML = "pimeja";
+  }
+});
+function menuClick() {
+  if (window.innerWidth <= 593) {
+    $(".smalldropdown").toggle();
+  }
+  $(".bigdropdown").toggle();
+}
+function modeToggle() {
+  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  if (prefersDarkScheme.matches) {
+    document.body.classList.toggle("light-mode");
+    if (localStorage.getItem("mode") == "light") {
+      localStorage.setItem("mode", "dark");
+    } else {
+      localStorage.setItem("mode", "light");
+    }
+  } else {
+    document.body.classList.toggle("dark-mode");
+    if (localStorage.getItem("mode") == "dark") {
+      localStorage.setItem("mode", "light");
+    } else {
+      localStorage.setItem("mode", "dark");
+    }
+  }
+  if (document.getElementById("modeBtn").innerHTML == "pimeja") {
+    document.getElementById("modeBtn").innerHTML = "walo";
+  } else {
+    document.getElementById("modeBtn").innerHTML = "pimeja";
+  }
+}
+</script>
+</body>
+</html>
