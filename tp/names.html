@@ -401,7 +401,7 @@ function modeToggle() {
       "<ul>";
   var newLine, el, title, link;
   
-  $(".content h1").each(function() {
+  $(".content h1,.content h3").each(function() {
     el = $(this);
     title = el.text();
     link = "#" + el.attr("id");
@@ -420,7 +420,7 @@ function modeToggle() {
     "</ul>" +
   "</div>"
 
-  $(".bar").prepend(ToC);
+  $(".bar").append(ToC);
     
 </script>
 </body>
