@@ -160,6 +160,8 @@ header button:focus {
   left: 0;
   right: 0;
   margin: auto;
+  max-height: calc(100vh - 235px);
+  overflow-y: auto;
 }
 
 .toc ul {
