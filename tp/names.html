@@ -399,11 +399,12 @@ function modeToggle() {
   var ToC = 
     "<div class='toc'>" +
       "<ul>";
-  var newLine, title, link;
+  var newLine, el, title, link;
   
   $(".content h1").each(function() {
-    title = $(this).text();
-    link = "#" + $(this).attr("id");
+    el = $(this);
+    title = el.text();
+    link = "#" + el.attr("id");
     
     newLine =
       "<li>" +
