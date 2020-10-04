@@ -150,6 +150,7 @@ header button:focus {
 }
 
 .bar button {
+  background-color: var(--dropdown-color);
   border: none;
 }
 
@@ -162,6 +163,16 @@ header button:focus {
   left: 0;
   right: 0;
   margin: auto;
+}
+
+.toc ul {
+  list-style: none;
+}
+
+.toc a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
 }
 
 button.center {
