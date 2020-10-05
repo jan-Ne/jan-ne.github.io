@@ -241,6 +241,10 @@ img.center {
   max-width:100%;
 }
 
+.txt-center {
+  text-align: center;
+}
+
 x-pos {
   text-transform: lowercase;
   font-variant: small-caps;
