@@ -140,6 +140,7 @@ header button:focus {
   max-height: 300px;
   margin-top: 10px;
   margin-bottom: 5px;
+  border-radius: 4px;
 }
 
 .shelf a {
