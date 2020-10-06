@@ -120,12 +120,14 @@ header button:focus {
 
 .shelf {
   background-color: var(--content-color);
-  padding: 10px 0px;
+  padding: 10px 20px;
   width: 100%;
   margin-bottom: 10px;
   display: grid;
   grid-template-columns: auto auto auto;
+  grid-gap: 20px;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .shelf ul {
@@ -145,6 +147,11 @@ header button:focus {
   color: var(--text-color);
   font-weight: bold;
   display: block;
+}
+
+.book {
+  width: fit-content;
+  margin: auto;
 }
 
 .bar {
@@ -239,7 +246,7 @@ table.formatted, table.formatted2 {
 img.center {
   margin: auto;
   display: block;
-  max-width:100%;
+  max-width: 100%;
 }
 
 .txt-center {
