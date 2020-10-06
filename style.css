@@ -120,7 +120,7 @@ header button:focus {
 
 .shelf {
   background-color: var(--content-color);
-  padding: 10px 20px;
+  padding: 10px 0px;
   width: 100%;
   margin-bottom: 10px;
   display: grid;
