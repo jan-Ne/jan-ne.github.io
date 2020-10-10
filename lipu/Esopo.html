@@ -46,6 +46,7 @@
   </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--Load modes-->
 <script>
 $(document).ready(function() {
   var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
@@ -69,12 +70,6 @@ $(document).ready(function() {
     document.getElementById("modeBtn").innerHTML = "pimeja";
   }
 });
-function menuClick() {
-  if (window.innerWidth <= 593) {
-    $(".smalldropdown").toggle();
-  }
-  $(".bigdropdown").toggle();
-}
 function modeToggle() {
   var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
   if (prefersDarkScheme.matches) {
@@ -98,6 +93,57 @@ function modeToggle() {
     document.getElementById("modeBtn").innerHTML = "pimeja";
   }
 }
+</script>
+
+<!--Menu Click-->
+<script>
+  function menuClick() {
+    if (window.innerWidth <= 593) {
+      $(".smalldropdown").toggle();
+    }
+    $(".bigdropdown").toggle();
+  }
+</script>
+
+<!--ToC Button Click-->
+<script>
+  function tocClick() {
+    $(".toc").toggle();
+  }
+</script>
+  
+<!--ToC Generation-->
+<script>
+  var ToC = 
+    "<div class='toc'>" +
+      "<ul style='padding: 0px 20px;'>";
+  var newLine, el, title, link;
+  
+  $(".content h1,.content h3").each(function() {
+    el = $(this);
+    title = el.text();
+    link = "#" + el.attr("id");
+    
+    if (el.is("h1")) {
+      newLine =
+        "<li style='font-size: larger;'><a href='" + link + "'>" + title + "</a>" + "</li>";
+      ToC += newLine;
+    }
+    if (el.is("h3")) {
+      newLine =
+        "<ul>" +
+          "<li><a href='" + link + "'>" + title + "</a></li>" +
+        "</ul>"
+      ToC += newLine;
+    }
+  });
+  
+  ToC +=
+    "</ul>" +
+  "</div>"
+
+  $(".bar").append(ToC);
+    
 </script>
 </body>
 </html>
