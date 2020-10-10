@@ -150,6 +150,11 @@ header button:focus {
   display: block;
 }
 
+.shelf h1 {
+  margin: 0px;
+  text-align: center;
+}
+
 .book {
   width: fit-content;
   margin: auto;
