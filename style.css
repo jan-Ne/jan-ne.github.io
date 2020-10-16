@@ -349,6 +349,9 @@ hr.pagebreak {
   .content {
     padding-top: 0px;
   }
+  .bar {
+    display:none;
+  }
 }
 
 /*Default Dark Mode*/
