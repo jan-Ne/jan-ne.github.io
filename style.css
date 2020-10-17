@@ -299,13 +299,13 @@ hr.pagebreak {
   font-family:"linja pona";
 }
 
-@media only screen and (min-width: 826px) {
+@media only screen and (min-width: 816px) {
   .content {
     width: 826px;
   }
 }
 
-@media only screen and (max-width: 826px) {
+@media only screen and (max-width: 816px) {
   .content {
     padding: 11.622%;
     padding-bottom: 16.7vh;
