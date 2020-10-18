@@ -385,14 +385,9 @@ hr.pagebreak {
     background-color: #0e0e11;
   }
   
-  .content, .shelf {
+  .content, .shelf, .a2 {
     background-color: #1e1e20;
     color: #dedede;
-  }
-  
-  .a2 {
-    background-color: #08090c;
-    color: white;
   }
   
   hr.pagebreak {
