@@ -390,6 +390,11 @@ hr.pagebreak {
     color: #dedede;
   }
   
+  .a2 {
+    background-color: #08090c;
+    color: white;
+  }
+  
   hr.pagebreak {
     background-color: #131316;
     border: #131316;
