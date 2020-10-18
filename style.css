@@ -368,7 +368,7 @@ hr.pagebreak {
     color: #dedede;
   }
   
-  .bigdropdown {
+  .bigdropdown, .bar button {
     background-color: #0e0e11;
     color: #dedede;
   }
@@ -380,6 +380,10 @@ hr.pagebreak {
   .body {
     background-color: #131316;
   } 
+  
+  .bar {
+    background-color: #0e0e11;
+  }
   
   .content, .shelf {
     background-color: #1e1e20;
