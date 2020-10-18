@@ -379,9 +379,9 @@ hr.pagebreak {
   
   .body {
     background-color: #131316;
-  }
+  } 
   
-  .content {
+  .content, .shelf {
     background-color: #1e1e20;
     color: #dedede;
   }
