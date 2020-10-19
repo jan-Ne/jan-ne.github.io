@@ -20,22 +20,6 @@ body {
   background-color: var(--bg-color);
 }
 
-body.light-mode {
-  --text-color: black;
-  --bg-color: LightGray;
-  --dropdown-color: WhiteSmoke;
-  --header-color: #6393F9;
-  --content-color: white;
-}
-
-body.dark-mode {
-  --text-color: #dedede;
-  --bg-color: #131316;
-  --dropdown-color: #0e0e11;
-  --header-color: #08090c;
-  --content-color: #1e1e20;
-}
-
 header {
   background-color: var(--header-color);
   color: white;
@@ -406,4 +390,22 @@ hr.pagebreak {
   h1 {
     color: #dedede;
   }
+}
+
+/*Light/Dark Mode*/
+
+body.light-mode {
+  --text-color: black;
+  --bg-color: LightGray;
+  --dropdown-color: WhiteSmoke;
+  --header-color: #6393F9;
+  --content-color: white;
+}
+
+body.dark-mode {
+  --text-color: #dedede;
+  --bg-color: #131316;
+  --dropdown-color: #0e0e11;
+  --header-color: #08090c;
+  --content-color: #1e1e20;
 }
