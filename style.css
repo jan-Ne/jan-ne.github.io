@@ -377,7 +377,7 @@ hr.pagebreak {
     background-color: #08090c;
   }
   
-  .body {
+  body {
     background-color: #131316;
   } 
   
@@ -393,7 +393,7 @@ hr.pagebreak {
   .shelf a {
     color: #dedede;
   
-  .a2 {
+  .a-2 {
     background-color: #08090c;
     color: white;
   }
