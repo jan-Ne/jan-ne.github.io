@@ -340,57 +340,11 @@ hr.pagebreak {
 
 /*Default Dark Mode*/
 @media (prefers-color-scheme: dark) {
-  header {
-    background-color: #08090c;
-  }
-  
-  header a {
-    color: #dedede;
-  }
-  
-  header button {
-    color: #dedede;
-  }
-  
-  .bigdropdown, .bar button {
-    background-color: #0e0e11;
-    color: #dedede;
-  }
-  
-  .smalldropdown {
-    background-color: #08090c;
-  }
-  
-  body {
-    background-color: #131316;
-  } 
-  
-  .bar {
-    background-color: #0e0e11;
-  }
-  
-  .content, .shelf {
-    background-color: #1e1e20;
-    color: #dedede;
-  }
-  
-  .shelf a {
-    color: #dedede;
-  }
-  
-  .a2 {
-    background-color: #08090c !important;
-    color: white !important;
-  }
-  
-  hr.pagebreak {
-    background-color: #131316;
-    border: #131316;
-  }
-  
-  h1 {
-    color: #dedede;
-  }
+  --text-color: #dedede;
+  --bg-color: #131316;
+  --dropdown-color: #0e0e11;
+  --header-color: #08090c;
+  --content-color: #1e1e20;
 }
 
 /*Light/Dark Mode*/
