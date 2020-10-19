@@ -20,15 +20,6 @@ body {
   background-color: var(--bg-color);
 }
 
-/*Default Dark Mode*/
-@media (prefers-color-scheme: dark) {
-  --text-color: #dedede;
-  --bg-color: #131316;
-  --dropdown-color: #0e0e11;
-  --header-color: #08090c;
-  --content-color: #1e1e20;
-}
-
 /*Light/Dark Mode*/
 
 body.light-mode {
@@ -40,6 +31,15 @@ body.light-mode {
 }
 
 body.dark-mode {
+  --text-color: #dedede;
+  --bg-color: #131316;
+  --dropdown-color: #0e0e11;
+  --header-color: #08090c;
+  --content-color: #1e1e20;
+}
+
+/*Default Dark Mode*/
+@media (prefers-color-scheme: dark) {
   --text-color: #dedede;
   --bg-color: #131316;
   --dropdown-color: #0e0e11;
