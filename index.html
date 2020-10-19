@@ -47,6 +47,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 $(document).ready(function() {
+});
+function menuClick() {
+  if (window.innerWidth <= 593) {
+    $(".smalldropdown").toggle(30);
+  }
+  $(".bigdropdown").toggle(30);
+  
   var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
   if (prefersDarkScheme.matches) {
     document.getElementById("modeBtn").innerHTML = "walo";
@@ -67,12 +74,6 @@ $(document).ready(function() {
     document.body.classList.toggle("dark-mode", false);
     document.getElementById("modeBtn").innerHTML = "pimeja";
   }
-});
-function menuClick() {
-  if (window.innerWidth <= 593) {
-    $(".smalldropdown").toggle(30);
-  }
-  $(".bigdropdown").toggle(30);
 }
 function modeToggle() {
   var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
