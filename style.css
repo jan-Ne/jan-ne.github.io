@@ -22,11 +22,11 @@ body {
 
 /*Default Dark Mode*/
 @media (prefers-color-scheme: dark) {
-  --text-color: #dedede;
-  --bg-color: #131316;
-  --dropdown-color: #0e0e11;
-  --header-color: #08090c;
-  --content-color: #1e1e20;
+  --text-color: #dedede !important;
+  --bg-color: #131316 !important;
+  --dropdown-color: #0e0e11 !important;
+  --header-color: #08090c !important;
+  --content-color: #1e1e20 !important;
 }
 
 /*Light/Dark Mode*/
