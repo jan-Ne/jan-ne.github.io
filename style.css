@@ -380,7 +380,7 @@ hr.pagebreak {
   
   .a2 {
     background-color: #08090c !important;
-    color: white;
+    color: white !important;
   }
   
   hr.pagebreak {
