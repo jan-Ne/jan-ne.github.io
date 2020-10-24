@@ -242,7 +242,7 @@ button.center {
 
 .page p {
   margin: auto 0px;
-  tex-indent: 50px;
+  text-indent: 50px;
 }
 
 th {
