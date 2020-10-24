@@ -62,6 +62,32 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!--Load modes-->
 <script>
+$(document).ready(function() {
+  var prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
+  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  if (prefersLightScheme.matches) {
+    document.getElementById("modeBtn").innerHTML = "pimeja";
+    if (localStorage.getItem("mode") == "dark") {
+      document.body.classList.toggle("dark-mode", true);
+      document.getElementById("modeBtn").innerHTML = "walo";
+    }
+    if (localStorage.getItem("mode") == "light") {
+      document.body.classList.toggle("dark-mode", false);
+      document.getElementById("modeBtn").innerHTML = "pimeja";
+    }
+  }
+  if (prefersDarkScheme.matches) {
+    document.getElementById("modeBtn").innerHTML = "walo";
+    if (localStorage.getItem("mode") == "light") {
+      document.body.classList.toggle("light-mode", true);
+      document.getElementById("modeBtn").innerHTML = "pimeja";
+    }
+    if (localStorage.getItem("mode") == "dark") {
+      document.body.classList.toggle("light-mode", false);
+      document.getElementById("modeBtn").innerHTML = "walo";
+    }
+  }
+}
 function modeToggle() {
   var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
   if (prefersDarkScheme.matches) {
@@ -94,31 +120,6 @@ function modeToggle() {
       $(".smalldropdown").toggle(30);
     }
     $(".bigdropdown").toggle(30);
-
-    var prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
-    var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-    if (prefersLightScheme.matches) {
-      document.getElementById("modeBtn").innerHTML = "pimeja";
-      if (localStorage.getItem("mode") == "dark") {
-        document.body.classList.toggle("dark-mode", true);
-        document.getElementById("modeBtn").innerHTML = "walo";
-      }
-      if (localStorage.getItem("mode") == "light") {
-        document.body.classList.toggle("dark-mode", false);
-        document.getElementById("modeBtn").innerHTML = "pimeja";
-      }
-    }
-    if (prefersDarkScheme.matches) {
-      document.getElementById("modeBtn").innerHTML = "walo";
-      if (localStorage.getItem("mode") == "light") {
-        document.body.classList.toggle("light-mode", true);
-        document.getElementById("modeBtn").innerHTML = "pimeja";
-      }
-      if (localStorage.getItem("mode") == "dark") {
-        document.body.classList.toggle("light-mode", false);
-        document.getElementById("modeBtn").innerHTML = "walo";
-      }
-    }
   }
 </script>
 
