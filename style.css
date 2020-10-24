@@ -290,6 +290,9 @@ img.center {
 
 .txt-center {
   text-align: center;
+}
+
+.page .txt-center {
   text-indent: 0px;
 }
 
