@@ -38,6 +38,10 @@ body.dark-mode {
   --content-color: #1e1e20;
 }
 
+body.dark-mode .dark-invert {
+    filter: invert(0.9);
+}
+
 /*Default Dark Mode*/
 @media (prefers-color-scheme: dark) {
   body { 
@@ -46,6 +50,9 @@ body.dark-mode {
     --dropdown-color: #0e0e11;
     --header-color: #08090c;
     --content-color: #1e1e20;
+  }
+  .dark-invert {
+    filter: invert(0.9);
   }
 }
 
