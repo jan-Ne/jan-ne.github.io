@@ -242,6 +242,7 @@ button.center {
 
 .page p {
   margin: auto 0px;
+  tex-indent: 50px;
 }
 
 th {
@@ -287,6 +288,7 @@ img.center {
 
 .txt-center {
   text-align: center;
+  text-indent: 0px;
 }
 
 x-pos {
