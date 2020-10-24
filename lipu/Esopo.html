@@ -156,9 +156,7 @@ function modeToggle() {
   
 <!--ToC Generation-->
 <script>
-  var ToC = 
-    "<div class='toc'>" +
-      "<ul style='padding: 0px 20px;'>";
+  var ToC = "<div class='toc'>"
   var newLine, el, title, link;
   
   $(".content h1,.content h3").each(function() {
@@ -169,22 +167,18 @@ function modeToggle() {
     if (!el.is(".toc-ignore")){
       if (el.is("h1")) {
         newLine =
-          "<li style='font-size: larger;'><a href='" + link + "'>" + title + "</a>" + "</li>";
+          "<a href='" + link + "' style='font-size: larger;'>" + title + "</a><br>";
         ToC += newLine;
       }
       if (el.is("h3")) {
         newLine =
-          "<ul>" +
-            "<li><a href='" + link + "'>" + title + "</a></li>" +
-          "</ul>"
+          "<a href='" + link + "' style='text-indent: 50px;'>" + title + "</a><br>"
         ToC += newLine;
       }
     }
   });
   
-  ToC +=
-    "</ul>" +
-  "</div>"
+  ToC += "</div>"
 
   $(".bar").append(ToC);
     
