@@ -227,6 +227,15 @@ button.center {
   text-decoration: none;
 }
 
+.page {
+  height: 566px;
+  display: grid;
+}
+
+.page p {
+  margin: auto 0px;
+}
+
 th {
   padding-right: 20px;
 }
@@ -322,9 +331,6 @@ hr.pagebreak {
   .content {
     padding: 11.622%;
     padding-bottom: 16.7vh;
-  }
-  hr.pagebreak {
-    padding: 11.622% 0px;
   }
 }
 
