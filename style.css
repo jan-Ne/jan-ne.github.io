@@ -231,6 +231,14 @@ button.center {
   background-color: var(--content-color);
 }
 
+.content h1 {
+  scroll-margin: 53px;
+}
+
+.content h3 {
+  scroll-margin: 50px;
+}
+
 .content a {
   color: #4980f8;
   text-decoration: none;
