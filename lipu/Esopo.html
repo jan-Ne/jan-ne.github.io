@@ -141,7 +141,7 @@ function modeToggle() {
     title = el.text();
     link = "#" + el.attr("id");
     
-    if (!el.is("toc-ignore")){
+    if (!(el.is("toc-ignore"))){
       if (el.is("h1")) {
         newLine =
           "<li style='font-size: larger;'><a href='" + link + "'>" + title + "</a>" + "</li>";
