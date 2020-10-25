@@ -246,8 +246,6 @@ button.center {
 
 .page {
   height: 866px;
-  display: grid;
-  align-content: start;
 }
 
 .page p {
