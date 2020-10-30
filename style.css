@@ -184,8 +184,11 @@ header button:focus {
 .bar {
   background-color: var(--dropdown-color);
   position: sticky;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  padding: 0px 20px;
   top: 0;
-  width: 100%;
   z-index: 1;
 }
 
@@ -193,6 +196,7 @@ header button:focus {
   background-color: var(--dropdown-color);
   color: var(--text-color);
   border: none;
+  width: fit-content;
 }
 
 .toc {
