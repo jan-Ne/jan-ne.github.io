@@ -222,6 +222,15 @@ header button:focus {
   font-weight: bold;
 }
 
+.font-menu {
+    background-color: var(--dropdown-color);
+    display: none;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    text-align: right;
+}
+
 button.center {
   margin: auto;
   display: flex;
