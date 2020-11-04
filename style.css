@@ -378,6 +378,7 @@ hr.pagebreak {
   }
   .page {
     min-height: 866px;
+    height: auto;
   }
   img.right {
     float: none;
