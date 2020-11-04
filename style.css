@@ -369,6 +369,13 @@ hr.pagebreak {
   .content {
     width: 816px;
   }
+}
+
+@media only screen and (max-width: 816px) {
+  .content {
+    padding: 11.622%;
+    padding-bottom: 16.7vh;
+  }
   .page {
     min-height: 866px;
   }
@@ -383,13 +390,6 @@ hr.pagebreak {
     margin: auto;
     display: block;
     max-width: 100%;
-  }
-}
-
-@media only screen and (max-width: 816px) {
-  .content {
-    padding: 11.622%;
-    padding-bottom: 16.7vh;
   }
 }
 
