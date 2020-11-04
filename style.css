@@ -369,6 +369,21 @@ hr.pagebreak {
   .content {
     width: 816px;
   }
+  .page {
+    min-height: 866px;
+  }
+  img.right {
+    float: none;
+    margin: auto;
+    display: block;
+    max-width: 100%;
+  }
+  img.left {
+    float: none;
+    margin: auto;
+    display: block;
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 816px) {
