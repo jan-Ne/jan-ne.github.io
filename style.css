@@ -346,13 +346,9 @@ abbr {
 }
 
 hr.pagebreak {
-  width: 131.5%;
   height: 6px;
   background-color: var(--bg-color);
   border: solid 1px var(--bg-color);
-  position: relative;
-  right: 16%;
-  margin: 96px 0px;  
 }
 
 .content footer {
