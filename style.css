@@ -349,6 +349,7 @@ hr.pagebreak {
   height: 6px;
   background-color: var(--bg-color);
   border: solid 1px var(--bg-color);
+  margin: 0px;
 }
 
 .content footer {
