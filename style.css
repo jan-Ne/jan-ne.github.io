@@ -365,19 +365,19 @@ hr.pagebreak {
   font-family:"linja pona";
 }
 
-@media only screen and (min-width: 816px) {
+@media only screen and (min-width: 51em) {
   .content {
-    width: 816px;
+    width: 51em;
   }
 }
 
-@media only screen and (max-width: 816px) {
+@media only screen and (max-width: 51em) {
   .content {
     padding: 11.622%;
     padding-bottom: 16.7vh;
   }
   .page {
-    min-height: 866px;
+    min-height: 54.125em;
     height: auto;
   }
   img.right {
