@@ -259,6 +259,7 @@ button.center {
 
 .page {
   height: 54.125em;
+  padding: 96px;
 }
 
 .page p {
@@ -427,6 +428,9 @@ hr.pagebreak {
   }
   .content {
     padding-top: 0px;
+  }
+  .page {
+    padding: 0px 96px;
   }
   .bar {
     display:none;
