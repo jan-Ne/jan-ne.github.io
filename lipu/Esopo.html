@@ -58,7 +58,7 @@
             display: grid;
             grid-template-columns: auto auto auto;
             justify-content: space-evenly;
-          "><button class="linjapona" style="
+          "><button class="linjapona" onclick="increaseSize" style="
             font-size: 18px;
             font-weight: normal;
           "><big>ᐯ</big></button>
@@ -66,7 +66,7 @@
             padding-top: 4.4px;
             font-weight: bold;
           ">│</label>
-          <button class="linjapona" style="
+          <button class="linjapona" onclick="decreaseSize" style="
             padding-top: 2px;
           ">lili</button></li>
           <li><button>linja pona</button></li>
@@ -74,6 +74,13 @@
   </div>
     
   </div>
+  <div style="
+    margin: auto;
+    width: calc(51em * 1.2);
+    height: 51173px;
+    max-width: 100%;
+    overflow-x: auto;
+  ">
   <div class="content" style="padding: 0px">
     <div class="page" style="display: grid; align-content: center">
       <img src="stork.jpg" alt="stork" class="center" height="108" style="margin-bottom: 6px">
@@ -449,6 +456,7 @@
       <p class="txt-center"><i>o ken ala e ni: ijo li pini e pali sina.</i></p>
     </div>
   </div>
+  </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!--Load modes-->
@@ -519,7 +527,22 @@ function modeToggle() {
   function fontClick() {
     $(".font-menu").toggle();
   }
-</script>  
+</script>
+  
+<!--Size Functions-->
+<script>
+  var scale = 1;
+  function increaseSize() {
+    scale += 0.1;
+    $(".content").attr("transform", "scale(" + scale + ")");
+    $(".content-scroll").attr("width", "calc(51em * " + scale + ")");
+  }
+  function decreaseSize() {
+    scale -= 0.1;
+    $(".content").attr("transform", "scale(" + scale + ")");
+    $(".content-scroll").attr("width", "calc(51em * " + scale + ")");
+  }
+</script> 
   
 <!--ToC Button Click-->
 <script>
