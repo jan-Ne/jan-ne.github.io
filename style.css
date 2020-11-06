@@ -249,6 +249,7 @@ button.center {
   min-height: calc(100vh - 77px);
   box-sizing: border-box;
   background-color: var(--content-color);
+  transform-origin: 0 0;
 }
 
 .content h1 {
