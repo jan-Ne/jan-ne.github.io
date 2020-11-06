@@ -528,13 +528,13 @@ function modeToggle() {
   var scale = 1;
   function increaseSize() {
     scale += 0.1;
-    $(".content").attr("transform", "scale(" + scale + ")");
-    $(".content-scroll").attr("width", "calc(51em * " + scale + ")");
+    $(".content").css("transform", "scale(" + scale + ")");
+    $(".content-scroll").css("width", "calc(51em * " + scale + ")");
   }
   function decreaseSize() {
     scale -= 0.1;
-    $(".content").attr("transform", "scale(" + scale + ")");
-    $(".content-scroll").attr("width", "calc(51em * " + scale + ")");
+    $(".content").css("transform", "scale(" + scale + ")");
+    $(".content-scroll").css("width", "calc(51em * " + scale + ")");
   }
 </script> 
   
