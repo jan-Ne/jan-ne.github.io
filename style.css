@@ -236,6 +236,13 @@ button.center {
   display: flex;
 }
 
+.content-scroll {
+  margin: auto;
+  width: 51em;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 .content {
   margin:auto;
   padding: 96px;
