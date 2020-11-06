@@ -529,12 +529,15 @@ function modeToggle() {
   function increaseSize() {
     scale += 0.1;
     $(".content").css("transform", "scale(" + scale + ")");
-    $(".content-scroll").css("width", "calc(51em \* " + scale + ")");
+    $(".content-scroll").css({'width': ($(".content").width() + 'px')});
+    $(".content-scroll").css({'height': ($(".content").height() + 'px')});
+    
   }
   function decreaseSize() {
     scale -= 0.1;
     $(".content").css("transform", "scale(" + scale + ")");
-    $(".content-scroll").css("width", "calc(51em \* " + scale + ")");
+    $(".content-scroll").css({'width': ($(".content").width() + 'px')});
+    $(".content-scroll").css({'height': ($(".content").height() + 'px')});
   }
 </script> 
   
