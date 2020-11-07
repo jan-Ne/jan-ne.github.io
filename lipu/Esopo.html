@@ -527,16 +527,24 @@ function modeToggle() {
 <script>
   var scale = 1;
   function increaseSize() {
-    scale += 0.1;
+    if (scale < 5){
+      scale += 0.1;
+    }
     $(".content").css("transform", "scale(" + scale + ")");
     $(".content-scroll").css("width", "calc(816px \* " + scale + ")");
-    $(".content-scroll").css("height", "calc(" + $(".content").height() + "px \* " + scale + " \+ 17px");
+    if (scale >= 1){
+      $(".content-scroll").css("height", "calc(" + $(".content").height() + "px \* " + scale + " \+ 17px");
+    }
   }
   function decreaseSize() {
-    scale -= 0.1;
+    if (scale > 0.5){
+      scale -= 0.1;
+    }
     $(".content").css("transform", "scale(" + scale + ")");
     $(".content-scroll").css("width", "calc(816px \* " + scale + ")");
-    $(".content-scroll").css("height", "calc(" + $(".content").height() + "px \* " + scale + " \+ 17px");
+    if (scale > 1){
+      $(".content-scroll").css("height", "calc(" + $(".content").height() + "px \* " + scale + " \+ 17px");
+    }
   }
 </script> 
   
