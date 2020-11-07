@@ -530,13 +530,13 @@ function modeToggle() {
     scale += 0.1;
     $(".content").css("transform", "scale(" + scale + ")");
     $(".content-scroll").css("width", "calc(816px \* " + scale + ")");
-    $(".content-scroll").css("height", "calc(" + $("content").height() * scale + 17 + "px");
+    $(".content-scroll").css("height", $("content").height() * scale + 17 + "px");
   }
   function decreaseSize() {
     scale -= 0.1;
     $(".content").css("transform", "scale(" + scale + ")");
     $(".content-scroll").css("width", "calc(816px \* " + scale + ")");
-    $(".content-scroll").css("height", "calc(" + $("content").height() * scale + 17 + "px");
+    $(".content-scroll").css("height", $("content").height() * scale + 17 + "px");
   }
 </script> 
   
