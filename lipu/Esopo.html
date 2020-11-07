@@ -527,7 +527,7 @@ function modeToggle() {
 <script>
   var scale = 1;
   function increaseSize() {
-    if (scale < 5){
+    if (scale < 4.9){
       scale += 0.1;
     }
     $(".content").css("transform", "scale(" + scale + ")");
@@ -537,7 +537,7 @@ function modeToggle() {
     }
   }
   function decreaseSize() {
-    if (scale > 0.5){
+    if (scale > 0.6){
       scale -= 0.1;
     }
     $(".content").css("transform", "scale(" + scale + ")");
