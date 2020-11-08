@@ -555,11 +555,11 @@ function modeToggle() {
 <!--linja pona toggle-->
 <script>
   function linjapona() {
-    if (document.documentElement.style.getPropertyValue("--my-variable-name") != "'linja pona'"){
-      document.documentElement.style.setProperty("--font", "'linja pona'");
+    if ($("*").style.getPropertyValue("--my-variable-name") != "'linja pona'"){
+      $("*").style.setProperty("--font", "'linja pona'");
     }
     if (document.documentElement.style.getPropertyValue("--my-variable-name") == "'linja pona'"){
-      document.documentElement.style.setProperty("--font", "'Open Sans'");
+      $("*").style.setProperty("--font", "'Open Sans'");
     }
   }
 </script>
