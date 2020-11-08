@@ -5,19 +5,22 @@
   font-weight: 400px;
 }
 
-body {
+:root {
   --text-color: black;
   --bg-color: LightGray;
   --dropdown-color: WhiteSmoke;
   --header-color: #6393F9;
   --content-color: white;
   --font: "Open Sans";
+}
+
+body {
   margin: 0px;
   color: var(--text-color);
   background-color: var(--bg-color);
 }
 
-body * {
+* {
   font-family: var(--font);
 }
 
