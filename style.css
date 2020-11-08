@@ -5,20 +5,20 @@
   font-weight: 400px;
 }
 
-* {
-  --font: "Open Sans";
-  font-family: var(--font);
-}
-
 body {
   --text-color: black;
   --bg-color: LightGray;
   --dropdown-color: WhiteSmoke;
   --header-color: #6393F9;
   --content-color: white;
+  --font: "Open Sans";
   margin: 0px;
   color: var(--text-color);
   background-color: var(--bg-color);
+}
+
+body * {
+  font-family: var(--font);
 }
 
 /*Light/Dark Mode*/
