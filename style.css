@@ -6,7 +6,8 @@
 }
 
 * {
-  font-family: "Open Sans";
+  --font: "Open Sans";
+  font-family: var(--font);
 }
 
 body {
