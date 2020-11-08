@@ -59,16 +59,21 @@
             grid-template-columns: auto auto auto;
             justify-content: space-evenly;
           "><button class="linjapona" onclick="increaseSize()" style="
-            font-size: 18px;
+            font-size: 26px;
             font-weight: bold;
           ">suli</button>
           <label style="
             font-weight: bold;
+            font-size: 24px;
           ">│</label>
           <button class="linjapona" onclick="decreaseSize()" style="
-            font-weight: bold;                                                   
+            font-weight: bold;
+            font-size: 20px;
           ">lili</button></li>
-          <li><button>linja pona</button></li>
+          <li><button onclick="linjapona()" style="
+            font-weight: bold;
+            font-size: 16px;
+          ">linja pona</button></li>
       </ul>
   </div>
     
@@ -545,7 +550,19 @@ function modeToggle() {
       $(".content-scroll").css("height", "calc(" + $(".content").height() + "px \* " + scale + " \+ 17px");
     }
   }
-</script> 
+</script>
+  
+<!--linja pona toggle-->
+<script>
+  function linjapona() {
+    if (document.documentElement.style.getPropertyValue("--my-variable-name") != "'linja pona'"){
+      document.documentElement.style.setProperty("--font", "'linja pona'");
+    }
+    if (document.documentElement.style.getPropertyValue("--my-variable-name") == "'linja pona'"){
+      document.documentElement.style.setProperty("--font", "'Open Sans'");
+    }
+  }
+</script>
   
 <!--ToC Button Click-->
 <script>
