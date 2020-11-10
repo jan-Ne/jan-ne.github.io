@@ -558,17 +558,17 @@ function modeToggle() {
   function linjapona() {
     $("body").toggleClass("linjapona");
     $( "x-sp" ).each(function() {
-      if ($(this).prop("display") == "none"){
-        $(this).prop("display", "inherit");
+      if ($(this).css("display") == "none"){
+        $(this).css("display", "inherit");
       } else {
-        $(this).prop("display", "none");
+        $(this).css("display", "none");
       }
     });
     $( "x-latn" ).each(function() {
-      if ($(this).prop("display") == "none"){
-        $(this).prop("display", "inherit");
+      if ($(this).css("display") == "none"){
+        $(this).css("display", "inherit");
       } else {
-        $(this).prop("display", "none");
+        $(this).css("display", "none");
       }
     });
   }
