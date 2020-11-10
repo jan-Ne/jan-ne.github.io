@@ -217,6 +217,7 @@ header button:focus {
 
 .toc ul {
   list-style: none;
+  width: fit-content;
 }
 
 .toc a {
@@ -370,10 +371,28 @@ hr.pagebreak {
   word-break: break-all;
 }
 
+/*linja pona*/
 .linjapona, .linjapona * {
   font-family:"linja pona";
 }
 
+.linjapona header a {
+  font-size: 27px;
+}
+
+.linjapona h1 {
+  font-size: 43px;
+}
+
+.linjapona h3 {
+  font-size 25px;
+}
+
+.linjapona a, .linjapona p {
+  font-size: 22px;
+}
+
+/*Media Queries*/
 @media only screen and (min-width: 51em) {
   .content {
     width: 51em;
