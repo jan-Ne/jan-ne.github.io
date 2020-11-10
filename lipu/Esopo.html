@@ -557,8 +557,16 @@ function modeToggle() {
 <script>
   function linjapona() {
     $("body").toggleClass("linjapona");
-    $("x-latn").toggle();
-    $("x-sp").toggle();
+    if ($("x-sp").style.getPropertyValue("display") == "none"){
+      $("x-sp").style.setProperty("display", "inherit");
+    } else {
+      $("x-sp").style.setProperty("display", "none");
+    }
+    if ($("x-latn").style.getPropertyValue("display") == "none"){
+      $("x-latn").style.setProperty("display", "inherit");
+    } else {
+      $("x-latn").style.setProperty("display", "none");
+    }
   }
 </script>
   
