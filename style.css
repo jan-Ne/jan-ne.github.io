@@ -11,7 +11,6 @@
   --dropdown-color: WhiteSmoke;
   --header-color: #6393F9;
   --content-color: white;
-  --font: "Open Sans";
 }
 
 body {
@@ -21,7 +20,7 @@ body {
 }
 
 * {
-  font-family: var(--font);
+  font-family: "Open Sans";
 }
 
 /*Light/Dark Mode*/
