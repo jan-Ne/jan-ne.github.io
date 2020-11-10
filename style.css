@@ -372,6 +372,11 @@ hr.pagebreak {
 }
 
 /*linja pona*/
+x-sp {
+  display: none;
+  font-family: "linja pona";
+}
+
 .linjapona, .linjapona * {
   font-family:"linja pona";
 }
