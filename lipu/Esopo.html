@@ -557,16 +557,20 @@ function modeToggle() {
 <script>
   function linjapona() {
     $("body").toggleClass("linjapona");
-    if ($("x-sp").getPropertyValue("display") == "none"){
-      $("x-sp").setProperty("display", "inherit");
-    } else {
-      $("x-sp").setProperty("display", "none");
-    }
-    if ($("x-latn").getPropertyValue("display") == "none"){
-      $("x-latn").setProperty("display", "inherit");
-    } else {
-      $("x-latn").setProperty("display", "none");
-    }
+    $( "x-sp" ).each(function() {
+      if ($(this).prop("display") == "none"){
+        $(this).prop("display", "inherit");
+      } else {
+        $(this).prop("display", "none");
+      }
+    });
+    $( "x-latn" ).each(function() {
+      if ($(this).prop("display") == "none"){
+        $(this).prop("display", "inherit");
+      } else {
+        $(this).prop("display", "none");
+      }
+    });
   }
 </script>
   
