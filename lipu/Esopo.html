@@ -53,29 +53,37 @@
     ">ߍ</a>
     <button class="linjapona" style="font-size: 30px" onclick="tocClick()">•••</button>
     <button class="" style="font-size: 18px; font-weight: bold;" onclick="fontClick()"><big style="font-family: 'Open Sans';">a</big><small style="font-family: 'Open Sans';">a</small></button>
-    <div class="font-menu">
+    <div class="font-menu" style="display: none; width: 160px;">
       <ul style="list-style: none; padding: 0px 20px;">
-          <li style="
+        <li style="
             display: grid;
             grid-template-columns: auto auto auto;
             justify-content: space-evenly;
           "><button class="linjapona" onclick="increaseSize()" style="
             font-size: 26px;
             font-weight: bold;
+            width: 33px;
           ">suli</button>
           <label style="
             font-weight: bold;
             font-size: 24px;
+            font-family: 'Open Sans';
           ">│</label>
           <button class="linjapona" onclick="decreaseSize()" style="
             font-weight: bold;
             font-size: 20px;
-          ">lili</button></li>
-          <li><button onclick="linjapona()" style="
+            width: 33px;
+          ">lili</button>
+        </li>
+        <li style="margin: 5px 0px;">
+          <button onclick="linjapona()" style="
             font-weight: bold;
             font-size: 16px;
-          ">linja pona</button></li>
+            width: -webkit-fill-available;
+          "><x-latn style="display: inherit; font-family: &quot;Open Sans&quot;;">sitelen Lasina</x-latn><x-sp style="font-size: 22px; display: none;">linja pona</x-sp></button>
+        </li>
       </ul>
+      </div>
   </div>
     
   </div>
