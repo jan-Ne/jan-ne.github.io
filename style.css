@@ -394,16 +394,16 @@ x-sp {
 }
 
 .linjapona h3 {
-  font-size: 25px;
+  font-size: 29px;
 }
 
-.linjapona a, .linjapona p {
-  font-size: 22px;
+.linjapona p {
+  font-size: 26px;
 }
 
 .linjapona .content a {
   font-family: "Open Sans";
-  font-size: 16px;
+  font-size: 19px;
 }
 
 /*Media Queries*/
