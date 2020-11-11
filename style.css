@@ -397,6 +397,10 @@ x-sp {
   font-size: 22px;
 }
 
+.linjapona .content a {
+  font-family: "Open Sans";
+}
+
 /*Media Queries*/
 @media only screen and (min-width: 51em) {
   .content {
