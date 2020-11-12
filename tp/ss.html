@@ -119,5 +119,53 @@ function modeToggle() {
   }
 }
 </script>
+  
+<!--Load writing script-->
+<script>
+  $(document).ready(function() {
+    if (localStorage.getItem("fontscript") == "linja_pona") {
+      $("body").toggleClass("linjapona");
+      $("x-sp").each(function() {
+        if ($(this).css("display") == "none"){
+          $(this).css("display", "contents");
+        } else {
+          $(this).css("display", "none");
+        }
+      });
+      $("x-latn").each(function() {
+        if ($(this).css("display") == "none"){
+          $(this).css("display", "contents");
+        } else {
+          $(this).css("display", "none");
+        }
+      });
+    }
+  });
+</script>
+<!--linja pona toggle-->
+<script>
+  function linjapona() {
+    $("body").toggleClass("linjapona");
+    $("x-sp").each(function() {
+      if ($(this).css("display") == "none"){
+        $(this).css("display", "contents");
+      } else {
+        $(this).css("display", "none");
+      }
+    });
+    $("x-latn").each(function() {
+      if ($(this).css("display") == "none"){
+        $(this).css("display", "contents");
+      } else {
+        $(this).css("display", "none");
+      }
+    });
+    if (localStorage.getItem("fontscript") != "linja_pona") {
+      localStorage.setItem("fontscript", "linja_pona");
+    } else {
+      localStorage.setItem("fontscript", "latin");
+    }
+  }
+</script>
 </body>
 </html>
