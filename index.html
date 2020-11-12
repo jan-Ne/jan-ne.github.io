@@ -114,7 +114,7 @@ function menuClick() {
 <script>
   $(document).ready(function() {
     if (localStorage.getItem("script") == "linjapona") {
-        $("body").toggleClass("linjapona");
+      $("body").toggleClass("linjapona");
       $( "x-sp" ).each(function() {
         if ($(this).css("display") == "none"){
           $(this).css("display", "contents");
@@ -134,14 +134,14 @@ function menuClick() {
                     
   function linjapona() {
     $("body").toggleClass("linjapona");
-    $( "x-sp" ).each(function() {
+    $("x-sp").each(function() {
       if ($(this).css("display") == "none"){
         $(this).css("display", "contents");
       } else {
         $(this).css("display", "none");
       }
     });
-    $( "x-latn" ).each(function() {
+    $("x-latn").each(function() {
       if ($(this).css("display") == "none"){
         $(this).css("display", "contents");
       } else {
