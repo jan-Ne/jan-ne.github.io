@@ -606,8 +606,7 @@ function modeToggle() {
     });
     if (localStorage.getItem("fontscript") != "linja_pona") {
       localStorage.setItem("fontscript", "linja_pona");
-    }
-    if (localStorage.getItem("fontscript") == "linja_pona") {
+    } else {
       localStorage.setItem("fontscript", "latin");
     }
   }
