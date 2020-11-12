@@ -404,11 +404,10 @@ x-sp {
 .linjapona .page a {
   font-family: "Open Sans";
   font-size: 19px;
-  
-.linjapona [lang|="en"], .linjapona [lang|="en"] * {
-    font-family: 'Open Sans' !important;
 }
-  
+
+.linjapona [lang|=en], .linjapona [lang|=en] * {
+    font-family: "Open Sans";
 }
 
 /*Media Queries*/
