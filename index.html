@@ -110,10 +110,35 @@ function menuClick() {
 }
 </script>
 
-<!--linja pona toggle-->
+<!--linja pona-->
 <script>
+  $(document).ready(function() {
+    if (localStorage.getItem("script") == "linjapona") {
+        $("body").toggleClass("linjapona");
+      $( "x-sp" ).each(function() {
+        if ($(this).css("display") == "none"){
+          $(this).css("display", "contents");
+        } else {
+          $(this).css("display", "none");
+        }
+      });
+      $( "x-latn" ).each(function() {
+        if ($(this).css("display") == "none"){
+          $(this).css("display", "contents");
+        } else {
+          $(this).css("display", "none");
+        }
+      });
+    }
+  }
   function linjapona() {
     $("body").toggleClass("linjapona");
+    if (localStorage.getItem("script") != "linjapona") {
+      localStorage.setItem("script", "linjapona");
+    }
+    if (localStorage.getItem("script") == "linjapona") {
+      localStorage.setItem("script", "latin");
+    }
     $( "x-sp" ).each(function() {
       if ($(this).css("display") == "none"){
         $(this).css("display", "contents");
