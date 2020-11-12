@@ -9,21 +9,22 @@
   <link rel="shortcut icon" href="../janNe.png">
 <body>
   <header>
-      <a href=".."><img src="../janNe.png" alt="jan Ne" height="77"></a>
-      <a class="home" href="..">lipu pi jan Ne</a>
+      <a href=".."><img src="janNe.png" alt="jan Ne" height="77"></a>
+      <a class="home" href=".."><x-latn>lipu pi jan Ne</x-latn><x-sp>lipu pi jan [_nena_esun]</x-sp></a>
     <nav>
       <ul>
-        <li><a href="../tp">toki pona</a></li>
-        <li><a href="../lipu">lipu</a></li>
-        <li><a href="../ijo">ijo</a></li>
+        <li><a href="tp"><x-latn>toki pona</x-latn><x-sp>toki-pona</x-sp></a></li>
+        <li><a href="lipu">lipu</a></li>
+        <li><a href="ijo">ijo</a></li>
       </ul>
       <span class="dropdown">
         <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
         <ul class="dropdownmenu">
-          <li class="smalldropdown"><a href="../tp">toki pona</a></li>
-          <li class="smalldropdown"><a href="../lipu">lipu</a></li>
-          <li class="smalldropdown"><a href="../ijo">ijo</a></li>
-          <li class="bigdropdown" onclick="modeToggle()" id="modeBtn">pimeja</li>
+          <li class="smalldropdown" style="display: none;"><a href="../tp"><x-latn>toki pona</x-latn><x-sp>toki-pona</x-sp></a></li>
+          <li class="smalldropdown" style="display: none;"><a href="../lipu">lipu</a></li>
+          <li class="smalldropdown" style="display: none;"><a href="../ijo">ijo</a></li>
+          <li class="bigdropdown" onclick="modeToggle()" id="modeBtn" style="display: none;">pimeja</li>
+          <li class="bigdropdown" onclick="linjapona()" style="display: none;"><x-latn style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</x-latn><x-sp style="font-size: 22px; display: contents;">linja pona</x-sp></li>
         </ul>
       </span>
     </nav>
