@@ -408,6 +408,7 @@ x-sp {
 
 .linjapona [lang|=en], .linjapona [lang|=en] * {
     font-family: "Open Sans";
+    font-size: initial;
 }
 
 /*Media Queries*/
