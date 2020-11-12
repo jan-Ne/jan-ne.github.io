@@ -568,7 +568,7 @@ function modeToggle() {
 <script>
   $(document).ready(function() {
     if (localStorage.getItem("fontscript") == "linja_pona") {
-      $("body").toggleClass("linjapona");
+      $("body").toggleClass("linjapona", true);
       $( "x-sp" ).each(function() {
         if ($(this).css("display") == "none"){
           $(this).css("display", "contents");
