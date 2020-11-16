@@ -54,7 +54,7 @@
     ">ߍ</a>
     <button class="linjapona" style="font-size: 30px" onclick="tocClick()">•••</button>
     <button class="" style="font-size: 18px; font-weight: bold;" onclick="fontClick()"><big style="font-family: 'Open Sans';">a</big><small style="font-family: 'Open Sans';">a</small></button>
-    <div class="font-menu" style="display: none; width: 160px;">
+    <div class="font-menu" style="width: 160px; display: block;">
       <ul style="list-style: none; padding: 0px 20px;">
         <li style="
             display: grid;
@@ -81,7 +81,14 @@
             font-weight: bold;
             font-size: 16px;
             width: -webkit-fill-available;
-          "><x-latn style="display: none; font-family: 'Open Sans'">sitelen Lasina</x-latn><x-sp style="font-size: 22px; display: inherit;">linja pona</x-sp></button>
+          "><x-latn style="display: none; font-family: &quot;Open Sans&quot;;">sitelen Lasina</x-latn><x-sp style="font-size: 22px; display: contents;">linja pona</x-sp></button>
+        </li>
+        <li style="margin: 5px 0px;">
+          <button id="fontmodeBtn" onclick="modeToggle()" style="
+            font-weight: bold;
+            font-size: 16px;
+            width: -webkit-fill-available;
+          ">pimeja</button>
         </li>
       </ul>
       </div>
@@ -476,24 +483,30 @@ $(document).ready(function() {
   var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
   if (prefersLightScheme.matches) {
     document.getElementById("modeBtn").innerHTML = "pimeja";
+    document.getElementById("fontmodeBtn").innerHTML = "pimeja";
     if (localStorage.getItem("mode") == "dark") {
       document.body.classList.toggle("dark-mode", true);
       document.getElementById("modeBtn").innerHTML = "walo";
+      document.getElementById("fontmodeBtn").innerHTML = "walo";
     }
     if (localStorage.getItem("mode") == "light") {
       document.body.classList.toggle("dark-mode", false);
       document.getElementById("modeBtn").innerHTML = "pimeja";
+      document.getElementById("fontmodeBtn").innerHTML = "pimeja";
     }
   }
   if (prefersDarkScheme.matches) {
     document.getElementById("modeBtn").innerHTML = "walo";
+    document.getElementById("fontmodeBtn").innerHTML = "walo";
     if (localStorage.getItem("mode") == "light") {
       document.body.classList.toggle("light-mode", true);
       document.getElementById("modeBtn").innerHTML = "pimeja";
+      document.getElementById("fontmodeBtn").innerHTML = "pimeja";
     }
     if (localStorage.getItem("mode") == "dark") {
       document.body.classList.toggle("light-mode", false);
       document.getElementById("modeBtn").innerHTML = "walo";
+      document.getElementById("fontmodeBtn").innerHTML = "walo";
     }
   }
 });
@@ -518,6 +531,11 @@ function modeToggle() {
     document.getElementById("modeBtn").innerHTML = "walo";
   } else {
     document.getElementById("modeBtn").innerHTML = "pimeja";
+  }
+  if (document.getElementById("fontmodeBtn").innerHTML == "pimeja") {
+    document.getElementById("fontmodeBtn").innerHTML = "walo";
+  } else {
+    document.getElementById("fontmodeBtn").innerHTML = "pimeja";
   }
 }
 </script>
