@@ -338,6 +338,10 @@ img.left {
   text-align: center;
 }
 
+.invert {
+  filter: invert(0.87);
+}
+
 .page .txt-center {
   text-indent: 0px;
 }
