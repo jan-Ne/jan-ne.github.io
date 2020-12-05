@@ -375,6 +375,10 @@ hr.pagebreak {
   word-break: break-all;
 }
 
+#meli_Kapunse, #jan_Kense_en_jan_Kete, #meli_lili_pi_len_lawa_loje, #meli_lili_pi_walo_lete, #jan_Kunpesisen, #meli_lili_pi_kasi_loje_pakala {
+  scroll-margin: 280px;
+}
+
 /*linja pona*/
 x-sp {
   display: none;
