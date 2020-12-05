@@ -338,7 +338,7 @@ img.left {
   text-align: center;
 }
 
-.invert {
+.dark-mode *.invert {
   filter: invert(0.87);
 }
 
