@@ -269,10 +269,6 @@ button.center {
   text-decoration: none;
 }
 
-.poem {
-  margin: 11px 0px;
-}
-
 .page {
   height: 54.125em;
   padding: 96px;
@@ -281,6 +277,10 @@ button.center {
 .page p {
   margin: auto 0px;
   text-indent: 50px;
+}
+
+.page p.poem {
+  margin: 11px 0px;
 }
 
 th {
