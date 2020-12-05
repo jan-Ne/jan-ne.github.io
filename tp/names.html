@@ -47,10 +47,57 @@
     </ul>
   </div>
   <div class="bar">
-    <button class="center linjapona" style="font-size: 30px" onclick="tocClick()">•••</button>
-    
+    <a href="#top" class="linjapona" style="
+      font-size: 21px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text-color);
+      padding-bottom: 5px;
+      width: 32px;
+    ">ߍ</a>
+    <button class="linjapona" style="font-size: 30px" onclick="tocClick()">•••</button>
+    <button class="" style="font-size: 18px; font-weight: bold;" onclick="fontClick()"><big style="font-family: 'Open Sans';">a</big><small style="font-family: 'Open Sans';">a</small></button>
+    <div class="font-menu" style="width: 160px; display: none;">
+      <ul style="list-style: none; padding: 0px 20px;">
+        <li style="
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-evenly;
+          "><button class="linjapona" onclick="increaseSize()" style="
+            font-size: 26px;
+            font-weight: bold;
+            width: 33px;
+          ">suli</button>
+          <label style="
+            font-weight: bold;
+            font-size: 24px;
+            font-family: 'Open Sans';
+          ">│</label>
+          <button class="linjapona" onclick="decreaseSize()" style="
+            font-weight: bold;
+            font-size: 20px;
+            width: 33px;
+          ">lili</button>
+        </li>
+        <li style="margin: 5px 0px;">
+          <button onclick="linjapona()" style="
+            font-weight: bold;
+            font-size: 16px;
+            width: -webkit-fill-available;
+          "><x-latn style="display: none; font-family: &quot;Open Sans&quot;;">sitelen Lasina</x-latn><x-sp style="font-size: 22px; display: contents;">linja pona</x-sp></button>
+        </li>
+        <li style="margin: 5px 0px;">
+          <button id="fontmodeBtn" onclick="modeToggle()" style="
+            font-weight: bold;
+            font-size: 16px;
+            width: -webkit-fill-available;
+          ">pimeja</button>
+        </li>
+      </ul>
+      </div>
   </div>
-  <div lang="en" class="content" style="min-height: calc(100vh - 207px)">
+  <div lang="en art-x-tokipona" class="content" style="min-height: calc(100vh - 207px)">
     <h1 id="Place_Names">Place Names</h1>				
     <hr>				
     <p>These suggestions are generally based on how the words are pronounced in the local language.</p>				
