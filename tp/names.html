@@ -397,24 +397,30 @@ $(document).ready(function() {
   var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
   if (prefersLightScheme.matches) {
     document.getElementById("modeBtn").innerHTML = "pimeja";
+    document.getElementById("fontmodeBtn").innerHTML = "pimeja";
     if (localStorage.getItem("mode") == "dark") {
       document.body.classList.toggle("dark-mode", true);
       document.getElementById("modeBtn").innerHTML = "walo";
+      document.getElementById("fontmodeBtn").innerHTML = "walo";
     }
     if (localStorage.getItem("mode") == "light") {
       document.body.classList.toggle("dark-mode", false);
       document.getElementById("modeBtn").innerHTML = "pimeja";
+      document.getElementById("fontmodeBtn").innerHTML = "pimeja";
     }
   }
   if (prefersDarkScheme.matches) {
     document.getElementById("modeBtn").innerHTML = "walo";
+    document.getElementById("fontmodeBtn").innerHTML = "walo";
     if (localStorage.getItem("mode") == "light") {
       document.body.classList.toggle("light-mode", true);
       document.getElementById("modeBtn").innerHTML = "pimeja";
+      document.getElementById("fontmodeBtn").innerHTML = "pimeja";
     }
     if (localStorage.getItem("mode") == "dark") {
       document.body.classList.toggle("light-mode", false);
       document.getElementById("modeBtn").innerHTML = "walo";
+      document.getElementById("fontmodeBtn").innerHTML = "walo";
     }
   }
 });
@@ -440,6 +446,11 @@ function modeToggle() {
   } else {
     document.getElementById("modeBtn").innerHTML = "pimeja";
   }
+  if (document.getElementById("fontmodeBtn").innerHTML == "pimeja") {
+    document.getElementById("fontmodeBtn").innerHTML = "walo";
+  } else {
+    document.getElementById("fontmodeBtn").innerHTML = "pimeja";
+  }
 }
 </script>
 
@@ -453,49 +464,38 @@ function modeToggle() {
   }
 </script>
 
-<!--ToC Button Click-->
+<!--Font Button Click-->
 <script>
-  function tocClick() {
-    $(".toc").toggle();
+  function fontClick() {
+    $(".font-menu").toggle();
   }
 </script>
   
-<!--ToC Generation-->
+<!--Size Functions-->
 <script>
-  var ToC = 
-    "<div class='toc'>" +
-      "<ul style='padding: 0px 20px;'>";
-  var newLine, el, title, link;
-  
-  $(".content h1,.content h3").each(function() {
-    el = $(this);
-    title = el.text();
-    link = "#" + el.attr("id");
-    
-    if (!el.is(".toc-ignore")){
-      if (el.is("h1")) {
-        newLine =
-          "<li style='font-size: larger;'><a href='" + link + "'>" + title + "</a>" + "</li>";
-        ToC += newLine;
-      }
-      if (el.is("h3")) {
-        newLine =
-          "<ul>" +
-            "<li><a href='" + link + "'>" + title + "</a></li>" +
-          "</ul>"
-        ToC += newLine;
-      }
+  var scale = 1;
+  function increaseSize() {
+    if (scale < 4.9){
+      scale += 0.1;
     }
-  });
-  
-  ToC +=
-    "</ul>" +
-  "</div>"
-
-  $(".bar").append(ToC);
-    
+    $(".content").css("transform", "scale(" + scale + ")");
+    $(".content-scroll").css("width", "calc(816px \* " + scale + ")");
+    if (scale >= 1){
+      $(".content-scroll").css("height", "calc(" + $(".content").height() + "px \* " + scale + " \+ 17px");
+    }
+  }
+  function decreaseSize() {
+    if (scale > 0.6){
+      scale -= 0.1;
+    }
+    $(".content").css("transform", "scale(" + scale + ")");
+    $(".content-scroll").css("width", "calc(816px \* " + scale + ")");
+    if (scale > 1){
+      $(".content-scroll").css("height", "calc(" + $(".content").height() + "px \* " + scale + " \+ 17px");
+    }
+  }
 </script>
-  
+
 <!--Load writing script-->
 <script>
   $(document).ready(function() {
@@ -542,6 +542,47 @@ function modeToggle() {
       localStorage.setItem("fontscript", "latin");
     }
   }
+</script>
+  
+<!--ToC Button Click-->
+<script>
+  function tocClick() {
+    $(".toc").toggle();
+  }
+</script>
+  
+<!--ToC Generation-->
+<script>
+  var ToC = 
+    "<div class='toc'>" +
+      "<ul style='padding: 0px 20px;'>";
+  var newLine, el, title, link;
+  
+  $(".content h1,.content h3").each(function() {
+    el = $(this);
+    title = el.text();
+    link = "#" + el.attr("id");
+    
+    if (!el.is(".toc-ignore")){
+      if (el.is("h1")) {
+        newLine =
+          "<li style='font-size: larger;'><a href='" + link + "'>" + title + "</a></li>";
+        ToC += newLine;
+      }
+      if (el.is("h3")) {
+        newLine =
+            "<li><a href='" + link + "'>" + title + "</a></li>"
+        ToC += newLine;
+      }
+    }
+  });
+  
+  ToC +=
+    "</ul>" +
+  "</div>"
+
+  $(".bar").append(ToC);
+    
 </script>
 </body>
 </html>
