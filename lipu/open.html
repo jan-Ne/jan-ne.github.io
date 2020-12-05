@@ -1,0 +1,404 @@
+<html lang="art-x-tokipona">
+<head>
+  <title>lipu pi jan Ne</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="toki pona, jan Ne, lipu, open, Genesis, Bereshit, Bible, Torah, Tanakh">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="shortcut icon" href="../janNe.png">
+</head><body>
+  <header>
+      <a href=".."><img src="../janNe.png" alt="jan Ne" height="77"></a>
+      <a class="home" href=".."><x-latn>lipu pi jan Ne</x-latn><x-sp style="display: inline; display: none;">lipu pi jan [_nena_esun]</x-sp></a>
+    <nav>
+      <ul>
+        <li><a href="../tp"><x-latn>toki pona</x-latn><x-sp style="display: inline; display: none;">toki-pona</x-sp></a></li>
+        <li><a href="../lipu">lipu</a></li>
+        <li><a href="../ijo">ijo</a></li>
+      </ul>
+      <span class="dropdown">
+        <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
+        <ul class="dropdownmenu">
+          <li class="smalldropdown" style="display: none;"><a href="../tp"><x-latn>toki pona</x-latn><x-sp>toki-pona</x-sp></a></li>
+          <li class="smalldropdown" style="display: none;"><a href="../lipu">lipu</a></li>
+          <li class="smalldropdown" style="display: none;"><a href="../ijo">ijo</a></li>
+          <li class="bigdropdown" onclick="modeToggle()" id="modeBtn" style="display: none;">pimeja</li>
+          <li class="bigdropdown" onclick="linjapona()" style="display: none;"><x-latn style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</x-latn><x-sp style="font-size: 22px; display: contents;">linja pona</x-sp></li>
+        </ul>
+      </span>
+    </nav>
+  </header>
+  <div class="shelf" style="margin-bottom: 0px">
+    <a style="background-color: var(--header-color);
+      color: white;
+      padding: 0px 10px;
+      border-radius: 4px;
+      font-family: 'Open Sans';
+      font-size: 25px;
+      text-align: center;
+      width: fit-content;" href="../lipu">&lt;</a>
+    <h1><x-latn>toki musi pi jan sama Kin</x-latn><x-sp>toki musi pi jan-sama [_kulupu_ijo_nena]</x-sp></h1>
+  </div>
+  <div class="bar">
+    <a href="#top" class="linjapona" style="
+      font-size: 21px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text-color);
+      padding-bottom: 5px;
+      width: 32px;
+    ">ߍ</a>
+    <button class="linjapona" style="font-size: 30px" onclick="tocClick()">•••</button>
+    <button class="" style="font-size: 18px; font-weight: bold;" onclick="fontClick()"><big style="font-family: 'Open Sans';">a</big><small style="font-family: 'Open Sans';">a</small></button>
+    <div class="font-menu" style="width: 160px; display: none;">
+      <ul style="list-style: none; padding: 0px 20px;">
+        <li style="
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-evenly;
+          "><button class="linjapona" onclick="increaseSize()" style="
+            font-size: 26px;
+            font-weight: bold;
+            width: 33px;
+          ">suli</button>
+          <label style="
+            font-weight: bold;
+            font-size: 24px;
+            font-family: 'Open Sans';
+          ">│</label>
+          <button class="linjapona" onclick="decreaseSize()" style="
+            font-weight: bold;
+            font-size: 20px;
+            width: 33px;
+          ">lili</button>
+        </li>
+        <li style="margin: 5px 0px;">
+          <button onclick="linjapona()" style="
+            font-weight: bold;
+            font-size: 16px;
+            width: -webkit-fill-available;
+          "><x-latn style="display: none; font-family: &quot;Open Sans&quot;;">sitelen Lasina</x-latn><x-sp style="font-size: 22px; display: contents;">linja pona</x-sp></button>
+        </li>
+        <li style="margin: 5px 0px;">
+          <button id="fontmodeBtn" onclick="modeToggle()" style="
+            font-weight: bold;
+            font-size: 16px;
+            width: -webkit-fill-available;
+          ">pimeja</button>
+        </li>
+      </ul>
+      </div>
+  <div class="toc" style="display: none;"><ul style="padding: 0px 20px;"></ul></div></div>
+  
+  <div class="content-scroll">
+  <div class="content" style="padding: 0px; margin: 0px;">
+    <div class="page" style="display: grid; align-content: center">
+    <h1 class="txt-center toc-ignore" style="margin-top: 0px;">open</h1>
+    <p class="txt-center">tan lipu ni:</p>
+    <a class="txt-center" href="https://biblehub.com/interlinear">https://biblehub.com/interlinear</a>
+    <p class="txt-center">tan <a href="http://www.tanach.us/" target="_blank">lipu Lininka</a></p>
+    <p class="txt-center">ante toki tan jan Ne</p>
+    </div>
+    <hr class="pagebreak">
+    <div class="page">
+      <h3 id="open" class="txt-center">open</h3>
+
+      <p>open la sewi li lon e kon e ma.<br> 
+      ma li weka li ala. pimeja li lon sewi pi anpa suli. kon sewi li tawa lon sewi telo.<br>
+      sewi li toki: “suno o lon.” suno li lon.<br>
+      sewi li lukin e suno pona li tu e suno e pimeja.<br>
+      sewi li pana e nimi "tenpo suno" tawa suno.<br> 
+      tawa pimeja la sewi li pana e nimi "tenpo pimeja". tenpo pi weka suno li lon. tenpo pi kama suno li lon. tenpo suno nanpa wan. </p>
+
+        <p>sewi li toki: “supa o lon insa telo o tu e telo e telo.”<br> 
+      sewi li pali e supa li tu e telo pi anpa supa e telo pi sewi supa. ni li kama.<br>
+      sewi li pana e nimi “sewi kon” tawa supa. tenpo pi weka suno li lon. tenpo pi kama suno li lon. tenpo suno nanpa tu.</p>
+
+        <p>sewi li toki: telo anpa o kulupu lon ma wan. ma pi telo ala o lon. ni li kama.<br> 
+      sewi li pana e nimi “ma” tawa ma pi telo ala. tawa kulupu telo la ona li pana e nimi “telo suli”. sewi li lukin e pona ona.<br> 
+      sewi li toki: “ma o pana e kasi. kasi o mama e kasi lili. kasi kili o pali e kili pi kulupu ona. kasi lili ona o lon insa.” ni li kama.<br>
+      ma li pana e kasi. kasi li mama e kasi lili pi kulupu ona. kasi li pali e kili. kasi lili ona pi kulupu ona li lon insa. sewi li lukin e pona ona.<br>
+      tenpo pi weka suno li lon. tenpo pi kama suno li lon. tenpo suno nanpa tu wan.</p>
+
+        <p>sewi li toki: “suno o lon supa sewi o tu e tenpo suno e tenpo pimeja. ona o tawa sitelen tawa tenpo tawa tenpo suno tawa tenpo sike.<br> 
+      ona o tawa suno lon supa sewi o suno lon ma.” ni li kama.<br>
+      sewi li pali e suno suli tu. suno pi suli mute li lawa e tenpo suno. suno lili li lawa e tenpo pimeja. ona li pali e mun<br> 
+      li pana e ona lon supa sewi. ona li suno lon ma<br> 
+      li lawa e tenpo suno e tenpo pimeja li tu e suno e pimeja. sewi li lukin e pona ona. tenpo pi weka suno li lon. tenpo pi kama suno li lon. tenpo suno nanpa tu tu.</p>
+
+        <p>sewi li toki: telo o jo ale e mute pi ijo kon lon. waso o tawa lon sewi ma lon sinpin pi supa sewi.<br> 
+      sewi li lon e kala suli e ijo kon lon tawa ale. telo li jo e ona pi kulupu ona. sewi li lon e waso ale pi kulupu ona. sewi li lukin e pona ona.<br> 
+      sewi li pana e pona tawa ona li toki: “o kama suli. o kama mute. o ale lon telo lon telo suli. waso o kama mute lon ma.”<br> 
+      tenpo pi weka suno li lon. tenpo pi kama suno li lon. tenpo suno nanpa luka.</p>
+
+        <p>sewi li toki: ma o pana e ijo kon lon pi kulupu ona e mani e pipi e soweli ma pi kulupu ona. ni li kama.<br>
+      sewi li pali e soweli ma pi kulupu ona e mani pi kulupu ona e pipi ale pi kulupu ona. sewi li lukin e pona ona.<br>
+      sewi li toki: “mi o pali e jan pi sama mi. ona o ken lawa e kala pi telo suli e waso pi kon sewi e mani e ma ale e pipi ale lon ma.”<br>
+      sewi li pali e jan pi sama ona. sama sewi la ona li lon e ona. mije la meli la ona li lon e ona mute.<br>
+      sewi li pana e pona tawa ona li toki tawa ona: o kama suli. o kama mute. o ale lon ma. o anpa e ona. o lawa e kala pi telo suli e waso pi kon sewi e ijo kon ale pi tawa ma.<br>
+      sewi li toki: “o lukin. sina la mi pana e kasi mama ale lon sinpin ma e kasi ale. ona la kili li jo e kasi lili. tawa sina la ona o moku<br>
+      tawa soweli ma ale tawa waso kon ale tawa ale pi tawa ma. ale pi jo kon la mi pana e kasi laso ale tawa moku.” ni li lon.<br>
+      sewi li lukin e ale pi pali ona. ona li pona mute kin. tenpo pi weka suno li lon. tenpo pi kama suno li lon. tenpo suno nanpa luka wan. </p>
+
+      <hr>
+
+      <p>kon en ma en kulupu ale ona li pini.<br> 
+      tenpo suno nanpa luka tu la sewi li pini e pali ona. ona li lape lon tenpo suno nanpa luka tu tan pali ale ona.<br> 
+      sewi li pona e tenpo suno nanpa luka tu. ona li sewi e ona tan ni: ona la ona li lape tan pali ale ona pi kama lon.</p>
+
+        <p>ni li tenpo pini kon ma lon tenpo pi kama lon ona. tenpo ni la sewi lawa li pali e ma e kon.<br> 
+      kasi ma li lon ala ma. kasi lili ma li kama lon ala tan ni: sewi lawa li kama ala e telo sewi lon ma. jan li lon ala li pali ala e ma.<br>
+      kon telo li kama sewi tan ma li telo e supa ale ma.<br> 
+      sewi lawa li pali e jan tan ko ma li pana e kon lon lon nena sinpin ona. jan li kama kon lon.<br>
+      sewi lawa li pana e ma kasi lon ma pona Eten pi open suno li pana e jan pi pali ona lon ni.<br>
+      sewi lawa li kama e kasi ale pi pona lukin pi pona moku tan ma. kasi lon en kasi pi sona pona ike li lon insa pi ma kasi.<br>
+      telo linja li tawa tan ma Eten li telo e ma kasi. tan ni la ona li kama telo linja mute.<br>
+      nimi pi telo nanpa wan li Pison. ona li tawa lon ma Kawila ale. ni la kiwen mani jelo li lon.<br>
+      kiwen mani pi ma ni li pona. ko kasi en kiwen pimeja li lon ni.<br>
+      nimi pi telo nanpa tu li Kikon. ona li tawa lon ma Kusi ale.<br>
+      nimi pi telo nanpa tu wan li Kiteke. ona li tawa lon poka pi open suno lon ma Asu. telo nanpa tu tu li Pala.<br> 
+      sewi lawa li kama jo e jan li pana e ona lon ma kasi pi ma Eten tawa ni: ona li pali li awen e ona.<br>
+      sewi lawa li toki lawa tawa jan e ni: “sina ken moku a tan kasi ale pi ma kasi.<br> 
+      taso tan kasi pi sona pona ike la sina o moku ala. sina moku e ona la sina kama moli a.”<br>
+      sewi lawa li toki: “jan o wan taso ala. mi pali e jan pona tawa ona.”<br>
+      sewi lawa li pali e soweli ale ma tan ma e waso ale kon. ona li pana e ona tawa jan li wile sona e ni: ona li pana e nimi seme tawa ona? jan li pana e nimi tawa ijo lon la ni li nimi ona.<br>
+      jan li pana e nimi tawa mani ale tawa waso ale kon tawa soweli ale ma. taso tawa jan la jan pona li lon ala.<br>
+      sewi lawa li lape wawa e jan. ona li kama jo e palisa poka wan tan ona li pini e sijelo lon ni.<br>
+      sewi lawa li pali e meli tan palisa poka pi jo ona li pana e ona tawa jan.<br>
+      jan li toki: “ni li palisa tan palisa mi. sijelo li tan sijelo mi. nimi ona o ‘meli’ tan ni: tan mije la ona li kama.”<br>
+      ni la mije o tawa tan mama ona o kama wan tawa meli ona. ona o kama sijelo wan.
+      ona tu li jo ala e len. jan en meli ona li pilin ike ala.</p>
+
+      <hr>
+
+      <p>soweli ma ale ante pi pali sewi la akesi linja li sona mute. ona li toki tawa meli: “toki sewi kin la sina o moku ala tan kasi ale pi ma kasi anu seme?”<br> 
+      meli li toki tawa akesi: “mi ken moku e kili pi kasi ni.<br> 
+      taso kasi pi insa ma la sewi li toki e ni: sina o moku ala e ona o luka ala e ona. ante la sina kama moli.”<br>
+      akesi li toki tawa meli: “sina kama moli a ala!<br> 
+      sewi li sona e ni: sina moku e ona la lukin sina li kama open. sina kama sama sewi. sina sona e pona e ike.”<br>
+      meli li lukin e pona moku kasi e pona lukin ona e pona ona pi kama sona la ona li kama jo e kili ona li moku. ona li pana kin tawa mije ona pi poka ona. ona li moku.<br>
+      lukin pi ona tu li kama open. ona li sona e weka len ona li wan e lipu kasi li pali e len.<br>
+      ona li kute e kalama pi sewi lawa. ona li tawa lon ma kasi lon kon lete pi tenpo suno. jan en meli ona li len e ona sama tan sinpin pi sewi lawa lon kasi ma.<br>
+      sewi lawa li kalama e nimi jan li toki tawa ona: “sina lon seme?”<br>
+      ona li toki: “mi kute e kalama sina lon ma kasi. mi pilin ike tan weka len mi. mi len e mi.”<br>
+      ona li toki: “jan seme li toki e ni tawa sina: sina jo ala e len? mi toki e ni tawa sina: sina o moku ala tan kasi ni. sina moku ala moku tan ona?”<br>
+      jan li toki: “sina pana e meli lon mi. ona li pana tawa mi tan kasi. mi moku.”<br>
+      sewi lawa li toki tawa meli: “pali ni sina li seme?” meli li toki: “akesi li toki pi lon ala tawa mi. mi moku.”<br>
+      sewi lawa li toki tawa akesi: “soweli ale ma la sina pakala mute tan pali sina. insa sijelo sina la sina o tawa. sina o moku e ko lon tenpo ale pi lon sina.<br> 
+      mi kama e ni: sina ike tawa meli. ijo lili sina li ike tawa jan lili ona. ona li kama pakala e lawa sina. sina kama pakala e anpa noka ona.</p>
+
+      <p>tawa meli la ona li toki: “wawa la mi mute e pilin ike sina lon tenpo sina pi pana jan. pilin ike la sina o pana e jan lili. wile sina o tawa mije sina. ona o lawa e sina.” </p>
+
+        <p>tawa jan la ona li toki: “sina kute e toki pi meli sina. mi toki e ni tawa sina: sina o moku ala tan ona. taso sina moku tan kasi ni. ni la ma li pakala tan sina. pilin ike la sina o moku tan ona lon tenpo ale pi lon sina.<br>
+      “ona o kama e palisa kasi pakala tawa sina. sina o moku e kasi ma.<br>
+      “sinpin sina li pana e telo la sina o moku e pan tawa ni: sina tawa ma lon tenpo sin. sina kama tan ona. sina ko. ko la sina tawa.<br>
+      jan li pana e nimi Kawa tawa meli ona tan ni: ona li mama pi ale lon.<br>
+      sewi lawa li pali e len selo tawa jan en meli ona li len e ona. </p>
+
+        <p>sewi lawa li toki: “o lukin. jan li kama sama mi. ona li sona e pona e ike. ona o pana ala e luka ona o kama jo ala tan kasi lon o moku ala e ona o lon ala tawa tenpo ale.<br>
+      sewi lawa li pana e ona tan ma kasi tawa ni: ona li pali e ma pi kama lon ona.<br>
+      ona li weka e jan li pana e kon sewi e ilo utala seli tawa ni: ona li awen e nasin tawa kasi lon. </p>
+    </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--Load modes-->
+<script>
+$(document).ready(function() {
+  var prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
+  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  if (prefersLightScheme.matches) {
+    document.getElementById("modeBtn").innerHTML = "pimeja";
+    document.getElementById("fontmodeBtn").innerHTML = "pimeja";
+    if (localStorage.getItem("mode") == "dark") {
+      document.body.classList.toggle("dark-mode", true);
+      document.getElementById("modeBtn").innerHTML = "walo";
+      document.getElementById("fontmodeBtn").innerHTML = "walo";
+    }
+    if (localStorage.getItem("mode") == "light") {
+      document.body.classList.toggle("dark-mode", false);
+      document.getElementById("modeBtn").innerHTML = "pimeja";
+      document.getElementById("fontmodeBtn").innerHTML = "pimeja";
+    }
+  }
+  if (prefersDarkScheme.matches) {
+    document.getElementById("modeBtn").innerHTML = "walo";
+    document.getElementById("fontmodeBtn").innerHTML = "walo";
+    if (localStorage.getItem("mode") == "light") {
+      document.body.classList.toggle("light-mode", true);
+      document.getElementById("modeBtn").innerHTML = "pimeja";
+      document.getElementById("fontmodeBtn").innerHTML = "pimeja";
+    }
+    if (localStorage.getItem("mode") == "dark") {
+      document.body.classList.toggle("light-mode", false);
+      document.getElementById("modeBtn").innerHTML = "walo";
+      document.getElementById("fontmodeBtn").innerHTML = "walo";
+    }
+  }
+});
+function modeToggle() {
+  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  if (prefersDarkScheme.matches) {
+    document.body.classList.toggle("light-mode");
+    if (localStorage.getItem("mode") == "light") {
+      localStorage.setItem("mode", "dark");
+    } else {
+      localStorage.setItem("mode", "light");
+    }
+  } else {
+    document.body.classList.toggle("dark-mode");
+    if (localStorage.getItem("mode") == "dark") {
+      localStorage.setItem("mode", "light");
+    } else {
+      localStorage.setItem("mode", "dark");
+    }
+  }
+  if (document.getElementById("modeBtn").innerHTML == "pimeja") {
+    document.getElementById("modeBtn").innerHTML = "walo";
+  } else {
+    document.getElementById("modeBtn").innerHTML = "pimeja";
+  }
+  if (document.getElementById("fontmodeBtn").innerHTML == "pimeja") {
+    document.getElementById("fontmodeBtn").innerHTML = "walo";
+  } else {
+    document.getElementById("fontmodeBtn").innerHTML = "pimeja";
+  }
+}
+</script>
+
+<!--Menu Click-->
+<script>
+  function menuClick() {
+    if (window.innerWidth <= 593) {
+      $(".smalldropdown").toggle(30);
+    }
+    $(".bigdropdown").toggle(30);
+  }
+</script>
+
+<!--Font Button Click-->
+<script>
+  function fontClick() {
+    $(".font-menu").toggle();
+  }
+</script>
+  
+<!--Size Functions-->
+<script>
+  var scale = 1;
+  function increaseSize() {
+    if (scale < 4.9){
+      scale += 0.1;
+    }
+    $(".content").css("transform", "scale(" + scale + ")");
+    $(".content-scroll").css("width", "calc(816px \* " + scale + ")");
+    if (scale >= 1){
+      $(".content-scroll").css("height", "calc(" + $(".content").height() + "px \* " + scale + " \+ 17px");
+    }
+  }
+  function decreaseSize() {
+    if (scale > 0.6){
+      scale -= 0.1;
+    }
+    $(".content").css("transform", "scale(" + scale + ")");
+    $(".content-scroll").css("width", "calc(816px \* " + scale + ")");
+    if (scale > 1){
+      $(".content-scroll").css("height", "calc(" + $(".content").height() + "px \* " + scale + " \+ 17px");
+    }
+  }
+</script>
+
+<!--Load writing script-->
+<script>
+  $(document).ready(function() {
+    if (localStorage.getItem("fontscript") == "linja_pona") {
+      $("body").toggleClass("linjapona");
+      $("x-sp").each(function() {
+        if ($(this).css("display") == "none"){
+          $(this).css("display", "contents");
+        } else {
+          $(this).css("display", "none");
+        }
+      });
+      $("x-latn").each(function() {
+        if ($(this).css("display") == "none"){
+          $(this).css("display", "contents");
+        } else {
+          $(this).css("display", "none");
+        }
+      });
+    }
+  });
+</script>
+<!--linja pona toggle-->
+<script>
+  function linjapona() {
+    $("body").toggleClass("linjapona");
+    $("x-sp").each(function() {
+      if ($(this).css("display") == "none"){
+        $(this).css("display", "contents");
+      } else {
+        $(this).css("display", "none");
+      }
+    });
+    $("x-latn").each(function() {
+      if ($(this).css("display") == "none"){
+        $(this).css("display", "contents");
+      } else {
+        $(this).css("display", "none");
+      }
+    });
+    if (localStorage.getItem("fontscript") != "linja_pona") {
+      localStorage.setItem("fontscript", "linja_pona");
+    } else {
+      localStorage.setItem("fontscript", "latin");
+    }
+  }
+</script>
+  
+<!--ToC Button Click-->
+<script>
+  function tocClick() {
+    $(".toc").toggle();
+  }
+</script>
+  
+<!--ToC Generation-->
+<script>
+  var ToC = 
+    "<div class='toc'>" +
+      "<ul style='padding: 0px 20px;'>";
+  var newLine, el, title, link;
+  
+  $(".content h1,.content h3").each(function() {
+    el = $(this);
+    title = el.text();
+    link = "#" + el.attr("id");
+    
+    if (!el.is(".toc-ignore")){
+      if (el.is("h1")) {
+        newLine =
+          "<li style='font-size: larger;'><a href='" + link + "'>" + title + "</a></li>";
+        ToC += newLine;
+      }
+      if (el.is("h3")) {
+        newLine =
+            "<li><a href='" + link + "'>" + title + "</a></li>"
+        ToC += newLine;
+      }
+    }
+  });
+  
+  ToC +=
+    "</ul>" +
+  "</div>"
+
+  $(".bar").append(ToC);
+    
+</script>
+
+
+
+
+</div></body></html>
