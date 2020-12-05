@@ -426,38 +426,6 @@ function modeToggle() {
   }
 </script>
 
-<!--Font Button Click-->
-<script>
-  function fontClick() {
-    $(".font-menu").toggle();
-  }
-</script>
-  
-<!--Size Functions-->
-<script>
-  var scale = 1;
-  function increaseSize() {
-    if (scale < 4.9){
-      scale += 0.1;
-    }
-    $(".content").css("transform", "scale(" + scale + ")");
-    $(".content-scroll").css("width", "calc(816px \* " + scale + ")");
-    if (scale >= 1){
-      $(".content-scroll").css("height", "calc(" + $(".content").height() + "px \* " + scale + " \+ 17px");
-    }
-  }
-  function decreaseSize() {
-    if (scale > 0.6){
-      scale -= 0.1;
-    }
-    $(".content").css("transform", "scale(" + scale + ")");
-    $(".content-scroll").css("width", "calc(816px \* " + scale + ")");
-    if (scale > 1){
-      $(".content-scroll").css("height", "calc(" + $(".content").height() + "px \* " + scale + " \+ 17px");
-    }
-  }
-</script>
-
 <!--Load writing script-->
 <script>
   $(document).ready(function() {
@@ -516,7 +484,7 @@ function modeToggle() {
 <!--ToC Generation-->
 <script>
   var ToC = 
-    "<div class='toc'>" +
+    "<div class='toc' lang='en'>" +
       "<ul style='padding: 0px 20px;'>";
   var newLine, el, title, link;
   
