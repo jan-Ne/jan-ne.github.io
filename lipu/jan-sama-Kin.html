@@ -685,7 +685,7 @@ function modeToggle() {
     
     if (!$(this).is(".toc-ignore")){
       if ($(this).is("h1")) {
-        if ($(this x-latn).length != 0 && $(this x-sp).length != 0){
+        if ($(this).children("x-latn").length != 0 && $(this).children("x-sp").length != 0){
           newLine =
             "<li style='font-size: larger;'><a href='" + link + "'><x-latn>" + latn_title + "</x-latn><x-sp>" + sp_title + "</x-sp></a></li>";
           ToC += newLine;
@@ -696,7 +696,7 @@ function modeToggle() {
         }
       }
       if ($(this).is("h3")) {
-        if ($(this x-latn).length != 0 && $(this x-sp).length != 0){
+        if ($(this).children("x-latn").length != 0 && $(this).children("x-sp").length != 0){
           newLine =
               "<li><a href='" + link + "'><x-latn>" + latn_title + "</x-latn><x-sp>" + sp_title + "</x-sp></a></li>"
           ToC += newLine;
