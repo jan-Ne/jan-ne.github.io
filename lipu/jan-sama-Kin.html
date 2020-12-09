@@ -679,8 +679,8 @@ function modeToggle() {
   
   $(".content h1,.content h3").each(function() {
     title = $(this).text();
-    latn_title = $(this x-latn).text();
-    sp_title = $(this x-sp).text()
+    latn_title = $(this).children("x-latn").text();
+    sp_title = $(this).children("x-sp").text()
     link = "#" + $(this).attr("id");
     
     if (!$(this).is(".toc-ignore")){
