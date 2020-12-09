@@ -646,20 +646,33 @@ function modeToggle() {
   var newLine, el, title, link;
   
   $(".content h1,.content h3").each(function() {
-    el = $(this);
-    title = el.text();
-    link = "#" + el.attr("id");
+    title = $(this).text();
+    latn_title = $(this).children("x-latn").text();
+    sp_title = $(this).children("x-sp").text()
+    link = "#" + $(this).attr("id");
     
-    if (!el.is(".toc-ignore")){
-      if (el.is("h1")) {
-        newLine =
-          "<li style='font-size: larger;'><a href='" + link + "'>" + title + "</a></li>";
-        ToC += newLine;
+    if (!$(this).is(".toc-ignore")){
+      if ($(this).is("h1")) {
+        if ($(this).children("x-latn").length != 0 && $(this).children("x-sp").length != 0){
+          newLine =
+            "<li style='font-size: larger;'><a href='" + link + "'><x-latn>" + latn_title + "</x-latn><x-sp>" + sp_title + "</x-sp></a></li>";
+          ToC += newLine;
+        } else {    
+          newLine =
+            "<li style='font-size: larger;'><a href='" + link + "'>" + title + "</a></li>";
+          ToC += newLine;
+        }
       }
-      if (el.is("h3")) {
-        newLine =
-            "<li><a href='" + link + "'>" + title + "</a></li>"
-        ToC += newLine;
+      if ($(this).is("h3")) {
+        if ($(this).children("x-latn").length != 0 && $(this).children("x-sp").length != 0){
+          newLine =
+              "<li><a href='" + link + "'><x-latn>" + latn_title + "</x-latn><x-sp>" + sp_title + "</x-sp></a></li>"
+          ToC += newLine;
+        } else {
+          newLine =
+              "<li><a href='" + link + "'>" + title + "</a></li>"
+          ToC += newLine;
+        }
       }
     }
   });
@@ -669,7 +682,7 @@ function modeToggle() {
   "</div>"
 
   $(".bar").append(ToC);
-    
 </script>
+
 </body>
 </html>
