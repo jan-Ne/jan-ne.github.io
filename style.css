@@ -160,13 +160,6 @@ header button:focus {
   margin: 0px;
 }
 
-.shelf img {
-  max-height: 300px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  border-radius: 4px;
-}
-
 .shelf a {
   text-decoration: none;
   color: var(--text-color);
@@ -179,9 +172,33 @@ header button:focus {
   text-align: center;
 }
 
-.book {
+.shelf-title {
+  grid-column: span 5;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.book, .item {
   width: fit-content;
   margin: auto;
+}
+
+.book img {
+  display: block;
+  max-height: 300px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+
+.item img {
+  display: block;
+  max-height: 100px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
 }
 
 .bar {
