@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="art-x-tokipona">
+<head>
+  <title>sitelen lape pi jan Antan | lipu pi jan Ne</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="toki pona, jan Ne, lipu, laso tu, poem, poetry">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="shortcut icon" href="../janNe.png">
+<body>
+  <header>
+      <a href=".."><img src="../janNe.png" alt="jan Ne" height="77"></a>
+      <a class="home" href=".."><x-latn>lipu pi jan Ne</x-latn><x-sp style="display: inline; display: none;">lipu pi jan [_nena_esun]</x-sp></a>
+    <nav>
+      <ul>
+        <li><a href="../tp"><x-latn>toki pona</x-latn><x-sp style="display: inline; display: none;">toki-pona</x-sp></a></li>
+        <li><a href="../lipu">lipu</a></li>
+        <li><a href="../ijo">ijo</a></li>
+      </ul>
+      <span class="dropdown">
+        <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
+        <ul class="dropdownmenu">
+          <li class="smalldropdown" style="display: none;"><a href="../tp"><x-latn>toki pona</x-latn><x-sp>toki-pona</x-sp></a></li>
+          <li class="smalldropdown" style="display: none;"><a href="../lipu">lipu</a></li>
+          <li class="smalldropdown" style="display: none;"><a href="../ijo">ijo</a></li>
+          <li class="bigdropdown" onclick="modeToggle()" id="modeBtn" style="display: none;">pimeja</li>
+          <li class="bigdropdown" onclick="linjapona()" style="display: none;"><x-latn style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</x-latn><x-sp style="font-size: 22px; display: contents;">linja pona</x-sp></li>
+        </ul>
+      </span>
+    </nav>
+  </header>
+  <div class="shelf" style="margin-bottom: 0px">
+    <a style=
+      "background-color: var(--header-color);
+      color: white;
+      padding: 0px 10px;
+      border-radius: 4px;
+      font-family: 'Open Sans';
+      font-size: 25px;
+      text-align: center;
+      width: fit-content;"
+    href="../lipu">&lt;</a>
+    <h1>laso tu</h1>
+    <div style="width: 34px;"></div>
+  </div>
+  <div class="bar">
+    <a href="#top" class="linjapona" style="
+      font-size: 21px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text-color);
+      padding-bottom: 5px;
+      width: 32px;
+    ">ߍ</a>
+    <button class="linjapona" style="font-size: 30px" onclick="tocClick()">•••</button>
+    <button class="" style="font-size: 18px; font-weight: bold;" onclick="fontClick()"><big style="font-family: 'Open Sans';">a</big><small style="font-family: 'Open Sans';">a</small></button>
+    <div class="font-menu" style="width: 160px; display: none;">
+      <ul style="list-style: none; padding: 0px 20px;">
+        <li style="
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-evenly;
+          "><button class="linjapona" onclick="increaseSize()" style="
+            font-size: 26px;
+            font-weight: bold;
+            width: 33px;
+          ">suli</button>
+          <label style="
+            font-weight: bold;
+            font-size: 24px;
+            font-family: 'Open Sans';
+          ">│</label>
+          <button class="linjapona" onclick="decreaseSize()" style="
+            font-weight: bold;
+            font-size: 20px;
+            width: 33px;
+          ">lili</button>
+        </li>
+        <li style="margin: 5px 0px;">
+          <button onclick="linjapona()" style="
+            font-weight: bold;
+            font-size: 16px;
+            width: -webkit-fill-available;
+          "><x-latn style="display: none; font-family: &quot;Open Sans&quot;;">sitelen Lasina</x-latn><x-sp style="font-size: 22px; display: contents;">linja pona</x-sp></button>
+        </li>
+        <li style="margin: 5px 0px;">
+          <button id="fontmodeBtn" onclick="modeToggle()" style="
+            font-weight: bold;
+            font-size: 16px;
+            width: -webkit-fill-available;
+          ">pimeja</button>
+        </li>
+      </ul>
+      </div>
+  </div>
+    
+  </div>
+  <div class="content-scroll">
+  <div class="content" style="padding: 0px; margin: 0px;">
+    <div class="page" style="display: grid; align-content: center">
+      <div>  
+      <img src="laso-tu/laso-tu.svg" width="300px" alt="laso tu" style="float: left; margin: 57px 48px 57px 0px;">
+      <h1 style="margin:0px" class="txt-center">laso tu</h1>
+        <p style="text-indent:0px" class="txt-center">tan jan Ne</p>
+        <div style="margin:auto;">
+          <p>&nbsp;</p>
+          <p style="text-indent:0px">laso sewi<br>laso anpa</p>
+          <p style="text-indent:0px">wan laso
+          <br>lon tu</p>
+          <p style="text-indent:0px">telo suli li pana sewi e luka.
+          <br>sewi la ona li awen weka.</p>
+          <p style="text-indent:0px">kon sewi li wile olin e telo.
+          <br>wile la telo li ken ala.</p>
+          <p style="text-indent:0px">taso ijo li lon. ijo li ken
+          <br>wan e olin pakala awen.</p>
+          <p style="text-indent:0px">sewi li lon e suno wawa.
+          <br>telo li ken kama anpa ala.</p>
+          <p>&nbsp;</p>
+          <p style="text-indent:0px">telo anpa o!
+          <br>suno o ken sewi e sina!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--Load modes-->
+<script>
+$(document).ready(function() {
+  var prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
+  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  if (prefersLightScheme.matches) {
+    document.getElementById("modeBtn").innerHTML = "pimeja";
+    document.getElementById("fontmodeBtn").innerHTML = "pimeja";
+    if (localStorage.getItem("mode") == "dark") {
+      document.body.classList.toggle("dark-mode", true);
+      document.getElementById("modeBtn").innerHTML = "walo";
+      document.getElementById("fontmodeBtn").innerHTML = "walo";
+    }
+    if (localStorage.getItem("mode") == "light") {
+      document.body.classList.toggle("dark-mode", false);
+      document.getElementById("modeBtn").innerHTML = "pimeja";
+      document.getElementById("fontmodeBtn").innerHTML = "pimeja";
+    }
+  }
+  if (prefersDarkScheme.matches) {
+    document.getElementById("modeBtn").innerHTML = "walo";
+    document.getElementById("fontmodeBtn").innerHTML = "walo";
+    if (localStorage.getItem("mode") == "light") {
+      document.body.classList.toggle("light-mode", true);
+      document.getElementById("modeBtn").innerHTML = "pimeja";
+      document.getElementById("fontmodeBtn").innerHTML = "pimeja";
+    }
+    if (localStorage.getItem("mode") == "dark") {
+      document.body.classList.toggle("light-mode", false);
+      document.getElementById("modeBtn").innerHTML = "walo";
+      document.getElementById("fontmodeBtn").innerHTML = "walo";
+    }
+  }
+});
+function modeToggle() {
+  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  if (prefersDarkScheme.matches) {
+    document.body.classList.toggle("light-mode");
+    if (localStorage.getItem("mode") == "light") {
+      localStorage.setItem("mode", "dark");
+    } else {
+      localStorage.setItem("mode", "light");
+    }
+  } else {
+    document.body.classList.toggle("dark-mode");
+    if (localStorage.getItem("mode") == "dark") {
+      localStorage.setItem("mode", "light");
+    } else {
+      localStorage.setItem("mode", "dark");
+    }
+  }
+  if (document.getElementById("modeBtn").innerHTML == "pimeja") {
+    document.getElementById("modeBtn").innerHTML = "walo";
+  } else {
+    document.getElementById("modeBtn").innerHTML = "pimeja";
+  }
+  if (document.getElementById("fontmodeBtn").innerHTML == "pimeja") {
+    document.getElementById("fontmodeBtn").innerHTML = "walo";
+  } else {
+    document.getElementById("fontmodeBtn").innerHTML = "pimeja";
+  }
+}
+</script>
+
+<!--Menu Click-->
+<script>
+  function menuClick() {
+    if (window.innerWidth <= 593) {
+      $(".smalldropdown").toggle(30);
+    }
+    $(".bigdropdown").toggle(30);
+  }
+</script>
+
+<!--Font Button Click-->
+<script>
+  function fontClick() {
+    $(".font-menu").toggle();
+  }
+</script>
+  
+<!--Size Functions-->
+<script>
+  var scale = 1;
+  function increaseSize() {
+    if (scale < 4.9){
+      scale += 0.1;
+    }
+    $(".content").css("transform", "scale(" + scale + ")");
+    $(".content-scroll").css("width", "calc(816px \* " + scale + ")");
+    if (scale >= 1){
+      $(".content-scroll").css("height", "calc(" + $(".content").height() + "px \* " + scale + " \+ 17px");
+    }
+  }
+  function decreaseSize() {
+    if (scale > 0.6){
+      scale -= 0.1;
+    }
+    $(".content").css("transform", "scale(" + scale + ")");
+    $(".content-scroll").css("width", "calc(816px \* " + scale + ")");
+    if (scale > 1){
+      $(".content-scroll").css("height", "calc(" + $(".content").height() + "px \* " + scale + " \+ 17px");
+    }
+  }
+</script>
+
+<!--Load writing script-->
+<script>
+  $(document).ready(function() {
+    if (localStorage.getItem("fontscript") == "linja_pona") {
+      $("body").toggleClass("linjapona");
+      $("x-sp").each(function() {
+        if ($(this).css("display") == "none"){
+          $(this).css("display", "contents");
+        } else {
+          $(this).css("display", "none");
+        }
+      });
+      $("x-latn").each(function() {
+        if ($(this).css("display") == "none"){
+          $(this).css("display", "contents");
+        } else {
+          $(this).css("display", "none");
+        }
+      });
+    }
+  });
+</script>
+<!--linja pona toggle-->
+<script>
+  function linjapona() {
+    $("body").toggleClass("linjapona");
+    $("x-sp").each(function() {
+      if ($(this).css("display") == "none"){
+        $(this).css("display", "contents");
+      } else {
+        $(this).css("display", "none");
+      }
+    });
+    $("x-latn").each(function() {
+      if ($(this).css("display") == "none"){
+        $(this).css("display", "contents");
+      } else {
+        $(this).css("display", "none");
+      }
+    });
+    if (localStorage.getItem("fontscript") != "linja_pona") {
+      localStorage.setItem("fontscript", "linja_pona");
+    } else {
+      localStorage.setItem("fontscript", "latin");
+    }
+  }
+</script>
+  
+<!--ToC Button Click-->
+<script>
+  function tocClick() {
+    $(".toc").toggle();
+  }
+</script>
+  
+<!--ToC Generation-->
+<script>
+  var ToC = 
+    "<div class='toc'>" +
+      "<ul style='padding: 0px 20px;'>";
+  var newLine, el, title, link;
+  
+  $(".content h1,.content h3").each(function() {
+    title = $(this).text();
+    latn_title = $(this).children("x-latn").text();
+    sp_title = $(this).children("x-sp").text()
+    link = "#" + $(this).attr("id");
+    
+    if (!$(this).is(".toc-ignore")){
+      if ($(this).is("h1")) {
+        if ($(this).children("x-latn").length != 0 && $(this).children("x-sp").length != 0){
+          newLine =
+            "<li style='font-size: larger;'><a href='" + link + "'><x-latn>" + latn_title + "</x-latn><x-sp>" + sp_title + "</x-sp></a></li>";
+          ToC += newLine;
+        } else {    
+          newLine =
+            "<li style='font-size: larger;'><a href='" + link + "'>" + title + "</a></li>";
+          ToC += newLine;
+        }
+      }
+      if ($(this).is("h3")) {
+        if ($(this).children("x-latn").length != 0 && $(this).children("x-sp").length != 0){
+          newLine =
+              "<li><a href='" + link + "'><x-latn>" + latn_title + "</x-latn><x-sp>" + sp_title + "</x-sp></a></li>"
+          ToC += newLine;
+        } else {
+          newLine =
+              "<li><a href='" + link + "'>" + title + "</a></li>"
+          ToC += newLine;
+        }
+      }
+    }
+  });
+  
+  ToC +=
+    "</ul>" +
+  "</div>"
+
+  $(".bar").append(ToC);
+</script>
+
+</body>
+</html>
