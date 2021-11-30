@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dictionnaire officiel | lipu pi jan Ne</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="toki pona, jan Ne, lipu, dictionnairre, Français, mots de toki pona, French, pu">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="shortcut icon" href="../janNe.png">
+<body>
+  <header>
+      <a href=".."><img src="../janNe.png" alt="jan Ne" height="77"></a>
+      <a class="home" href=".."><x-latn>lipu pi jan Ne</x-latn><x-sp>lipu pi jan [_nena_esun]</x-sp></a>
+    <nav>
+      <ul>
+        <li><a href="../tp"><x-latn>toki pona</x-latn><x-sp>toki-pona</x-sp></a></li>
+        <li><a href="../lipu">lipu</a></li>
+        <li><a href="../ijo">ijo</a></li>
+      </ul>
+      <span class="dropdown">
+        <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
+        <ul class="dropdownmenu">
+          <li class="smalldropdown" style="display: none;"><a href="../tp"><x-latn>toki pona</x-latn><x-sp>toki-pona</x-sp></a></li>
+          <li class="smalldropdown" style="display: none;"><a href="../lipu">lipu</a></li>
+          <li class="smalldropdown" style="display: none;"><a href="../ijo">ijo</a></li>
+          <li class="bigdropdown" onclick="modeToggle()" id="modeBtn" style="display: none;">pimeja</li>
+          <li class="bigdropdown" onclick="linjapona()" style="display: none;"><x-latn style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</x-latn><x-sp style="font-size: 22px; display: contents;">linja pona</x-sp></li>
+        </ul>
+      </span>
+    </nav>
+  </header>
+  <div lang="en" class="shelf">
+    <ul>
+      <li><a href="../tp/dictionnaire">Dictionnaire officiel</a></li>
+      <li><a href="etymology">Etymology</a></li>
+      <li><a href="otherwords">Other Words</a></li>
+    </ul>
+    <ul>
+      <li><a href="phonology">Phonology</a></li>
+      <li><a href="tpize">Phonetic Guidelines</a></li>
+      <li><a href="names">Place Names and Language Names</a></li>
+    </ul>
+    <ul>
+      <li><a href="sp">sitelen pona</a></li>
+      <li><a href="ss">sitelen sitelen</a></li>
+      <li><a href="tpl">toki pona luka</a></li>
+    </ul>
+  </div>
+  <div lang="fr" class="content" style="min-height: calc(100vh - 207px)">
+    <h1 style="margin-bottom:0px;">Dictionnaire officiel du Toki Pona</h1>
+    <small>tel qu'il figure dans <i>Toki Pona: La langue du bien</i> par Sonja Lang, la créatrice du toki pona</small>
+    <hr>
+    <table>					
+      <tr><td><i>	a </i>  ou <i>  kin	</i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	PARTICULE	</x-pos> 	(accent, émotion ou confirmation)	 </td></tr>
+      <tr><td><i> akesi	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	animal non-mignon ; reptile, amphibien	 </td></tr>
+      <tr><td><i> ala	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	non, ne, pas, aucun, zéro	 </td></tr>
+      <tr><td><i> alasa	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	VERBE	</x-pos> 	chasser, cueillir	 </td></tr>
+      <tr><td><i>	ale </i>  ou <i>  ali	</i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos> ADJECTIF	</x-pos> 	tous, abondants, innombrables	 </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>NOM</x-pos> tout, abondance, la vie, l'univers	</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>NOMBRE</x-pos> 100	</td></tr>
+      <tr><td><i> anpa	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	incliné vers le bas, humble, qui dépend	 </td></tr>
+      <tr><td><i> ante	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	différent, changé, autre	 </td></tr>
+      <tr><td><i> anu	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	PARTICULE	</x-pos> 	ou	 </td></tr>
+      <tr><td><i> awen	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	resté, protégé, gardé, qui attend, qui persiste, conservé	 </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>AUXILIARE</x-pos> to continue to	</td></tr>
+      <tr><td><i> e	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	PARTICULE	</x-pos> 	(avant l'objet direct)	 </td></tr>
+      <tr><td><i> en	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	PARTICULE	</x-pos> 	(entre plusieurs sujets)	 </td></tr>
+      <tr><td><i> esun	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	marché, boutique, foire, magasin, commerce	 </td></tr>
+      <tr><td><i> ijo	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	chose, phénomène, objet, matière	 </td></tr>
+      <tr><td><i> ike	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	mauvais, négatif ; superflu, non pertinent	 </td></tr>
+      <tr><td><i> ilo	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	outil, instrument, équipement, machine, appareil	 </td></tr>
+      <tr><td><i> insa	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	centre, contenu, intérieur, entre ; estomac, viscères	 </td></tr>
+      <tr><td><i> jaki	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	dégoûtant, obscène, maladif, toxique, impur, insalubre	 </td></tr>
+      <tr><td><i> jan	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	être humain, personne, quelqu'un	 </td></tr>
+      <tr><td><i> jelo	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	jaune	 </td></tr>
+      <tr><td><i> jo	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	VERBE	</x-pos> 	avoir, porter, contenir, tenir	 </td></tr>
+      <tr><td><i> kala	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	poisson, animal sous-marin	 </td></tr>
+      <tr><td><i> kalama	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	VERBE	</x-pos> 	émettre un son ; réciter, proférer	 </td></tr>
+      <tr><td><i> kama	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	qui arrive, qui vient, futur, venu	 </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>AUXILIARE</x-pos> devenir, arriver à, réussir à	</td></tr>
+      <tr><td><i> kasi	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	plante, végétation ; herbe, feuille	 </td></tr>
+      <tr><td><i> ken	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	AUXILIAIRE	</x-pos> 	pouvoir	 </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>ADJECTIF</x-pos> possible	</td></tr>
+      <tr><td><i> kepeken	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	PRÉPOSITION	</x-pos> 	en utilisant, avec, au moyen de	 </td></tr>
+      <tr><td><i> kili	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	fruit, légume, champignon	 </td></tr>
+      <tr><td><i> kiwen	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	objet dur, métal, pierre	 </td></tr>
+      <tr><td><i> ko	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	argile, pâte, poudre, substance collante, semi-solide	 </td></tr>
+      <tr><td><i> kon	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	air, souffle ; essence, esprit ; réalité cachée, agent invisible	 </td></tr>
+      <tr><td><i> kule	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	coloré, pigmenté, peint	 </td></tr>
+      <tr><td><i> kulupu	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	communauté, groupe, nation, société, tribu, compagnie	 </td></tr>
+      <tr><td><i> kute	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	oreille	 </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>VERBE</x-pos> entendre, écouter ; faire attention à, obéir	</td></tr>
+      <tr><td><i> la	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	PARTICULE	</x-pos> 	(entre le contexte et la phrase principale)	 </td></tr>
+      <tr><td><i> lape	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	dormant, se reposant	 </td></tr>
+      <tr><td><i> laso	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	bleu, vert	 </td></tr>
+      <tr><td><i> lawa	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	tête	 </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>VERBE</x-pos> dominer, diriger, guider, mener, posséder, régler	</td></tr>
+      <tr><td><i> len	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	tissu, vêtement, textile ; couverture, rideau d'intimité	 </td></tr>
+      <tr><td><i> lete	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	froid, frais ; cru	 </td></tr>
+      <tr><td><i> li	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	PARTICULE	</x-pos> 	(entre le sujet et son verbe, à l'exception de 'mi' ou <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'sina' tout seul ; sert aussi à introduire un nouveau verbe pour le <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;même sujet)	 </td></tr>
+      <tr><td><i> lili	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	petit, (un) peu, jeune	 </td></tr>
+      <tr><td><i> linja	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	objet long et flexible : corde, cheveu, fil, ligne	 </td></tr>
+      <tr><td><i> lipu	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	objet plat ; livre, document, carte, papier, site web	 </td></tr>
+      <tr><td><i> loje	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	rouge	 </td></tr>
+      <tr><td><i> lon	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	PRÉPOSITION	</x-pos> 	à, situé à, présent à, dans, sur ; réel, vrai, actuel	 </td></tr>
+      <tr><td><i> luka	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	bras, main, organe du toucher	 </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>NOMBRE</x-pos> 5	</td></tr>
+      <tr><td><i>	lukin </i>  ou <i>  oko	</i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	œil	 </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>VERBE</x-pos> regarder, voir, examiner, observer, lire, surveiller	</td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>AUXILIARE</x-pos> chercher à, essayer de	</td></tr>  
+      <tr><td><i> lupa	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	porte, trou, orifice, fenêtre	 </td></tr>
+      <tr><td><i> ma	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	terre, sol ; monde, lieu en plein air ; pays, territoire	 </td></tr>
+      <tr><td><i> mama	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	parent, ancêtre ; créateur ; celui ou celle qui prend soin	 </td></tr>
+      <tr><td><i> mani	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	argent, richesse ; grand animal domestiqué	 </td></tr>
+      <tr><td><i> meli	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	femme, femelle ; épouse	 </td></tr>
+      <tr><td><i> mi	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	je, moi, nous	 </td></tr>
+      <tr><td><i> mije	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	homme, mâle ; mari	 </td></tr>
+      <tr><td><i> moku	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	VERBE	</x-pos> 	manger, boire, consommer, avaler	 </td></tr>
+      <tr><td><i> moli	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	mort, mourant	 </td></tr>
+      <tr><td><i> monsi	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	dos, derrière, arrière	 </td></tr>
+      <tr><td><i> mu	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	PARTICULE	</x-pos> 	(cri ou communication d'un animal)	 </td></tr>
+      <tr><td><i> mun	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	lune, astre, étoile	 </td></tr>
+      <tr><td><i> musi	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	artistique, divertissant, frivole, pour s'amuser	 </td></tr>
+      <tr><td><i> mute	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	beaucoup de, plusieurs, de plus ; très	 </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>NOM</x-pos> quantité	</td></tr>
+      <tr><td><i> nanpa	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	PARTICULE	</x-pos> 	ième (nombre ordinal)	 </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>NOM</x-pos> nombre	</td></tr>
+      <tr><td><i> nasa	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	étrange, insolite ; fou, bête, idiot ; ivre	 </td></tr>
+      <tr><td><i> nasin	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	chemin, voie ; manière, façon ; coutume, méthode, doctrine	 </td></tr>
+      <tr><td><i> nena	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	nez ; bosse, colline, montagne ; bouton	 </td></tr>
+      <tr><td><i> ni	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	ce, cette	 </td></tr>
+      <tr><td><i> nimi	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	mot, nom	 </td></tr>
+      <tr><td><i> noka	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	pied, jambe, organe de locomotion ; bas, dessous	 </td></tr>
+      <tr><td><i> o	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	PARTICULE	</x-pos> 	Hé ! Ô ! (vocatif ou impératif)	 </td></tr>
+      <tr><td><i> olin	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	VERBE	</x-pos> 	aimer, respecter, compatif, montrer de l'affection pour	 </td></tr>
+      <tr><td><i> ona	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	il(s), elle(s)	 </td></tr>
+      <tr><td><i> open	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	VERBE	</x-pos> 	commencer, ouvrir, allumer	 </td></tr>
+      <tr><td><i> pakala	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	brisé, cassé, abîmé, bâclé, gâché	 </td></tr>
+      <tr><td><i> pali	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	VERBE	</x-pos> 	faire, agir sur, travailler, construire, préparer	 </td></tr>
+      <tr><td><i> palisa	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	objet long et dur : bâton	 </td></tr>
+      <tr><td><i> pan	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	céréale ; riz, blé, orge, maïs, avoine ; pain, pâtes	 </td></tr>
+      <tr><td><i> pana	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	VERBE	</x-pos> 	donner, envoyer, mettre, fournir, émettre, lâcher	 </td></tr>
+      <tr><td><i> pi	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	PARTICULE	</x-pos> 	de	 </td></tr>
+      <tr><td><i> pilin	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	cœur (physique et psychologique)	 </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>ADJECTIF</x-pos> qui ressent (une émotion, une expérience directe)	</td></tr>
+      <tr><td><i> pimeja	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	noir, foncé, sombre	 </td></tr>
+      <tr><td><i> pini	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	fini, passé, terminé	 </td></tr>
+      <tr><td><i> pipi	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	insecte, araignée, fourmi	 </td></tr>
+      <tr><td><i> poka	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	hanche, côté ; proximité	 </td></tr>
+      <tr><td><i> poki	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	sac, bol, récipient, tasse, placard, tiroir, vase	 </td></tr>
+      <tr><td><i> pona	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	bon, positif, utile ; sympa, paisible ; simple	 </td></tr>
+      <tr><td><i> pu	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	interagissant avec le livre officiel du Toki Pona	 </td></tr>
+      <tr><td><i> sama	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	même, semblable ; l'un l'autre ; fraternel, homologue	 </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>PRÉPOSITION</x-pos> comme	</td></tr>
+      <tr><td><i> seli	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	feu ; élement de cuisson, réaction chimique, chaleur	 </td></tr>
+      <tr><td><i> selo	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	forme, couche extérieure, peau, écorce, pelure, coquille ; limite	 </td></tr>
+      <tr><td><i> seme	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	PARTICULE	</x-pos> 	quoi ? quel ?	 </td></tr>
+      <tr><td><i> sewi	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	dessus, le haut, chose élevée	 </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>ADJECTIF</x-pos> divin, sacré, surnaturel, qui inspire le respect et la crainte	</td></tr>
+      <tr><td><i> sijelo	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	corps, état physique, torse	 </td></tr>
+      <tr><td><i> sike	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	objet rond : ballon, cercle, cycle, sphère, roue, anneau	 </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>ADJECTIF</x-pos> annuel	</td></tr>
+      <tr><td><i>	sin </i>  ou <i>  namako	</i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	nouveau, frais ; encore un, de plus	 </td></tr>
+      <tr><td><i> sina	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	tu, toi, vous	 </td></tr>
+      <tr><td><i> sinpin	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	avant, visage, front, mur	 </td></tr>
+      <tr><td><i> sitelen	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	image, représentation, symbole, marque, écriture	 </td></tr>
+      <tr><td><i> sona	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	VERBE	</x-pos> 	savoir, connaître	 </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>AUXILIARE</x-pos> savoir	</td></tr>
+      <tr><td><i> soweli	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	animal, mammifère terrestre	 </td></tr>
+      <tr><td><i> suli	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	grand, lourd, long ; important ; adulte	 </td></tr>
+      <tr><td><i> suno	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	soleil, lumière, lueur, brillant	 </td></tr>
+      <tr><td><i> supa	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	surface horizontale sur laquelle on pose quelque chose	 </td></tr>
+      <tr><td><i> suwi	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	doux, parfumé, mignon, innocent, adorable	 </td></tr>
+      <tr><td><i> tan	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	PRÉPOSITION	</x-pos> 	de, provenant de, à cause de	 </td></tr>
+      <tr><td><i> taso	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	PARTICULE	</x-pos> 	mais, cependant	 </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>ADJECTIF</x-pos> seulement	</td></tr>
+      <tr><td><i> tawa	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	PRÉPOSITION	</x-pos> 	à, allant à, vers, pour, du point de vue de	 </td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;	<x-pos>ADJECTIF</x-pos> en mouvement, animé	</td></tr>
+      <tr><td><i> telo	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	eau, liquide, fluide, substance mouillée, boisson	 </td></tr>
+      <tr><td><i> tenpo	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	temps, durée, moment, occasion, période, situation	 </td></tr>
+      <tr><td><i> toki	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	VERBE	</x-pos> 	communiquer, dire, parler, penser	 </td></tr>
+      <tr><td><i> tomo	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	espace intérieur, lieu couvert ; maison, bâtiment, édifice, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pièce, chambre, chez soi, demeure	 </td></tr>
+      <tr><td><i> tu	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	2	 </td></tr>
+      <tr><td><i> unpa	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	VERBE	</x-pos> 	avoir des rapports sexuels ou conjugaux avec	 </td></tr>
+      <tr><td><i> uta	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	bouche, lèvres, cavité bucale, mâchoire	 </td></tr>
+      <tr><td><i> utala	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	VERBE	</x-pos> 	se battre contre, lutter contre	 </td></tr>
+      <tr><td><i> walo	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	blanc, clair, pâle	 </td></tr>
+      <tr><td><i> wan	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	unique, uni ; 1	 </td></tr>
+      <tr><td><i> waso	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	NOM	</x-pos> 	oiseau, créature volante, animal ailé	 </td></tr>
+      <tr><td><i> wawa	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	fort, puissant ; sûr, confiant ; énergique, intense	 </td></tr>
+      <tr><td><i> weka	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	ADJECTIF	</x-pos> 	absent, enlevé, éloigné	 </td></tr>
+      <tr><td><i> wile	 </i></td></tr>        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;        <x-pos>	AUXILIAIRE	</x-pos> 	devoir, avoir besoin de, vouloir	 </td></tr>
+    </table>
+    <footer>
+    <hr>
+      <small>source: <i>Toki Pona: La langue du bien</i>, Sonja Lang</small>
+    </footer>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  var prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
+  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  if (prefersLightScheme.matches) {
+    document.getElementById("modeBtn").innerHTML = "pimeja";
+    if (localStorage.getItem("mode") == "dark") {
+      document.body.classList.toggle("dark-mode", true);
+      document.getElementById("modeBtn").innerHTML = "walo";
+    }
+    if (localStorage.getItem("mode") == "light") {
+      document.body.classList.toggle("dark-mode", false);
+      document.getElementById("modeBtn").innerHTML = "pimeja";
+    }
+  }
+  if (prefersDarkScheme.matches) {
+    document.getElementById("modeBtn").innerHTML = "walo";
+    if (localStorage.getItem("mode") == "light") {
+      document.body.classList.toggle("light-mode", true);
+      document.getElementById("modeBtn").innerHTML = "pimeja";
+    }
+    if (localStorage.getItem("mode") == "dark") {
+      document.body.classList.toggle("light-mode", false);
+      document.getElementById("modeBtn").innerHTML = "walo";
+    }
+  }
+});
+function menuClick() {
+  if (window.innerWidth <= 593) {
+    $(".smalldropdown").toggle(30);
+  }
+  $(".bigdropdown").toggle(30);
+}
+function modeToggle() {
+  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  if (prefersDarkScheme.matches) {
+    document.body.classList.toggle("light-mode");
+    if (localStorage.getItem("mode") == "light") {
+      localStorage.setItem("mode", "dark");
+    } else {
+      localStorage.setItem("mode", "light");
+    }
+  } else {
+    document.body.classList.toggle("dark-mode");
+    if (localStorage.getItem("mode") == "dark") {
+      localStorage.setItem("mode", "light");
+    } else {
+      localStorage.setItem("mode", "dark");
+    }
+  }
+  if (document.getElementById("modeBtn").innerHTML == "pimeja") {
+    document.getElementById("modeBtn").innerHTML = "walo";
+  } else {
+    document.getElementById("modeBtn").innerHTML = "pimeja";
+  }
+}
+</script>
+
+<!--Load writing script-->
+<script>
+  $(document).ready(function() {
+    if (localStorage.getItem("fontscript") == "linja_pona") {
+      $("body").toggleClass("linjapona");
+      $("x-sp").each(function() {
+        if ($(this).css("display") == "none"){
+          $(this).css("display", "contents");
+        } else {
+          $(this).css("display", "none");
+        }
+      });
+      $("x-latn").each(function() {
+        if ($(this).css("display") == "none"){
+          $(this).css("display", "contents");
+        } else {
+          $(this).css("display", "none");
+        }
+      });
+    }
+  });
+</script>
+<!--linja pona toggle-->
+<script>
+  function linjapona() {
+    $("body").toggleClass("linjapona");
+    $("x-sp").each(function() {
+      if ($(this).css("display") == "none"){
+        $(this).css("display", "contents");
+      } else {
+        $(this).css("display", "none");
+      }
+    });
+    $("x-latn").each(function() {
+      if ($(this).css("display") == "none"){
+        $(this).css("display", "contents");
+      } else {
+        $(this).css("display", "none");
+      }
+    });
+    if (localStorage.getItem("fontscript") != "linja_pona") {
+      localStorage.setItem("fontscript", "linja_pona");
+    } else {
+      localStorage.setItem("fontscript", "latin");
+    }
+  }
+</script>
+</body>
+</html>
