@@ -300,6 +300,13 @@ button.center {
   margin: 11px 0px;
 }
 
+code {
+    background-color: var(--bg-color);
+    font-family: monospace;
+    border-radius: 3px;
+    padding: 0px 3px;
+}
+
 th {
   padding-right: 20px;
 }
