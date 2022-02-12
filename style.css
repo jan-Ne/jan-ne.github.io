@@ -170,7 +170,7 @@ header button:focus {
 .selected {
   position: relative;
   left: -8px;
-  border-left: 2px solid white;
+  border-left: 2px solid var(--text-color);
   padding-left: 6px;
   border-radius: 2px;
 }
