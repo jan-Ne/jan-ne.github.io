@@ -167,6 +167,14 @@ header button:focus {
   display: block;
 }
 
+.selected {
+  position: relative;
+  left: -8px;
+  border-left: 2px solid white;
+  padding-left: 6px;
+  border-radius: 2px;
+}
+
 .shelf h1 {
   margin: 0px;
   text-align: center;
