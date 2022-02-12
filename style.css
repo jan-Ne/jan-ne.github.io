@@ -277,6 +277,19 @@ button.center {
   transform-origin: 0 0;
 }
 
+.content h1 {
+  scroll-margin: 53px;
+}
+
+.content h3 {
+  scroll-margin: 50px;
+}
+
+.content a {
+  color: #4980f8;
+  text-decoration: none;
+}
+
 .translate-icon {
   position: relative;
   left: 730px;
@@ -289,19 +302,6 @@ button.center {
   font-variant: small-caps;
   font-weight: bold;
   font-size: 22px;
-}
-
-.content h1 {
-  scroll-margin: 53px;
-}
-
-.content h3 {
-  scroll-margin: 50px;
-}
-
-.content a {
-  color: #4980f8;
-  text-decoration: none;
 }
 
 .page {
