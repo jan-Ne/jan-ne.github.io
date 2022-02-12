@@ -296,7 +296,8 @@ button.center {
   top: -96px;
   display: block;
   width: 37px;
-  padding: 7px;
+  padding-bottom: 7px;
+  text-align: center;
   background-color: var(--dropdown-color);
   color: var(--text-color);
   font-variant: small-caps;
