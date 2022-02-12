@@ -176,14 +176,10 @@ header button:focus {
 }
 
 .shelf h1 {
-  margin: 0px;
-  text-align: center;
-}
-
-.shelf-title {
   grid-column: span 5;
   text-align: center;
-  margin-bottom: -10px;
+  margin-bottom: 10px;
+  font-size: 22px;
 }
 
 .book, .item {
