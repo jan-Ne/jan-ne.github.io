@@ -305,6 +305,10 @@ button.center {
   font-size: 22px;
 }
 
+.justify p {
+  text-align: justify;
+}
+
 .page {
   height: 54.125em;
   padding: 96px;
