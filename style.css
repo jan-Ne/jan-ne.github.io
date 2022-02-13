@@ -440,23 +440,23 @@ x-sp {
   font-family:"linja pona";
 }
 
-.linjapona header a {
+.linjapona header a [lang|=tok] {
   font-size: 27px;
 }
 
-.linjapona .dropdownmenu li {
+.linjapona .dropdownmenu li [lang|=tok] {
   font-size: 27px;
 }
 
-.linjapona h1 {
+.linjapona h1 [lang|=tok] {
   font-size: 43px;
 }
 
-.linjapona h3 {
+.linjapona h3 [lang|=tok] {
   font-size: 29px;
 }
 
-.linjapona a, .linjapona p {
+.linjapona a [lang|=tok], .linjapona p [lang|=tok] {
   font-size: 26px;
 }
 
