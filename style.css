@@ -436,33 +436,38 @@ x-sp {
   font-family: "linja pona";
 }
 
-.linjapona [lang|=tok], .linjapona [lang|=tok] * {
+.linjapona, .linjapona * {
   font-family:"linja pona";
 }
 
-.linjapona header a [lang|=tok] {
+.linjapona header a {
   font-size: 27px;
 }
 
-.linjapona .dropdownmenu li [lang|=tok] {
+.linjapona .dropdownmenu li {
   font-size: 27px;
 }
 
-.linjapona h1 [lang|=tok] {
+.linjapona h1 {
   font-size: 43px;
 }
 
-.linjapona h3 [lang|=tok] {
+.linjapona h3 {
   font-size: 29px;
 }
 
-.linjapona a [lang|=tok], .linjapona p [lang|=tok] {
+.linjapona a, .linjapona p {
   font-size: 26px;
 }
 
 .linjapona .page a {
   font-family: "Open Sans";
   font-size: 19px;
+}
+
+.linjapona [lang|=en], .linjapona [lang|=en] *, .linjapona [lang|=fr], .linjapona [lang|=fr] * {
+    font-family: "Open Sans";
+    font-size: revert;
 }
 
 /*Media Queries*/
