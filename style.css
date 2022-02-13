@@ -465,7 +465,7 @@ x-sp {
   font-size: 19px;
 }
 
-.linjapona [lang|=en], .linjapona [lang|=en] * {
+.linjapona [lang|=en], .linjapona [lang|=fr] * {
     font-family: "Open Sans";
     font-size: revert;
 }
