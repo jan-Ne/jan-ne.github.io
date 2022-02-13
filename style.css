@@ -59,6 +59,48 @@ body.dark-mode .dark-invert {
   }
 }
 
+/*linja pona*/
+x-sp {
+  display: none;
+  font-family: "linja pona";
+}
+
+.linjapona, .linjapona * {
+  font-family:"linja pona";
+}
+
+.linjapona header a {
+  font-size: 27px;
+}
+
+.linjapona .dropdownmenu li {
+  font-size: 27px;
+}
+
+.linjapona h1 {
+  font-size: 43px;
+}
+
+.linjapona h3 {
+  font-size: 29px;
+}
+
+.linjapona a, .linjapona p {
+  font-size: 26px;
+}
+
+.linjapona .page a {
+  font-family: "Open Sans";
+  font-size: 19px;
+}
+
+.linjapona [lang|=en], .linjapona [lang|=en] *, .linjapona [lang|=fr], .linjapona [lang|=fr] * {
+    font-family: "Open Sans";
+    font-size: revert;
+}
+
+/*Main*/
+
 header {
   background-color: var(--header-color);
   color: white;
@@ -428,46 +470,6 @@ hr.pagebreak {
 
 #meli_Kapunse, #jan_Kense_en_jan_Kete, #meli_lili_pi_len_lawa_loje, #meli_lili_pi_walo_lete, #jan_Kunpesisen, #meli_lili_pi_kasi_loje_pakala {
   scroll-margin: 280px;
-}
-
-/*linja pona*/
-x-sp {
-  display: none;
-  font-family: "linja pona";
-}
-
-.linjapona, .linjapona * {
-  font-family:"linja pona";
-}
-
-.linjapona header a {
-  font-size: 27px;
-}
-
-.linjapona .dropdownmenu li {
-  font-size: 27px;
-}
-
-.linjapona h1 {
-  font-size: 43px;
-}
-
-.linjapona h3 {
-  font-size: 29px;
-}
-
-.linjapona a, .linjapona p {
-  font-size: 26px;
-}
-
-.linjapona .page a {
-  font-family: "Open Sans";
-  font-size: 19px;
-}
-
-.linjapona [lang|=en], .linjapona [lang|=en] *, .linjapona [lang|=fr], .linjapona [lang|=fr] * {
-    font-family: "Open Sans";
-    font-size: revert;
 }
 
 /*Media Queries*/
