@@ -436,7 +436,7 @@ x-sp {
   font-family: "linja pona";
 }
 
-.linjapona, .linjapona * {
+.linjapona [lang|=tok], .linjapona [lang|=tok] * {
   font-family:"linja pona";
 }
 
@@ -463,11 +463,6 @@ x-sp {
 .linjapona .page a {
   font-family: "Open Sans";
   font-size: 19px;
-}
-
-.linjapona [lang|=en], .linjapona [lang|=fr] * {
-    font-family: "Open Sans";
-    font-size: revert;
 }
 
 /*Media Queries*/
