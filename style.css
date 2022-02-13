@@ -466,6 +466,7 @@ hr.pagebreak {
   background-color: var(--content-color);
   margin-bottom: 8px;
   word-break: break-all;
+  max-width: 624px;
 }
 
 #meli_Kapunse, #jan_Kense_en_jan_Kete, #meli_lili_pi_len_lawa_loje, #meli_lili_pi_walo_lete, #jan_Kunpesisen, #meli_lili_pi_kasi_loje_pakala {
