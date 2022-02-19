@@ -506,7 +506,7 @@ hr.pagebreak {
 }
 
 @media only screen and (max-width: 939px) {
-  .translate-icon {
+  .content .translate-icon {
     position: initial;
     float: right;
 }
@@ -545,7 +545,7 @@ hr.pagebreak {
   .content {
     padding-top: 0px;
   }
-  .translate-icon {
+  .content .translate-icon {
     display: none;
   }
   .page {
