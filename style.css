@@ -218,7 +218,6 @@ header button:focus {
 }
 
 .shelf h1 {
-  grid-column: span 5;
   text-align: center;
   margin-bottom: 10px;
   font-size: 22px;
