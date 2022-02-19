@@ -545,6 +545,9 @@ hr.pagebreak {
   .content {
     padding-top: 0px;
   }
+  .translate-icon {
+    display: none;
+  }
   .page {
     padding-bottom: 0px;
   }
