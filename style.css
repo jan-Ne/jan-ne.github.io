@@ -534,7 +534,7 @@ hr.pagebreak {
 
 /*Printed Page*/
 @media print {
-  header, .shelf {
+  header, .shelf, .bar, .content .translate-icon {
     display: none;
   }
   hr.pagebreak {
@@ -545,13 +545,7 @@ hr.pagebreak {
   .content {
     padding-top: 0px;
   }
-  .content .translate-icon {
-    display: none;
-  }
   .page {
     padding-bottom: 0px;
-  }
-  .bar {
-    display:none;
   }
 }
