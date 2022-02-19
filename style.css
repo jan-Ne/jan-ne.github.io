@@ -334,10 +334,11 @@ button.center {
 
 .content .translate-icon {
   position: relative;
-  left: 730px;
-  top: -96px;
+  left: 745px;
+  top: -78px;
   display: block;
   width: 37px;
+  margin: -18.5px -15px;
   padding-bottom: 7px;
   text-align: center;
   background-color: var(--dropdown-color);
