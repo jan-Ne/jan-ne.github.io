@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ilo pi ante nimi | lipu pi jan Ne</title>
+  <title>Transliterator | lipu pi jan Ne</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="toki pona, jan Ne, lipu, transliteration, tokiponization, names, ilo pi ante nimi">
-  <link rel="stylesheet" type="text/css" href="https://jan-ne.github.io/style.css">
-  <link rel="shortcut icon" href="https://jan-ne.github.io/janNe.png">
+  <meta name="keywords" content="toki pona, jan Ne, lipu, transliteration, transliterator, tokiponization, names, ilo pi ante nimi">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="shortcut icon" href="../janNe.png">
 <body>
   <header>
-      <a href=".."><img src="https://jan-ne.github.io/janNe.png" alt="jan Ne" height="77"></a>
+      <a href=".."><img src="../janNe.png" alt="jan Ne" height="77"></a>
       <a class="home" href=".."><x-latn>lipu pi jan Ne</x-latn><x-sp>lipu pi jan [_nena_esun]</x-sp></a>
     <nav>
       <ul>
@@ -36,7 +36,7 @@
       <li><a href="otherwords">Other Words</a></li>
     </ul>
     <ul>
-      <li><a href="ilo_pi_ante_nimi">ilo pi ante nimi</a></li>
+      <li><a href="transliterator">Transliterator</a></li>
       <li><a href="tpize">Phonetic Guidelines</a></li>
       <li><a href="names">Place Names and Language Names</a></li>
     </ul>
@@ -50,7 +50,7 @@
     <h1 style="margin:0px 0px 10px 0px">ilo pi ante nimi</h1>
     <h2 style="margin:0px">Enter <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank">IPA</a> transcription:</h2>
     <h3 style="font-size: 13px; margin:0px 0px 10px 0px">For most accurate results, use exact <a href="https://en.wikipedia.org/wiki/Phone_(phonetics)" target="_blank">phones</a> instead of general <a href="https://en.wikipedia.org/wiki/Phoneme" target="_blank">phonemes</a><br>and delineate syllables with <code>.</code></h3>
-    <input id="name" onchange="test()" autocomplete="off" style="
+    <input id="name" onchange="transliterate()" autocomplete="off" style="
 		font-family: Arial;
 		font-size: 24px;
 		border: 2px solid #dedede;
@@ -72,7 +72,7 @@
 		</footer>
   </div>
 
-<script src="test.js"></script>
+<script src="transliterator.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 $(document).ready(function() {
