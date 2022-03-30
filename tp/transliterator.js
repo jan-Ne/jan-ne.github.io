@@ -1,6 +1,9 @@
 function transliterate(){
 	var input = document.getElementById("name").value;
 	document.getElementById("nimi").innerHTML = tpize(input);
+	if (input == ""){
+		document.getElementById("nimi").innerHTML = \xa0
+	}
 }
 function tpize(n){
 			//Boundary marking
