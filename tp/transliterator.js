@@ -18,7 +18,7 @@ function tpize(n){
 			.replace(/(b|f|ʙ|ɸ|β|ʘ|ɓ)/g, "p").replace(/d|ð|ǀ|ǃ|ɗ|ᶑ/g,"t").replace(/(g|ɡ|c|ɟ|q|ɢ|x|ɣ|χ|ʁ|ʀ|ʡ|ʜ|ʢ|ɠ|ʛ)/g,"k")
 			.replace(/(v|ⱱ|ɹ|ʋ|ɰ|ʍ|\u02DE)/g,"w").replace(/(r|ɾ|ɽ|ɺ|ɫ|ɭ|ʎ|ʟ)/g,"l").replace(/(ç|ʝ|ɥ|ʄ)/g,"j")
 			//Syllabic consonant vowel insertion
-			.replace(/([^aeioun])\u0329/g, "$1ə").replace(/n\u0329/g, "ən").replace(/([^aeioun])\u030D/g, "$1ə").replace(/n\u030D/g, "ən").replace(/(?<=(#|\s))n/g, "ən")
+			.replace(/([^aeioun])\u0329/g, "$1ə").replace(/n\u0329/g, "ən").replace(/([^aeioun])\u030D/g, "$1ə").replace(/n\u030D/g, "ən").replace(/(?<=(#|\s))n(?=[^aeiou])/g, "ən")
 			//Glides and Diphthongs
 				//Rewriting vowel+glide as diphthong
 				.replace(/([aeiou])j(?=[^aeiou])/g, "$1i").replace(/([aeiou])w(?=[^aeiou])/g, "$1u")
