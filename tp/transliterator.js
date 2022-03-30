@@ -18,7 +18,7 @@ function tpize(n){
 			.replace(/(b|f|ʙ|ɸ|β|ʘ|ɓ)/g, "p").replace(/d|ð|ǀ|ǃ|ɗ|ᶑ/g,"t").replace(/(g|ɡ|c|ɟ|q|ɢ|x|ɣ|χ|ʁ|ʀ|ʡ|ʜ|ʢ|ɠ|ʛ)/g,"k")
 			.replace(/(v|ⱱ|ɹ|ʋ|ɰ|ʍ|\u02DE)/g,"w").replace(/(r|ɾ|ɽ|ɺ|ɫ|ɭ|ʎ|ʟ)/g,"l").replace(/(ç|ʝ|ɥ|ʄ)/g,"j")
 			//Syllabic consonant vowel insertion
-			.replace(/([^aeioun])\u0329/g, "$1ə").replace(/n\u0329/g, "ən").replace(/([^aeioun])\u030D/g, "$1ə").replace(/n\u030D/g, "ən").replace(/(?<=(#|\s))n(?=[^aeiou])/g, "ən")
+			.replace(/([^aeioun])\u0329/g, "$1ə").replace(/n\u0329/g, "ən").replace(/([^aeioun])\u030D/g, "$1ə").replace(/n\u030D/g, "ən").replace(/(?<=(#|\s)(ˈ|')*)n(?=[^aeiou])/g, "ən")
 			//Glides and Diphthongs
 				//Rewriting vowel+glide as diphthong
 				.replace(/([aeiou])j(?=[^aeiou])/g, "$1i").replace(/([aeiou])w(?=[^aeiou])/g, "$1u")
@@ -26,16 +26,20 @@ function tpize(n){
 				.replace(/([^aeiou#\s\.ˈ'ˌ])w([aeiou])([aei])/g, "$1$2w$3").replace(/([^aeiou#\s\.ˈ'ˌ])j([aeiou])([aeou])/g, "$1$2j$3")
 				//Expanding noninitial syllables that have glides
 				.replace(/(?<!(#|\s))([^aeiou#\s\.ˈ'ˌ])w(?=[aeiou])/g, "$2u.w").replace(/(?<!(#|\s))([^aeiou#\s\.ˈ'ˌ])j(?=[aeiou])/g, "$2i.j")
+				//Double vowel deletion
+				.replace(/(?<=[aeiou])[aeiou]/g, "")
 			//Schwa
 				//Word Final ə/ɚ -> a
 				.replace(/əw(?=#)/g, "a").replace(/ə(?=#)/g, "a")
+				//word initial unstressed [ə] deleted
+				.replace(/(?<=(#|\s))(?!<(ˈ|'|ˌ))ə(?=(#|\s|\.|ˈ|'|ˌ))/g, "")
 				//replace with previous vowel or otherwise next vowel
 				.replace(/([aeiou])([^aeiou]*)\.([^aeiou]*)ə/g,"$1$2.$3$1")
 				.replace(/ə([^aeiou]*)(\.(([^aeiou]*)ə([^aeiou]*))*)\.([^aeiou]*)([aeiou])/g,"$7$1$4$7$5.$6$7")
-				//word initial unstressed [ə] deleted
-				.replace(/(?<=#)(?!<(ˈ|'|ˌ))ə(?=[#\s\.ˈ'ˌ])/g, "")
+				//ə -> a
 				.replace(/ə/g, "a")
 			//Remove stress markings
+			.replace(/(?<=(#|\s))ˈ/g, "").replace(/(?<=(#|\s))'/g, "")
 			.replace(/(\.ˈ|\.'|ˈ|'|ˌ)/g, ".")
 			//Order Changes
 				//m.n -> .m and C.n -> n.C (as in "Lubnan" to "Lunpan")
@@ -56,8 +60,6 @@ function tpize(n){
 				.replace(/ti/g,"si").replace(/n\.m/g,".m").replace(/n\.n/g,".n")
 				//Glides between double vowels across syllable boundaries
 				.replace(/(?<=[aou]\.)a/g,"wa").replace(/(?<=[ie]\.)a/g,"ja").replace(/(?<=[ou]\.)e/g,"we").replace(/(?<=[aei]\.)e/g,"je").replace(/(?<=[aeiou]\.)i/g,"wi").replace(/(?<=[aeiou]\.)o/g,"jo").replace(/(?<=[aeiou]\.)u/g,"ju")
-				//Double vowel deletion
-				.replace(/(?<=[aeiou])[aeiou]/g, "")
 				//Final consonant deletion
 				.replace(/[^aeioun]*(?=[^aeiou]*(\.|#|\s))/g, "")
 			//Removal of dividing marks
