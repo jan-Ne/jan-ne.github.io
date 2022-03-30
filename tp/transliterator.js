@@ -53,7 +53,8 @@ function tpize(n){
 			//Syllable Structure Maintenance
 				//Consonant cluster reduction (dominant plosive kept)
 				.replace(/s(?=[ptkl])/g,"").replace(/(?<=[ptk])(w|l|j)/g,"")
-				.replace(/(?<=[mnptkswlj])[mnptkswlj]/g, "")
+				.replace(/(?<=[mnptkswlj])[ptkswlj]/g, "")
+				.replace(/(?<=n)n/g, "")
 				//Final consonant deletion
 				.replace(/[^aeioun]*(?=[^aeiou]*(\.|#|\s))/g, "")
 				//wo, wu, ji
