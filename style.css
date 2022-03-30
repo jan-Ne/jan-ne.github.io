@@ -352,6 +352,17 @@ button.center {
   font-size: 22px;
 }
 
+#nimi {
+		font-size: 24px;
+		margin: 5px auto;
+		padding: 0px 15px;
+		border: 2px solid #dedede;
+		border-radius: 3px;
+    height: 33px;
+		width: fit-content;
+    min-width: 6.234px;
+}
+ 
 .justify p {
   text-align: justify;
 }
