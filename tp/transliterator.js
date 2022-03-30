@@ -26,7 +26,7 @@ function tpize(n){
 				.replace(/([^aeiou#\s\.ˈ'ˌ])w([aeiou])([aei])/g, "$1$2w$3").replace(/([^aeiou#\s\.ˈ'ˌ])j([aeiou])([aeou])/g, "$1$2j$3")
 				//Expanding noninitial syllables that have glides
 				.replace(/(?<!(#|\s))([^aeiou#\s\.ˈ'ˌ])w(?=[aeiou])/g, "$2u.w").replace(/(?<!(#|\s))([^aeiou#\s\.ˈ'ˌ])j(?=[aeiou])/g, "$2i.j")
-				//Double vowel deletion
+				//Diphthong reduction
 				.replace(/(?<=[aeiou])[aeiou]/g, "")
 			//Schwa
 				//Word Final ə/ɚ -> a
@@ -54,14 +54,16 @@ function tpize(n){
 				//Consonant cluster reduction (dominant plosive kept)
 				.replace(/s(?=[ptkl])/g,"").replace(/(?<=[ptk])(w|l|j)/g,"")
 				.replace(/(?<=[mnptkswlj])[mnptkswlj]/g, "")
+				//Final consonant deletion
+				.replace(/[^aeioun]*(?=[^aeiou]*(\.|#|\s))/g, "")
 				//wo, wu, ji
 				.replace(/wo/g,"o").replace(/wu/g,"u").replace(/ji/g,"i")
 				//ti, n.m, n.n
 				.replace(/ti/g,"si").replace(/n\.m/g,".m").replace(/n\.n/g,".n")
 				//Glides between double vowels across syllable boundaries
 				.replace(/(?<=[aou]\.)a/g,"wa").replace(/(?<=[ie]\.)a/g,"ja").replace(/(?<=[ou]\.)e/g,"we").replace(/(?<=[aei]\.)e/g,"je").replace(/(?<=[aeiou]\.)i/g,"wi").replace(/(?<=[aeiou]\.)o/g,"jo").replace(/(?<=[aeiou]\.)u/g,"ju")
-				//Final consonant deletion
-				.replace(/[^aeioun]*(?=[^aeiou]*(\.|#|\s))/g, "")
+				//Double vowel deletion
+				.replace(/(?<=[aeiou])[aeiou]/g, "")
 			//Removal of dividing marks
 			.replace(/(#|\.)/g,"")
 			//Capitalization
