@@ -15,8 +15,8 @@ function tpize(n){
 			//Consonants (and final ʃ -> si, c => ki, and Xʲ -> Xi)
 			.replace(/ɱ/g, "m").replace(/(ɳ|ɲ|ŋ|ɴ|m(?=(\.|ˈ|'|#|\s))|\u0303)/g, "n").replace(/(?<=[^i])(ʃ|ʒ|ɕ|ʑ)(?=#)/g,".si").replace(/(c|ɟ)(?=#)/g,".ki").replace(/([^aeiou])ʲ(?=#)/g,".$1i")
 			.replace(/(z|ʃ|ʒ|ɕ|ʑ|ʂ|ʐ|θ|ɬ|ɮ|ts|dz|tʃ|dʒ|ʈʂ|ɖʐ|tɕ|dʑ|tɬ|dɮ|ɧ)/g,"s")
-			.replace(/(b|f|ʙ|ɸ|β|ʘ|ɓ)/g, "p").replace(/d|ð|ǀ|ǃ|ɗ|ᶑ/g,"t").replace(/(g|ɡ|c|ɟ|q|ɢ|x|ɣ|χ|ʁ|ʀ|ʡ|ʜ|ʢ|ɠ|ʛ)/g,"k")
-			.replace(/(v|ⱱ|ɹ|ʋ|ɰ|ʍ|\u02DE)/g,"w").replace(/(r|ɾ|ɽ|ɺ|ɫ|ɭ|ʎ|ʟ)/g,"l").replace(/(ç|ʝ|ɥ|ʄ)/g,"j")
+			.replace(/(b|f|ʙ|ɸ|β|ʘ|ɓ)/g, "p").replace(/d|ð|ǀ|ǃ|ɗ|ᶑ|ɖ/g,"t").replace(/(g|ɡ|c|ɟ|q|ɢ|x|ɣ|χ|ʁ|ʀ|ʡ|ʜ|ʢ|ɠ|ʛ)/g,"k")
+			.replace(/(v|ⱱ|ɹ|ɻ|ʋ|ɰ|ʍ|\u02DE)/g,"w").replace(/(r|ɾ|ɽ|ɺ|ɫ|ɭ|ʎ|ʟ)/g,"l").replace(/(ç|ʝ|ɥ|ʄ)/g,"j")
 			//Syllabic consonant vowel insertion
 			.replace(/([^aeioun])\u0329/g, "$1ə").replace(/n\u0329/g, "ən").replace(/([^aeioun])\u030D/g, "$1ə").replace(/n\u030D/g, "ən").replace(/(?<=(#|\s)(ˈ|')*)n(?=[^aeiou])/g, "ən")
 			//Glides and Diphthongs
