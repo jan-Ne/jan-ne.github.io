@@ -11,6 +11,7 @@
   --dropdown-color: #e9e9e9;
   --header-color: #6393F9;
   --content-color: white;
+  --link-color: #326DF7;
 }
 
 body {
@@ -39,6 +40,7 @@ body.dark-mode {
   --dropdown-color: #18181b;
   --header-color: #08090c;
   --content-color: #1e1e20;
+  --link-color: #6393F9;
 }
 
 body.dark-mode .dark-invert {
@@ -332,7 +334,7 @@ button.center {
 }
 
 .content a {
-  color: #6393f9;
+  color: var(--link-color);
   text-decoration: none;
 }
 
