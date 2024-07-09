@@ -62,13 +62,18 @@ body.dark-mode .dark-invert {
 }
 
 /*linja pona*/
+:lang(tok:Zzzz){
+  display: none;
+  font-family: "linja pona";
+}
+
 x-sp {
   display: none;
   font-family: "linja pona";
 }
 
 .linjapona, .linjapona * {
-  font-family:"linja pona";
+  font-family: "linja pona";
 }
 
 .linjapona header a {
