@@ -62,7 +62,7 @@ body.dark-mode .dark-invert {
 }
 
 /*linja pona*/
-:lang(tok:Zzzz){
+[lang|=tok-Zzzz]{
   display: none;
   font-family: "linja pona";
 }
