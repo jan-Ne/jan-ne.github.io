@@ -61,79 +61,6 @@ body.dark-mode .dark-invert {
   }
 }
 
-/*sitelen pona*/
-:lang(tok-Zzzz){
-  font-family: "linja pona";
-}
-
-:not(html)[lang="tok-Zzzz"]{
-  display: none;
-}
-
-:lang(tok-Zzzz) header a {
-  font-size: 27px;
-}
-
-:lang(tok-Zzzz) .dropdownmenu li {
-  font-size: 27px;
-}
-
-:lang(tok-Zzzz) h1 {
-  font-size: 43px;
-}
-
-:lang(tok-Zzzz) h3 {
-  font-size: 29px;
-}
-
-:lang(tok-Zzzz) a, :lang(tok-Zzzz) p {
-  font-size: 26px;
-}
-
-:lang(tok-Zzzz) .page a {
-  font-family: "Open Sans";
-  font-size: 19px;
-}
-
-x-sp {
-  display: none;
-  font-family: "linja pona";
-}
-
-.linjapona, .linjapona * {
-  font-family: "linja pona";
-}
-
-.linjapona header a {
-  font-size: 27px;
-}
-
-.linjapona .dropdownmenu li {
-  font-size: 27px;
-}
-
-.linjapona h1 {
-  font-size: 43px;
-}
-
-.linjapona h3 {
-  font-size: 29px;
-}
-
-.linjapona a, .linjapona p {
-  font-size: 26px;
-}
-
-.linjapona .page a {
-  font-family: "Open Sans";
-  font-size: 19px;
-}
-
-.linjapona [lang|=en], .linjapona [lang|=en] *, .linjapona [lang|=fr], .linjapona [lang|=fr] * {
-    font-family: "Open Sans";
-    font-size: revert;
-}
-
 /*Main*/
 
 header {
@@ -522,6 +449,79 @@ hr.pagebreak {
 
 #meli_Kapunse, #jan_Kense_en_jan_Kete, #meli_lili_pi_len_lawa_loje, #meli_lili_pi_walo_lete, #jan_Kunpesisen, #meli_lili_pi_kasi_loje_pakala {
   scroll-margin: 280px;
+}
+
+/*sitelen pona*/
+:lang(tok-Zzzz){
+  font-family: "linja pona";
+}
+
+:not(html)[lang="tok-Zzzz"]{
+  display: none;
+}
+
+:lang(tok-Zzzz) header a {
+  font-size: 27px;
+}
+
+:lang(tok-Zzzz) .dropdownmenu li {
+  font-size: 27px;
+}
+
+:lang(tok-Zzzz) h1 {
+  font-size: 43px;
+}
+
+:lang(tok-Zzzz) h3 {
+  font-size: 29px;
+}
+
+:lang(tok-Zzzz) a, :lang(tok-Zzzz) p {
+  font-size: 26px;
+}
+
+:lang(tok-Zzzz) .page a {
+  font-family: "Open Sans";
+  font-size: 19px;
+}
+
+x-sp {
+  display: none;
+  font-family: "linja pona";
+}
+
+.linjapona, .linjapona * {
+  font-family: "linja pona";
+}
+
+.linjapona header a {
+  font-size: 27px;
+}
+
+.linjapona .dropdownmenu li {
+  font-size: 27px;
+}
+
+.linjapona h1 {
+  font-size: 43px;
+}
+
+.linjapona h3 {
+  font-size: 29px;
+}
+
+.linjapona a, .linjapona p {
+  font-size: 26px;
+}
+
+.linjapona .page a {
+  font-family: "Open Sans";
+  font-size: 19px;
+}
+
+.linjapona [lang|=en], .linjapona [lang|=en] *, .linjapona [lang|=fr], .linjapona [lang|=fr] * {
+    font-family: "Open Sans";
+    font-size: revert;
 }
 
 /*Media Queries*/
