@@ -63,8 +63,11 @@ body.dark-mode .dark-invert {
 
 /*sitelen pona*/
 :lang(tok-Zzzz){
-  display: none;
   font-family: "linja pona";
+}
+
+:lang(tok-Zzzz):not(html){
+  display: none;
 }
 
 x-sp {
