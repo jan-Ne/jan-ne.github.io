@@ -33,7 +33,6 @@ function modeToggle() {
 
 // Toggle sitelen pona
 function sitelenpona() {
-    $('html').attr('lang', 'tok-Zzzz');
     $("[lang='tok-Zzzz']").each(function() {
       if ($(this).css("display") == "none"){
         $(this).css("display", "contents");
@@ -50,7 +49,9 @@ function sitelenpona() {
     });
     if (localStorage.getItem("script") != "tok-Zzzz") {
       localStorage.setItem("script", "tok-Zzzz");
+      $('html').attr('lang', 'tok-Zzzz');
     } else {
       localStorage.setItem("script", "tok-Latn");
+      $('html').attr('lang', 'tok-Latn');
     }
   }
