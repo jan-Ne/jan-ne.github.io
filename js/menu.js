@@ -34,17 +34,21 @@ function modeToggle() {
 // Toggle sitelen pona
 function sitelenpona() {
     $("[lang='tok-Zzzz']").each(function() {
-      if ($(this).css("display") == "none"){
-        $(this).css("display", "contents");
-      } else {
-        $(this).css("display", "none");
+      if ($(this).prop('tagName') !== 'HTML') {
+        if ($(this).css("display") == "none"){
+          $(this).css("display", "contents");
+        } else {
+          $(this).css("display", "none");
+        }
       }
     });
     $("[lang='tok-Latn']").each(function() {
-      if ($(this).css("display") == "none"){
-        $(this).css("display", "contents");
-      } else {
-        $(this).css("display", "none");
+      if ($(this).prop('tagName') !== 'HTML') {
+        if ($(this).css("display") == "none"){
+          $(this).css("display", "contents");
+        } else {
+          $(this).css("display", "none");
+        }
       }
     });
     if (localStorage.getItem("script") != "tok-Zzzz") {
