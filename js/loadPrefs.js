@@ -1,4 +1,4 @@
-// Load Light/Dark Mode
+// Load light/dark mode
 $(document).ready(function() {
   var prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
   var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
@@ -25,3 +25,23 @@ $(document).ready(function() {
     }
   }
 });
+
+// Load writing script
+$(document).ready(function() {
+    if (localStorage.getItem("script") == "tok-Zzzz") {
+      $("[lang='tok-Zzzz']").each(function() {
+        if ($(this).css("display") == "none"){
+          $(this).css("display", "contents");
+        } else {
+          $(this).css("display", "none");
+        }
+      });
+      $("[lang='tok-Latn']").each(function() {
+        if ($(this).css("display") == "none"){
+          $(this).css("display", "contents");
+        } else {
+          $(this).css("display", "none");
+        }
+      });
+    }
+  });
