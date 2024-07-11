@@ -70,6 +70,31 @@ body.dark-mode .dark-invert {
   display: none;
 }
 
+:lang(tok-Zzzz) header a {
+  font-size: 27px;
+}
+
+:lang(tok-Zzzz) .dropdownmenu li {
+  font-size: 27px;
+}
+
+:lang(tok-Zzzz) h1 {
+  font-size: 43px;
+}
+
+:lang(tok-Zzzz) h3 {
+  font-size: 29px;
+}
+
+:lang(tok-Zzzz) a, :lang(tok-Zzzz) p {
+  font-size: 26px;
+}
+
+:lang(tok-Zzzz) .page a {
+  font-family: "Open Sans";
+  font-size: 19px;
+}
+
 x-sp {
   display: none;
   font-family: "linja pona";
