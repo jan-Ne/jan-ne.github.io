@@ -31,17 +31,21 @@ $(document).ready(function() {
     if (localStorage.getItem("script") == "tok-Zzzz") {
       $('html').attr('lang', localStorage.getItem("script"));
       $("[lang='tok-Zzzz']").each(function() {
-        if ($(this).css("display") == "none"){
-          $(this).css("display", "contents");
-        } else {
-          $(this).css("display", "none");
+        if ($(this).prop('tagName') !== 'HTML') {
+          if ($(this).css("display") == "none"){
+            $(this).css("display", "contents");
+          } else {
+            $(this).css("display", "none");
+          }
         }
       });
       $("[lang='tok-Latn']").each(function() {
-        if ($(this).css("display") == "none"){
-          $(this).css("display", "contents");
-        } else {
-          $(this).css("display", "none");
+        if ($(this).prop('tagName') !== 'HTML') {
+          if ($(this).css("display") == "none"){
+            $(this).css("display", "contents");
+          } else {
+            $(this).css("display", "none");
+          }
         }
       });
     }
