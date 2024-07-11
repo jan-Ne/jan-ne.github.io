@@ -29,6 +29,7 @@ $(document).ready(function() {
 // Load writing script
 $(document).ready(function() {
     if (localStorage.getItem("script") == "tok-Zzzz") {
+      $('html').attr('lang', localStorage.getItem("script"));
       $("[lang='tok-Zzzz']").each(function() {
         if ($(this).css("display") == "none"){
           $(this).css("display", "contents");
