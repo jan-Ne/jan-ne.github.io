@@ -33,6 +33,7 @@ function modeToggle() {
 
 // Toggle sitelen pona
 function sitelenpona() {
+    $('html').attr('lang', 'tok-Zzzz');
     $("[lang='tok-Zzzz']").each(function() {
       if ($(this).css("display") == "none"){
         $(this).css("display", "contents");
