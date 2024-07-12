@@ -485,6 +485,10 @@ hr.pagebreak {
   font-size: 19px;
 }
 
+:not(:lang(tok-Zzzz)) {
+  font-size: revert;
+}
+
 x-sp {
   display: none;
   font-family: "linja pona";
