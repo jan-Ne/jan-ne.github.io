@@ -485,8 +485,9 @@ hr.pagebreak {
   font-size: 19px;
 }
 
-:not(:lang(tok-Zzzz)) {
-  font-size: revert;
+:lang(tok-Zzzz) [lang|=en], :lang(tok-Zzzz) [lang|=en] *, :lang(tok-Zzzz) [lang|=fr], :lang(tok-Zzzz) [lang|=fr] * {
+    font-family: "Open Sans";
+    font-size: revert;
 }
 
 x-sp {
