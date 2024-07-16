@@ -5,26 +5,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="toki pona, jan Ne, lipu, books, literature, translations">
-  <link rel="stylesheet" type="text/css" href="../style.css">
-  <link rel="shortcut icon" href="../janNe.png">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="shortcut icon" href="/janNe.png">
 <body>
   <header>
-      <a href=".."><img src="../janNe.png" alt="jan Ne" height="77"></a>
-      <a class="home" href=".."><x-latn>lipu pi jan Ne</x-latn><x-sp style="display: inline; display: none;">lipu pi jan [_nena_esun]</x-sp></a>
+      <a href="/"><img src="/janNe.png" alt="jan Ne" height="77"></a>
+      <a class="home" href="/"><span lang="tok-Latn">lipu pi jan Ne</span><span lang="tok-Zzzz" style="display: inline; display: none;">lipu pi jan [_nena_esun]</span></a>
     <nav>
       <ul>
-        <li><a href="../tp"><x-latn>toki pona</x-latn><x-sp style="display: inline; display: none;">toki-pona</x-sp></a></li>
-        <li><a href="../lipu">lipu</a></li>
-        <li><a href="../ijo">ijo</a></li>
+        <li><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz" style="display: inline; display: none;">toki-pona</span></a></li>
+        <li><a href="/lipu">lipu</a></li>
+        <li><a href="/ijo">ijo</a></li>
       </ul>
       <span class="dropdown">
         <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
         <ul class="dropdownmenu">
-          <li class="smalldropdown" style="display: none;"><a href="../tp"><x-latn>toki pona</x-latn><x-sp>toki-pona</x-sp></a></li>
-          <li class="smalldropdown" style="display: none;"><a href="../lipu">lipu</a></li>
-          <li class="smalldropdown" style="display: none;"><a href="../ijo">ijo</a></li>
+          <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz">toki-pona</span></a></li>
+          <li class="smalldropdown" style="display: none;"><a href="/lipu">lipu</a></li>
+          <li class="smalldropdown" style="display: none;"><a href="/ijo">ijo</a></li>
           <li class="bigdropdown" onclick="modeToggle()" id="modeBtn" style="display: none;">pimeja</li>
-          <li class="bigdropdown" onclick="linjapona()" style="display: none;"><x-latn style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</x-latn><x-sp style="font-size: 22px; display: contents;">linja pona</x-sp></li>
+          <li class="bigdropdown" onclick="linjapona()" style="display: none;"><span lang="tok-Latn" style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</span><span lang="tok-Zzzz" style="font-size: 22px; display: contents;">linja pona</span></li>
         </ul>
       </span>
     </nav>
@@ -36,15 +36,15 @@
     </div>
     <div class="book">
       <a href="Esopo"><img src="the_aesop_for_children.jpg"></a>
-      <a href="Esopo" class="txt-center"><x-latn>toki musi pi jan Esopo</x-latn><x-sp>toki musi pi jan [_esun_soweli_open_pona_ona]</x-sp></a>
+      <a href="Esopo" class="txt-center"><span lang="tok-Latn">toki musi pi jan Esopo</span><span lang="tok-Zzzz">toki musi pi jan [_esun_soweli_open_pona_ona]</span></a>
     </div>
     <div class="book">
       <a href="jan-sama-Kin"><img src="grimm's_fairy_tales.jpg"></a>
-      <a href="jan-sama-Kin" class="txt-center"><x-latn>toki musi pi jan sama Kin</x-latn><x-sp>toki musi pi jan-sama [_kulupu_ijo_nimi]</x-sp></a>
+      <a href="jan-sama-Kin" class="txt-center"><span lang="tok-Latn">toki musi pi jan sama Kin</span><span lang="tok-Zzzz">toki musi pi jan-sama [_kulupu_ijo_nimi]</span></a>
     </div>
     <div class="book">
       <a href="sitelen-lape-pi-jan-Antan"><img src="einstein's_dreams.jpg"></a>
-      <a href="sitelen-lape-pi-jan-Antan" class="txt-center"><x-latn>sitelen lape pi jan Antan</x-latn><x-sp>sitelen-lape pi jan [_alasa_nasin_tenpo_anu_nanpa]</x-sp></a>
+      <a href="sitelen-lape-pi-jan-Antan" class="txt-center"><span lang="tok-Latn">sitelen lape pi jan Antan</span><span lang="tok-Zzzz">sitelen-lape pi jan [_alasa_nasin_tenpo_anu_nanpa]</span></a>
     </div>
     <div class="book">
       <a href="open"><div style="
@@ -63,111 +63,9 @@
     </div>
   </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function() {
-  var prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
-  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-  if (prefersLightScheme.matches) {
-    document.getElementById("modeBtn").innerHTML = "pimeja";
-    if (localStorage.getItem("mode") == "dark") {
-      document.body.classList.toggle("dark-mode", true);
-      document.getElementById("modeBtn").innerHTML = "walo";
-    }
-    if (localStorage.getItem("mode") == "light") {
-      document.body.classList.toggle("dark-mode", false);
-      document.getElementById("modeBtn").innerHTML = "pimeja";
-    }
-  }
-  if (prefersDarkScheme.matches) {
-    document.getElementById("modeBtn").innerHTML = "walo";
-    if (localStorage.getItem("mode") == "light") {
-      document.body.classList.toggle("light-mode", true);
-      document.getElementById("modeBtn").innerHTML = "pimeja";
-    }
-    if (localStorage.getItem("mode") == "dark") {
-      document.body.classList.toggle("light-mode", false);
-      document.getElementById("modeBtn").innerHTML = "walo";
-    }
-  }
-});
-function menuClick() {
-  if (window.innerWidth <= 593) {
-    $(".smalldropdown").toggle(30);
-  }
-  $(".bigdropdown").toggle(30);
-}
-function modeToggle() {
-  var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-  if (prefersDarkScheme.matches) {
-    document.body.classList.toggle("light-mode");
-    if (localStorage.getItem("mode") == "light") {
-      localStorage.setItem("mode", "dark");
-    } else {
-      localStorage.setItem("mode", "light");
-    }
-  } else {
-    document.body.classList.toggle("dark-mode");
-    if (localStorage.getItem("mode") == "dark") {
-      localStorage.setItem("mode", "light");
-    } else {
-      localStorage.setItem("mode", "dark");
-    }
-  }
-  if (document.getElementById("modeBtn").innerHTML == "pimeja") {
-    document.getElementById("modeBtn").innerHTML = "walo";
-  } else {
-    document.getElementById("modeBtn").innerHTML = "pimeja";
-  }
-}
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="/js/loadPrefs.js"></script>
+<script src="/js/menu.js"></script>
   
-<!--Load writing script-->
-<script>
-  $(document).ready(function() {
-    if (localStorage.getItem("fontscript") == "linja_pona") {
-      $("body").toggleClass("linjapona");
-      $("x-sp").each(function() {
-        if ($(this).css("display") == "none"){
-          $(this).css("display", "contents");
-        } else {
-          $(this).css("display", "none");
-        }
-      });
-      $("x-latn").each(function() {
-        if ($(this).css("display") == "none"){
-          $(this).css("display", "contents");
-        } else {
-          $(this).css("display", "none");
-        }
-      });
-    }
-  });
-</script>
-<!--linja pona toggle-->
-<script>
-  function linjapona() {
-    $("body").toggleClass("linjapona");
-    $("x-sp").each(function() {
-      if ($(this).css("display") == "none"){
-        $(this).css("display", "contents");
-      } else {
-        $(this).css("display", "none");
-      }
-    });
-    $("x-latn").each(function() {
-      if ($(this).css("display") == "none"){
-        $(this).css("display", "contents");
-      } else {
-        $(this).css("display", "none");
-      }
-    });
-    if (localStorage.getItem("fontscript") != "linja_pona") {
-      localStorage.setItem("fontscript", "linja_pona");
-    } else {
-      localStorage.setItem("fontscript", "latin");
-    }
-  }
-</script>
 </body>
 </html>
