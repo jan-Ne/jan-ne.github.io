@@ -1,6 +1,6 @@
 // Open Menu
 function menuClick() {
-  if (window.innerWidth <= 593) {
+  if (window.innerWidth <= 748) {
     $(".smalldropdown").toggle(30);
   }
   $(".bigdropdown").toggle(30);
@@ -33,29 +33,24 @@ function modeToggle() {
 
 // Toggle sitelen pona
 function sitelenpona() {
-    $("[lang='tok-Zzzz']").each(function() {
-      if ($(this).prop('tagName') !== 'HTML') {
-        if ($(this).css("display") == "none"){
-          $(this).css("display", "contents");
-        } else {
-          $(this).css("display", "none");
-        }
-      }
-    });
-    $("[lang='tok-Latn']").each(function() {
-      if ($(this).prop('tagName') !== 'HTML') {
-        if ($(this).css("display") == "none"){
-          $(this).css("display", "contents");
-        } else {
-          $(this).css("display", "none");
-        }
-      }
-    });
-    if (localStorage.getItem("script") != "tok-Zzzz") {
-      localStorage.setItem("script", "tok-Zzzz");
-      $('html').attr('lang', 'tok-Zzzz');
-    } else {
-      localStorage.setItem("script", "tok-Latn");
-      $('html').attr('lang', 'tok-Latn');
-    }
+  const script = localStorage.getItem("script");
+  if (script !== "tok-Zzzz") {
+    $("[lang='tok-Latn'].alt").css("display", "none");
+    $("[lang='tok-Zzzz'].alt").css("display", "contents");
+    
+    $(".sptoggle [lang='tok-Latn'].alt").css("display", "contents");
+    $(".sptoggle [lang='tok-Zzzz'].alt").css("display", "none");
+
+    localStorage.setItem("script", "tok-Zzzz");
+    $('html').attr('lang', 'tok-Zzzz');
+  } else {
+    $("[lang='tok-Zzzz'].alt").css("display", "none");
+    $("[lang='tok-Latn'].alt").css("display", "contents");
+
+    $(".sptoggle [lang='tok-Latn'].alt").css("display", "none");
+    $(".sptoggle [lang='tok-Zzzz'].alt").css("display", "contents");
+
+    localStorage.setItem("script", "tok-Latn");
+    $('html').attr('lang', 'tok-Latn');
   }
+}

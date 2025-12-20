@@ -6,25 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="toki pona, toki pona phonology, toki pona sounds, toki pona letters, how to pronounce toki pona, how to read toki pona, jan Ne, lipu, phonology, spelling, alphabet, sounds">
   <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="shortcut icon" href="/janNe.png">
+  <link rel="shortcut icon" href="/janNelaso.svg">
 <body>
   <header>
-      <a href="/"><img src="/janNe.png" alt="jan Ne" height="77"></a>
-      <a class="home" href="/"><span lang="tok-Latn">lipu pi jan Ne</span><span lang="tok-Zzzz">lipu pi jan [_nena_esun]</span></a>
+      <a id="sitelen-nimi" href="/">
+        <img src="/janNe.svg" alt="jan Ne" height="77">
+        <span id="nimi-lipu">
+          <span lang="tok-Latn" class="alt">lipu pi jan Ne</span><span lang="tok-Zzzz" class="alt">lipu pi jan [_nena_esun]</span>
+        </span>
+      </a>
     <nav>
       <ul>
-        <li><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz">toki-pona</span></a></li>
+        <li><a href="/tp"><span lang="tok-Latn" class="alt">toki pona</span><span lang="tok-Zzzz" class="alt">toki-pona</span></a></li>
         <li><a href="/lipu">lipu</a></li>
         <li><a href="/ijo">ijo</a></li>
       </ul>
       <span class="dropdown">
-        <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
+        <button lang="tok-Zzzz" onclick="menuClick()" id="settings">ante</button>
         <ul class="dropdownmenu">
-          <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz">toki-pona</span></a></li>
+          <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang="tok-Latn" class="alt">toki pona</span><span lang="tok-Zzzz" class="alt">toki-pona</span></a></li>
           <li class="smalldropdown" style="display: none;"><a href="/lipu">lipu</a></li>
           <li class="smalldropdown" style="display: none;"><a href="/ijo">ijo</a></li>
           <li class="bigdropdown" onclick="modeToggle()" id="modeBtn" style="display: none;">pimeja</li>
-          <li class="bigdropdown" onclick="sitelenpona()" style="display: none;"><span lang="tok-Latn" style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</span><span lang="tok-Zzzz" style="font-size: 22px; display: contents;">sitelen-pona</span></li>
+          <li class="bigdropdown sptoggle" onclick="sitelenpona()"><span lang="tok-Latn" class="alt">sitelen Lasina</span><span lang="tok-Zzzz" class="alt">sitelen-pona</span></li>
         </ul>
       </span>
     </nav>
@@ -46,13 +50,13 @@
       <li><a href="tpl">toki pona luka</a></li>
     </ul>
   </div>
-  <div lang="en" class="content" style="min-height: calc(100vh - 207px)">
+  <main lang="en" style="min-height: calc(100vh - 207px)">
     <h1>Phonology</h1>				
     <hr>				
     <p>toki pona's phonology is simple and flexible.</p>
     <p>The charts below use symbols from the <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank">International Phonetic Alphabet</a>.</p>
     <p>It is written in the Latin script using the same letters as its phonemes written in the IPA.</p>
-    <h3>Consonants</h3>
+    <h2>Consonants</h2>
     <div class="scroll">
     <table class="formatted center">
       <tr>
@@ -88,7 +92,7 @@
       </table>
       </div>
 
-      <h3>Vowels</h3>  
+      <h2>Vowels</h2>  
       <table class="formatted center">
       <tbody><tr>
         <th></th>

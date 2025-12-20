@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="toki pona, jan Ne, lipu">
   <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="shortcut icon" href="/janNe.png">
+  <link rel="shortcut icon" href="/janNelaso.svg">
 <body>
   <header>
-      <a href="/"><img src="../janNe.png" alt="jan Ne" height="77"></a>
-      <a class="home" href="/"><span lang ="tok-Latn">lipu pi jan Ne</span><span lang ="tok-Zzzz">lipu pi jan [_nena_esun]</span></a>
+      <a id="sitelen-nimi" href="/">
+        <img src="/janNe.svg" alt="jan Ne" height="77">
+        <span id="nimi-lipu">
+          <span lang="tok-Latn" class="alt">lipu pi jan Ne</span><span lang="tok-Zzzz" class="alt">lipu pi jan [_nena_esun]</span>
+        </span>
+      </a>
     <nav>
       <ul>
         <li><a href="/tp"><span lang ="tok-Latn">toki pona</span><span lang ="tok-Zzzz">toki-pona</span></a></li>
@@ -18,13 +22,13 @@
         <li><a href="/ijo">ijo</a></li>
       </ul>
       <span class="dropdown">
-        <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
+        <button lang="tok-Zzzz" onclick="menuClick()" id="settings">ante</button>
         <ul class="dropdownmenu">
           <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang ="tok-Latn">toki pona</span><span lang ="tok-Zzzz">toki-pona</span></a></li>
           <li class="smalldropdown" style="display: none;"><a href="/lipu">lipu</a></li>
           <li class="smalldropdown" style="display: none;"><a href="/ijo">ijo</a></li>
           <li class="bigdropdown" onclick="modeToggle()" id="modeBtn" style="display: none;">pimeja</li>
-          <li class="bigdropdown" onclick="sitelenpona()" style="display: none;"><span lang ="tok-Latn" style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</span><span lang ="tok-Zzzz" style="font-size: 22px; display: contents;">sitelen-pona</span></li>
+          <li class="bigdropdown sptoggle" onclick="sitelenpona()" style="display: none;"><span lang ="tok-Latn" style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</span><span lang ="tok-Zzzz" style="font-size: 22px; display: contents;">sitelen-pona</span></li>
         </ul>
       </span>
     </nav>
@@ -46,10 +50,10 @@
       <li><a href="tpl">toki pona luka</a></li>
     </ul>
   </div>
-  <div lang="en" class="content" style="min-height: calc(100vh - 207px)">
+  <main lang="en" style="min-height: calc(100vh - 207px)">
     <h1>Other Words</h1>
     <hr>										
-    <h3>Other uses</h3>
+    <h2>Other uses</h2>
     <div class="scroll">
     <table class="formatted2">																					
       <tr><th>  Word </th><th> Definition </th><th>Source</th></tr>
@@ -57,14 +61,14 @@
       <tr><th>	namako	</th><td>	food additive, accessory, something extra; season, embellish, stimulate	</td><td><a href="https://archive.is/OcYnB" target="_blank">en.tokipona.org</a></td></tr>	
     </table>
     </div>
-    <h3>Community words</h3>
+    <h2>Community words</h2>
     <div class="scroll">
     <table class="formatted2" style="width:100%">										
       <tr><th>  Word </th><th> Definition </th><th></th></tr>
       <tr><th>	tonsi	</th><td>	non-binary, genderqueer, trans	</td><td><small>voted on by the community on Discord</small></td></tr>													
     </table>
     </div>
-    <h3>Old words</h3>
+    <h2>Old words</h2>
     <div class="scroll">
     <table class="formatted2">																						
       <tr><th>  Word </th><th> Definition </th><th colspan="2">Alternative/Replacement</th><th>Source</th></tr>
@@ -90,7 +94,7 @@
       <tr><th>	tuli	</th><td>	three	</td><td colspan="2">	tu wan, mute	</td><td colspan="2"><a href="https://web.archive.org/web/20200128090358/http://tokipona.net/tp/janpije/originalwords.php" target="_blank">jan Pije's archive of tokipona.org</a>			</td></tr>												
     </table>
     </div>
-    <h3>Joke words</h3>
+    <h2>Joke words</h2>
     <div class="scroll">
     <table class="formatted2">																					
       <tr><th>  Word </th><th> Definition </th> <th></th><th>Source</th></tr>

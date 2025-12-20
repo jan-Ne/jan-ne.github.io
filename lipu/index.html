@@ -6,62 +6,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="toki pona, jan Ne, lipu, books, literature, translations">
   <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="shortcut icon" href="/janNe.png">
+  <link rel="shortcut icon" href="/janNelaso.svg">
 <body>
   <header>
-      <a href="/"><img src="/janNe.png" alt="jan Ne" height="77"></a>
-      <a class="home" href="/"><span lang="tok-Latn">lipu pi jan Ne</span><span lang="tok-Zzzz" style="display: inline; display: none;">lipu pi jan [_nena_esun]</span></a>
+      <a id="sitelen-nimi" href="/">
+        <img src="/janNe.svg" alt="jan Ne" height="77">
+        <span id="nimi-lipu">
+          <span lang="tok-Latn" class="alt">lipu pi jan Ne</span><span lang="tok-Zzzz" class="alt">lipu pi jan [_nena_esun]</span>
+        </span>
+      </a>
     <nav>
       <ul>
-        <li><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz" style="display: inline; display: none;">toki-pona</span></a></li>
+        <li><a href="/tp"><span lang="tok-Latn" class="alt">toki pona</span><span lang="tok-Zzzz" class="alt">toki-pona</span></a></li>
         <li><a href="/lipu">lipu</a></li>
         <li><a href="/ijo">ijo</a></li>
       </ul>
       <span class="dropdown">
-        <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
+        <button lang="tok-Zzzz" onclick="menuClick()" id="settings">ante</button>
         <ul class="dropdownmenu">
-          <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz">toki-pona</span></a></li>
+          <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang="tok-Latn" class="alt">toki pona</span><span lang="tok-Zzzz" class="alt">toki-pona</span></a></li>
           <li class="smalldropdown" style="display: none;"><a href="/lipu">lipu</a></li>
           <li class="smalldropdown" style="display: none;"><a href="/ijo">ijo</a></li>
           <li class="bigdropdown" onclick="modeToggle()" id="modeBtn" style="display: none;">pimeja</li>
-          <li class="bigdropdown" onclick="sitelenpona()" style="display: none;"><span lang="tok-Latn" style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</span><span lang="tok-Zzzz" style="font-size: 22px; display: contents;">sitelen-pona</span></li>
+          <li class="bigdropdown sptoggle" onclick="sitelenpona()"><span lang="tok-Latn" class="alt">sitelen Lasina</span><span lang="tok-Zzzz" class="alt">sitelen-pona</span></li>
         </ul>
       </span>
     </nav>
+    <div class="shelf" style="margin-bottom:0px">
+      <div class="book">
+        <a href="laso-tu"><img src="laso-tu/laso-tu.svg"></a>
+        <a href="laso-tu" class="txt-center">laso tu</a>
+      </div>
+      <div class="book">
+        <a href="Esopo"><img src="the_aesop_for_children.jpg"></a>
+        <a href="Esopo" class="txt-center"><span lang="tok-Latn" class="alt">toki musi pi jan Esopo</span><span lang="tok-Zzzz" class="alt">toki musi pi jan [_esun_soweli_open_pona_ona]</span></a>
+      </div>
+      <div class="book">
+        <a href="jan-sama-Kin"><img src="grimm's_fairy_tales.jpg"></a>
+        <a href="jan-sama-Kin" class="txt-center"><span lang="tok-Latn" class="alt">toki musi pi jan sama Kin</span><span lang="tok-Zzzz" class="alt">toki musi pi jan-sama [_kulupu_ijo_nimi]</span></a>
+      </div>
+      <div class="book">
+        <a href="sitelen-lape-pi-jan-Antan"><img src="einstein's_dreams.jpg"></a>
+        <a href="sitelen-lape-pi-jan-Antan" class="txt-center"><span lang="tok-Latn" class="alt">sitelen lape pi jan Antan</span><span lang="tok-Zzzz" class="alt">sitelen-lape pi jan [_alasa_nasin_tenpo_anu_nanpa]</span></a>
+      </div>
+      <div class="book">
+        <a href="open"><div style="
+          position: relative;
+        "><img src="lipu.png"><p style="
+          font-family: sans-serif;
+          font-size: 26px;
+          color: white;
+          text-align: center;
+          position: absolute;
+          top: 34%;
+          width: 100%;
+        ">בראשית</p>
+        </div></a>
+        <a href="open" class="txt-center">open</a>
+      </div>
+    </div>
   </header>
-  <div class="shelf" style="margin-bottom:0px">
-    <div class="book">
-      <a href="laso-tu"><img src="laso-tu/laso-tu.svg"></a>
-      <a href="laso-tu" class="txt-center">laso tu</a>
-    </div>
-    <div class="book">
-      <a href="Esopo"><img src="the_aesop_for_children.jpg"></a>
-      <a href="Esopo" class="txt-center"><span lang="tok-Latn">toki musi pi jan Esopo</span><span lang="tok-Zzzz">toki musi pi jan [_esun_soweli_open_pona_ona]</span></a>
-    </div>
-    <div class="book">
-      <a href="jan-sama-Kin"><img src="grimm's_fairy_tales.jpg"></a>
-      <a href="jan-sama-Kin" class="txt-center"><span lang="tok-Latn">toki musi pi jan sama Kin</span><span lang="tok-Zzzz">toki musi pi jan-sama [_kulupu_ijo_nimi]</span></a>
-    </div>
-    <div class="book">
-      <a href="sitelen-lape-pi-jan-Antan"><img src="einstein's_dreams.jpg"></a>
-      <a href="sitelen-lape-pi-jan-Antan" class="txt-center"><span lang="tok-Latn">sitelen lape pi jan Antan</span><span lang="tok-Zzzz">sitelen-lape pi jan [_alasa_nasin_tenpo_anu_nanpa]</span></a>
-    </div>
-    <div class="book">
-      <a href="open"><div style="
-        position: relative;
-      "><img src="lipu.png"><p style="
-        font-family: sans-serif;
-        font-size: 26px;
-        color: white;
-        text-align: center;
-        position: absolute;
-        top: 34%;
-        width: 100%;
-      ">בראשית</p>
-      </div></a>
-      <a href="open" class="txt-center">open</a>
-    </div>
-  </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="/js/loadPrefs.js"></script>

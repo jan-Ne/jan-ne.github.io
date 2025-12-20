@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="toki pona, where does toki pona come from, etymology, jan Ne, lipu">
   <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="shortcut icon" href="/janNe.png">
+  <link rel="shortcut icon" href="/janNelaso.svg">
 <body>
   <header>
-      <a href="/"><img src="/janNe.png" alt="jan Ne" height="77"></a>
-      <a class="home" href="/"><span lang ="tok-Latn">lipu pi jan Ne</span><span lang ="tok-Zzzz">lipu pi jan [_nena_esun]</span></a>
+      <a id="sitelen-nimi" href="/">
+        <img src="/janNe.svg" alt="jan Ne" height="77">
+        <span id="nimi-lipu">
+          <span lang="tok-Latn" class="alt">lipu pi jan Ne</span><span lang="tok-Zzzz" class="alt">lipu pi jan [_nena_esun]</span>
+        </span>
+      </a>
     <nav>
       <ul>
         <li><a href="/tp"><span lang ="tok-Latn">toki pona</span><span lang ="tok-Zzzz">toki-pona</span></a></li>
@@ -18,13 +22,13 @@
         <li><a href="/ijo">ijo</a></li>
       </ul>
       <span class="dropdown">
-        <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
+        <button lang="tok-Zzzz" onclick="menuClick()" id="settings">ante</button>
         <ul class="dropdownmenu">
           <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang ="tok-Latn">toki pona</span><span lang ="tok-Zzzz">toki-pona</span></a></li>
           <li class="smalldropdown" style="display: none;"><a href="/lipu">lipu</a></li>
           <li class="smalldropdown" style="display: none;"><a href="/ijo">ijo</a></li>
           <li class="bigdropdown" onclick="modeToggle()" id="modeBtn" style="display: none;">pimeja</li>
-          <li class="bigdropdown" onclick="sitelenpona()" style="display: none;"><span lang ="tok-Latn" style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</span><span lang ="tok-Zzzz" style="font-size: 22px; display: contents;">sitelen-pona</span></li>
+          <li class="bigdropdown sptoggle" onclick="sitelenpona()" style="display: none;"><span lang ="tok-Latn" style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</span><span lang ="tok-Zzzz" style="font-size: 22px; display: contents;">sitelen-pona</span></li>
         </ul>
       </span>
     </nav>
@@ -46,10 +50,10 @@
       <li><a href="tpl">toki pona luka</a></li>
     </ul>
   </div>
-  <div lang="en" class="content" style="min-height: calc(100vh - 207px)">
+  <main lang="en" style="min-height: calc(100vh - 207px)">
     <h1>Etymology</h1>
     <hr>
-    <h3>Source languages</h3> 
+    <h2>Source languages</h2> 
     <table>
       <tbody>
       <td>
@@ -139,7 +143,7 @@
       Chinese (Cantonese) </td></tr></tbody></table>
       </td></tr></tbody>
     </table>
-    <p>&nbsp;</p>
+    <br>
     <table>
       <td>
       <b>a

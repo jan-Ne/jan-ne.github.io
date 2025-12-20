@@ -6,25 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="toki pona, sitelen pona, toki pona logography, toki pona symbols, sp, writing system, glyphs, hieroglpyhs, logography, jan Ne, lipu">
   <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="shortcut icon" href="/janNe.png">
+  <link rel="shortcut icon" href="/janNelaso.svg">
 <body>
   <header>
-      <a href="/"><img src="/janNe.png" alt="jan Ne" height="77"></a>
-      <a class="home" href="/"><span lang="tok-Latn">lipu pi jan Ne</span><span lang="tok-Zzzz">lipu pi jan [_nena_esun]</span></a>
+      <a id="sitelen-nimi" href="/">
+        <img src="/janNe.svg" alt="jan Ne" height="77">
+        <span id="nimi-lipu">
+          <span lang="tok-Latn" class="alt">lipu pi jan Ne</span><span lang="tok-Zzzz" class="alt">lipu pi jan [_nena_esun]</span>
+        </span>
+      </a>
     <nav>
       <ul>
-        <li><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz">toki-pona</span></a></li>
+        <li><a href="/tp"><span lang="tok-Latn" class="alt">toki pona</span><span lang="tok-Zzzz" class="alt">toki-pona</span></a></li>
         <li><a href="/lipu">lipu</a></li>
         <li><a href="/ijo">ijo</a></li>
       </ul>
       <span class="dropdown">
-        <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
+        <button lang="tok-Zzzz" onclick="menuClick()" id="settings">ante</button>
         <ul class="dropdownmenu">
-          <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz">toki-pona</span></a></li>
+          <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang="tok-Latn" class="alt">toki pona</span><span lang="tok-Zzzz" class="alt">toki-pona</span></a></li>
           <li class="smalldropdown" style="display: none;"><a href="/lipu">lipu</a></li>
           <li class="smalldropdown" style="display: none;"><a href="/ijo">ijo</a></li>
           <li class="bigdropdown" onclick="modeToggle()" id="modeBtn" style="display: none;">pimeja</li>
-          <li class="bigdropdown" onclick="sitelenpona()" style="display: none;"><span lang="tok-Latn" style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</span><span lang="tok-Zzzz" style="font-size: 22px; display: contents;">sitelen-pona</span></li>
+          <li class="bigdropdown sptoggle" onclick="sitelenpona()"><span lang="tok-Latn" class="alt">sitelen Lasina</span><span lang="tok-Zzzz" class="alt">sitelen-pona</span></li>
         </ul>
       </span>
     </nav>
@@ -46,15 +50,15 @@
       <li><a href="tpl">toki pona luka</a></li>
     </ul>
   </div>
-  <div lang="en" class="content" style="min-height: calc(100vh - 207px)">
+  <main lang="en" style="min-height: calc(100vh - 207px)">
     <h1 style="margin-bottom:0px">sitelen pona</h1>
     <small>by Sonja Lang, the creator of toki pona</small>
     <hr>
     <a href="sitelen_pona.png"><img class="center dark-invert" src="sitelen_pona.png" style="width:100%" alt="sitelen pona dictionary"></a>
-    <h3>Combined Glyphs</h3>
+    <h2>Combined Glyphs</h2>
     <p>A single adjective can be written inside or above the word it modifies.</p>
     <img class="center dark-invert" src="combined_glyphs.png" alt="modifiers go inside or above">
-    <h3>Proper Names</h3>
+    <h2>Proper Names</h2>
     <p>Proper names are written inside a cartouche. Inside this oval shape, each glyph only represents the first letter of its word.</p>
     <p>When writing these proper names, you may creatively choose whichever glyphs you feel are appropriate. For example, to write the letter <i>w</i> in your name, you might use <i>waso</i> if you like birds, or <i>wawa</i> if you value strength.</p>
     <p>This sentence shows one way to write Canada:</p>

@@ -6,98 +6,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="toki pona, jan Ne, lipu">
   <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="shortcut icon" href="/janNe.png">
+  <link rel="shortcut icon" href="/janNelaso.svg">
 <body>
   <header>
-      <a href="/"><img src="/janNe.png" alt="jan Ne" height="77"></a>
-      <a class="home" href="/"><span lang="tok-Latn">lipu pi jan Ne</span><span lang="tok-Zzzz" style="display: inline; display: none;">lipu pi jan [_nena_esun]</span></a>
+      <a id="sitelen-nimi" href="/">
+        <img src="/janNe.svg" alt="jan Ne" height="77">
+        <span id="nimi-lipu">
+          <span lang="tok-Latn" class="alt">lipu pi jan Ne</span><span lang="tok-Zzzz" class="alt">lipu pi jan [_nena_esun]</span>
+        </span>
+      </a>
     <nav>
       <ul>
-        <li><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz">toki-pona</span></a></li>
+        <li><a href="/tp"><span lang="tok-Latn" class="alt">toki pona</span><span lang="tok-Zzzz" class="alt">toki-pona</span></a></li>
         <li><a href="/lipu">lipu</a></li>
         <li><a href="/ijo">ijo</a></li>
       </ul>
       <span class="dropdown">
-        <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
+        <button lang="tok-Zzzz" onclick="menuClick()" id="settings">ante</button>
         <ul class="dropdownmenu">
-          <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz">toki-pona</span></a></li>
+          <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang="tok-Latn" class="alt">toki pona</span><span lang="tok-Zzzz" class="alt">toki-pona</span></a></li>
           <li class="smalldropdown" style="display: none;"><a href="/lipu">lipu</a></li>
           <li class="smalldropdown" style="display: none;"><a href="/ijo">ijo</a></li>
           <li class="bigdropdown" onclick="modeToggle()" id="modeBtn" style="display: none;">pimeja</li>
-          <li class="bigdropdown" onclick="sitelenpona()" style="display: none;"><span lang="tok-Latn" style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</span><span lang="tok-Zzzz" style="font-size: 22px; display: contents;">sitelen-pona</span></li>
+          <li class="bigdropdown sptoggle" onclick="sitelenpona()"><span lang="tok-Latn" class="alt">sitelen Lasina</span><span lang="tok-Zzzz" class="alt">sitelen-pona</span></li>
         </ul>
       </span>
     </nav>
+    <div class="shelf" style="margin-bottom:0px;grid-template-columns: auto auto auto auto;">
+      <h1 class="shelf-title" style="margin-top: 10px"><span lang="tok-Latn" class="alt">ijo mi</span><span lang="tok-Zzzz" class="alt">ijo-mi</span></h1>
+      <div class="item">
+        <a href="https://github.com/jan-Ne" target="_blank"><img src="https://github.githubassets.com/favicons/favicon.svg" width="100" class="dark-invert"></a>
+        <a href="https://github.com/jan-Ne" target="_blank" class="txt-center"><span lang="tok-Latn" class="alt">jan Ne</span><span lang="tok-Zzzz" class="alt">jan[_nena_esun]</span></a>
+      </div>
+      <div class="item">
+        <a href="https://www.reddit.com/user/LesVisages" target="_blank"><img src="reddit.png"></a>
+        <a lang="en" href="https://www.reddit.com/user/LesVisages" target="_blank" class="txt-center">u/LesVisages</a>
+      </div>
+      <div class="item">
+        <a href="https://bsky.app/profile/jan-ne.github.io" target="_blank"><img src="sewilaso.svg"></a>
+        <a lang="tok" href="https://bsky.app/profile/jan-ne.github.io" target="_blank" class="txt-center">jan Ne</a>
+      </div>
+      <div class="item">
+        <a href="https://www.facebook.com/nena.esun/" target="_blank"><img src="facebook.png"></a>
+        <a lang="en" href="https://www.facebook.com/nena.esun/" target="_blank" class="txt-center">Nena Esun</a>
+      </div>
+      <div class="item">
+        <a href="https://jan-ne.github.io/lipu-lili-pona/" target="_blank"><img src="lipuliliponalogo.svg"></a>
+        <a href="https://jan-ne.github.io/lipu-lili-pona/" target="_blank" class="txt-center">lipu lili pona</a>
+      </div>
+      <h1 class="shelf-title"><span lang="tok-Latn" class="alt">lipu ante</span><span lang="tok-Zzzz" class="alt">lipu-ante</span></h1>
+      <div class="item">
+        <a href="http://tokipona.org/" target="_blank"><img src="tplen.png"></a>
+        <a href="http://tokipona.org/" target="_blank" class="txt-center"><span lang="tok-Latn" class="alt">lipu pi jan Sonja</span><span lang="tok-Zzzz" class="alt">lipu pi jan [_sona_olin_nasin_jan_alasa]</span></a>
+      </div>
+      <div class="item">
+        <a href="https://lipu-sona.pona.la/" target="_blank"><img src="lipusonapona.png" width="100" style="image-rendering: pixelated;"></a>
+        <a href="https://lipu-sona.pona.la/" target="_blank" class="txt-center">lipu sona pona</a>
+      </div>
+      <div class="item">
+        <a href="https://tok.wikipedia.org/wiki/lipu_open" target="_blank"><img src="Wikipesija.svg"></a>
+        <a href="https://tok.wikipedia.org/wiki/lipu_open" target="_blank" class="txt-center"><span lang="tok-Latn" class="alt">lipu Wikipesija</span><span lang="tok-Zzzz" class="alt">lipu [_wan_ilo_kulupu_ijo_pana_en_sitelen_ilo_jo_ale]</span></a>
+      </div>
+      <div class="item">
+        <a href="https://sona.pona.la/wiki/Main_Page" target="_blank"><img src="miraheze.svg"></a>
+        <a href="https://sona.pona.la/wiki/Main_Page" target="_blank" class="txt-center">sona pona</a>
+      </div>
+      <div class="item">
+        <a href="https://pona.la/" target="_blank"><img src="pona.la.svg"></a>
+        <a href="https://pona.la/" target="_blank" class="txt-center">pona.la</a>
+      </div>
+      <h1 class="shelf-title">nasin sitelen</h1>
+      <div class="item">
+        <a href="http://musilili.net/" target="_blank"><img src="musilili.png"></a>
+        <a href="http://musilili.net/" target="_blank" class="txt-center">musi lili</a>
+      </div>
+      <div class="item">
+        <a href="https://davidar.github.io/tp/" target="_blank"><img src="davidar.svg"></a>
+        <a href="https://davidar.github.io/tp/" target="_blank" class="txt-center"><span lang="tok-Latn" class="alt">tomo pi sitelen pona</span><span lang="tok-Zzzz" class="alt">tomo pi sitelen-pona</span></a>
+      </div>
+      <div class="item">
+        <a href="https://jonathangabel.com/" target="_blank"><img src="gabel.png" width="100" style="image-rendering: pixelated;"></a>
+        <a href="https://jonathangabel.com/" target="_blank" class="txt-center"><span lang="tok-Latn" class="alt">jan Josan</span><span lang="tok-Zzzz" class="alt">jan [_jo_o_sona_a_nasin]</span></a>
+      </div>
+      <h1 class="shelf-title">kulupu</h1>
+      <div class="item">
+        <a href="https://www.facebook.com/groups/sitelen" target="_blank"><img src="facebook.png"></a>
+        <a href="https://www.facebook.com/groups/sitelen" target="_blank" class="txt-center"><span lang="tok-Latn" class="alt">lipu Pepu</span><span lang="tok-Zzzz" class="alt">lipu [_pana_en_poka_utala]</span></a>
+      </div>
+      <div class="item">
+        <a href="http://reddit.com/r/tokipona" target="_blank"><img src="reddit.png"></a>
+        <a href="http://reddit.com/r/tokipona" target="_blank" class="txt-center"><span lang="tok-Latn" class="alt">lipu Wesi</span><span lang="tok-Zzzz" class="alt">lipu [_weka_en_sitelen_ilo]</span></a>
+      </div>
+      <div class="item">
+        <a href="https://discord.gg/Byqn5z9" target="_blank"><img src="discord.svg"></a>
+        <a href="https://discord.gg/Byqn5z9" target="_blank" class="txt-center"><span lang="tok-Latn" class="alt">ilo Siko</span><span lang="tok-Zzzz" class="alt">ilo [_sitelen_ilo_kulupu_open]</span></a>
+      </div>
+      <div class="item">
+        <a href="https://t.me/tokiponaTelegram" target="_blank"><img src="telegram.png"></a>
+        <a href="https://t.me/tokiponaTelegram" target="_blank" class="txt-center"><span lang="tok-Latn" class="alt">ilo Telekan</span><span lang="tok-Zzzz" class="alt">ilo [_toki_en_lipu_en_kalama_awen_nimi]</span></a>
+      </div>
   </header>
-  <div class="shelf" style="margin-bottom:0px;grid-template-columns: auto auto auto auto;">
-    <h1 class="shelf-title" style="margin-top: 10px"><span lang="tok-Latn">ijo mi</span><span lang="tok-Zzzz">ijo-mi</span></h1>
-    <div class="item">
-      <a href="https://github.com/jan-Ne" target="_blank"><img src="https://github.githubassets.com/favicons/favicon.svg" width="100"></a>
-      <a href="https://github.com/jan-Ne" target="_blank" class="txt-center"><span lang="tok-Latn">jan Ne</span><span lang="tok-Zzzz">jan[_nena_esun]</span></a>
-    </div>
-    <div class="item">
-      <a href="https://www.reddit.com/user/LesVisages" target="_blank"><img src="reddit.png"></a>
-      <a lang="en" href="https://www.reddit.com/user/LesVisages" target="_blank" class="txt-center">u/LesVisages</a>
-    </div>
-    <div class="item">
-      <a href="https://bsky.app/profile/jan-ne.github.io" target="_blank"><img src="sewilaso.svg"></a>
-      <a lang="tok" href="https://bsky.app/profile/jan-ne.github.io" target="_blank" class="txt-center">jan Ne</a>
-    </div>
-    <div class="item">
-      <a href="https://www.facebook.com/nena.esun/" target="_blank"><img src="facebook.png"></a>
-      <a lang="en" href="https://www.facebook.com/nena.esun/" target="_blank" class="txt-center">Nena Esun</a>
-    </div>
-    <h1 class="shelf-title"><span lang="tok-Latn">lipu ante</span><span lang="tok-Zzzz">lipu-ante</span></h1>
-    <div class="item">
-      <a href="http://tokipona.org/" target="_blank"><img src="tokipona.png"></a>
-      <a href="http://tokipona.org/" target="_blank" class="txt-center"><span lang="tok-Latn">lipu pi jan Sonja</span><span lang="tok-Zzzz">lipu pi jan [_sona_olin_nasin_jan_alasa]</span></a>
-    </div>
-    <div class="item">
-      <a href="https://lipu-sona.pona.la/" target="_blank"><img src="lipusonapona.png" width="100" style="image-rendering: pixelated;"></a>
-      <a href="https://lipu-sona.pona.la/" target="_blank" class="txt-center">lipu sona pona</a>
-    </div>
-    <div class="item">
-      <a href="https://jan-ne.github.io/lipu-lili-pona/" target="_blank"><img src="lipuliliponalogo.svg"></a>
-      <a href="https://jan-ne.github.io/lipu-lili-pona/" target="_blank" class="txt-center">lipu lili pona</a>
-    </div>
-    <div class="item">
-      <a href="https://wikipesija.org/wiki/lipu_open" target="_blank"><img src="Wikipesija.svg"></a>
-      <a href="https://wikipesija.org/wiki/lipu_open" target="_blank" class="txt-center"><span lang="tok-Latn">lipu Wikipesija</span><span lang="tok-Zzzz">lipu [_wan_ilo_kulupu_ijo_pana_en_sitelen_ilo_jo_ale]</span></a>
-    </div>
-    <div class="item">
-      <a href="https://sona.pona.la/wiki/Main_Page" target="_blank"><img src="miraheze.svg"></a>
-      <a href="https://sona.pona.la/wiki/Main_Page" target="_blank" class="txt-center">sona pona</a>
-    </div>
-    <h1 class="shelf-title">nasin sitelen</h1>
-    <div class="item">
-      <a href="http://musilili.net/" target="_blank"><img src="musilili.png"></a>
-      <a href="http://musilili.net/" target="_blank" class="txt-center">musi lili</a>
-    </div>
-    <div class="item">
-      <a href="https://davidar.github.io/tp/" target="_blank"><img src="davidar.svg"></a>
-      <a href="https://davidar.github.io/tp/" target="_blank" class="txt-center"><span lang="tok-Latn">tomo pi sitelen pona</span><span lang="tok-Zzzz">tomo pi sitelen-pona</span></a>
-    </div>
-    <div class="item">
-      <a href="https://jonathangabel.com/" target="_blank"><img src="gabel.png" width="100" style="image-rendering: pixelated;"></a>
-      <a href="https://jonathangabel.com/" target="_blank" class="txt-center"><span lang="tok-Latn">jan Josan</span><span lang="tok-Zzzz">jan [_jo_o_sona_a_nasin]</span></a>
-    </div>
-    <h1 class="shelf-title">kulupu</h1>
-    <div class="item">
-      <a href="https://www.facebook.com/groups/sitelen" target="_blank"><img src="facebook.png"></a>
-      <a href="https://www.facebook.com/groups/sitelen" target="_blank" class="txt-center"><span lang="tok-Latn">lipu Pepu</span><span lang="tok-Zzzz">lipu [_pana_en_poka_utala]</span></a>
-    </div>
-    <div class="item">
-      <a href="http://reddit.com/r/tokipona" target="_blank"><img src="reddit.png"></a>
-      <a href="http://reddit.com/r/tokipona" target="_blank" class="txt-center"><span lang="tok-Latn">lipu Wesi</span><span lang="tok-Zzzz">lipu [_weka_en_sitelen_ilo]</span></a>
-    </div>
-    <div class="item">
-      <a href="https://discord.gg/Byqn5z9" target="_blank"><img src="discord.png"></a>
-      <a href="https://discord.gg/Byqn5z9" target="_blank" class="txt-center"><span lang="tok-Latn">ilo Siko</span><span lang="tok-Zzzz">ilo [_sitelen_ilo_kulupu_open]</span></a>
-    </div>
-    <div class="item">
-      <a href="https://t.me/tokiponaTelegram" target="_blank"><img src="telegram.png"></a>
-      <a href="https://t.me/tokiponaTelegram" target="_blank" class="txt-center"><span lang="tok-Latn">ilo Telekan</span><span lang="tok-Zzzz">ilo [_toki_en_lipu_en_kalama_awen_nimi]</span></a>
-    </div>
   </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

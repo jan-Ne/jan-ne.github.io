@@ -6,25 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="toki pona, jan Ne, lipu, transliteration, transliterator, tokiponization, names, ilo pi ante nimi">
   <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="shortcut icon" href="/janNe.png">
+  <link rel="shortcut icon" href="/janNelaso.svg">
 <body>
   <header>
-      <a href="/"><img src="/janNe.png" alt="jan Ne" height="77"></a>
-      <a class="home" href="/"><span lang="tok-Latn">lipu pi jan Ne</span><span lang="tok-Zzzz">lipu pi jan [_nena_esun]</span></a>
+      <a id="sitelen-nimi" href="/">
+        <img src="/janNe.svg" alt="jan Ne" height="77">
+        <span id="nimi-lipu">
+          <span lang="tok-Latn" class="alt">lipu pi jan Ne</span><span lang="tok-Zzzz" class="alt">lipu pi jan [_nena_esun]</span>
+        </span>
+      </a>
     <nav>
       <ul>
-        <li><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz">toki-pona</span></a></li>
+        <li><a href="/tp"><span lang="tok-Latn" class="alt">toki pona</span><span lang="tok-Zzzz" class="alt">toki-pona</span></a></li>
         <li><a href="/lipu">lipu</a></li>
         <li><a href="/ijo">ijo</a></li>
       </ul>
       <span class="dropdown">
-        <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
+        <button lang="tok-Zzzz" onclick="menuClick()" id="settings">ante</button>
         <ul class="dropdownmenu">
-          <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz">toki-pona</span></a></li>
+          <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang="tok-Latn" class="alt">toki pona</span><span lang="tok-Zzzz" class="alt">toki-pona</span></a></li>
           <li class="smalldropdown" style="display: none;"><a href="/lipu">lipu</a></li>
           <li class="smalldropdown" style="display: none;"><a href="/ijo">ijo</a></li>
           <li class="bigdropdown" onclick="modeToggle()" id="modeBtn" style="display: none;">pimeja</li>
-          <li class="bigdropdown" onclick="sitelenpona()" style="display: none;"><span lang="tok-Latn" style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</span><span lang="tok-Zzzz" style="font-size: 22px; display: contents;">sitelen-pona</span></li>
+          <li class="bigdropdown sptoggle" onclick="sitelenpona()"><span lang="tok-Latn" class="alt">sitelen Lasina</span><span lang="tok-Zzzz" class="alt">sitelen-pona</span></li>
         </ul>
       </span>
     </nav>
@@ -46,19 +50,19 @@
       <li><a href="tpl">toki pona luka</a></li>
     </ul>
   </div>
-  <div lang="en" class="content" style="min-height: calc(100vh - 207px); text-align:center">
+  <main lang="en" style="min-height: calc(100vh - 207px); text-align:center">
     <h1 style="margin:0px 0px 10px 0px">ilo pi ante nimi</h1>
-    <h2 style="margin:0px">Enter <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank">IPA</a> transcription:</h2>
-    <h3 style="font-size: 13px; margin:0px 0px 10px 0px">For most accurate results, use exact <a href="https://en.wikipedia.org/wiki/Phone_(phonetics)" target="_blank">phones</a> instead of general <a href="https://en.wikipedia.org/wiki/Phoneme" target="_blank">phonemes</a><br>and delineate syllables with <code>.</code></h3>
+    <p style="font-size: 1.3rem; font-weight: 500; margin:0px">Enter <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank">IPA</a> transcription:</p>
+    <p style="font-size: 0.8rem; margin:0px 0px 10px 0px">For most accurate results, use exact <a href="https://en.wikipedia.org/wiki/Phone_(phonetics)" target="_blank">phones</a> instead of general <a href="https://en.wikipedia.org/wiki/Phoneme" target="_blank">phonemes</a><br>and delineate syllables with <code>.</code></p>
     <input id="name" onkeyup="transliterate()" autocomplete="off" style="
-		font-family: Arial;
-		font-size: 24px;
-		border: 2px solid #dedede;
-		border-radius: 3px;
-		padding: 5px;
-		background: transparent;
-		color: var(--text-color);
-		">
+      font-family: Arial;
+      font-size: 24px;
+      border: 2px solid #dedede;
+      border-radius: 3px;
+      padding: 5px;
+      background: transparent;
+      color: var(--text-color);
+    ">
 	<p id="nimi">&nbsp;</p>
 		<footer>
 			<small style="margin-bottom:0px">* Note: Names transliterated by a tool are never as good as those transliterated by a person.</small>

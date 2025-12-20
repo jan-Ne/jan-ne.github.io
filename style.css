@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+@import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
 @font-face {
   font-family:"linja pona";
   src: url('https://jan-ne.github.io/linja-pona-4.2.otf')  format('opentype');
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 :root {
+  font-family: "Teachers";
+  font-size: 18px;
   --text-color: black;
-  --bg-color: LightGray;
-  --dropdown-color: #e9e9e9;
-  --header-color: #6393F9;
+  --bg-color: #e2e2e4;
+  --dropdown-color: #d0d0d0;
+  --accent-color: #6393F9;
   --content-color: white;
   --link-color: #326DF7;
 }
@@ -20,8 +22,16 @@ body {
   background-color: var(--bg-color);
 }
 
-* {
-  font-family: "Open Sans";
+h1, h2, h3, h4, h5, h6, th {
+  font-weight: 500;
+}
+
+h1:lang(tok-Zzzz), h2:lang(tok-Zzzz), h3:lang(tok-Zzzz), h4:lang(tok-Zzzz), h5:lang(tok-Zzzz), h6:lang(tok-Zzzz), th:lang(tok-Zzzz) {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.17rem;
 }
 
 /*Light/Dark Mode*/
@@ -30,15 +40,15 @@ body.light-mode {
   --text-color: black;
   --bg-color: LightGray;
   --dropdown-color: WhiteSmoke;
-  --header-color: #6393F9;
-  --content-color: white;
+  --accent-color: #6393F9;
+  --content-color: #fdfdfd;
 }
 
 body.dark-mode {
   --text-color: #dedede;
   --bg-color: #131316;
   --dropdown-color: #18181b;
-  --header-color: #08090c;
+  --accent-color: #08090c;
   --content-color: #1e1e20;
   --link-color: #6393F9;
 }
@@ -53,7 +63,7 @@ body.dark-mode .dark-invert {
     --text-color: #dedede;
     --bg-color: #131316;
     --dropdown-color: #18181b;
-    --header-color: #08090c;
+    --accent-color: #08090c;
     --content-color: #1e1e20;
   }
   .dark-invert {
@@ -64,58 +74,88 @@ body.dark-mode .dark-invert {
 /*Main*/
 
 header {
-  background-color: var(--header-color);
-  color: white;
-  font-size: 20px;
-  font-weight: 400;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--text-color);
 }
 
-header img {
-  padding: 0px 15px;
+#sitelen-nimi {
+  display: flex;
+  align-items: center;
+  border-radius: 32px;
+  margin: 10px;
+  max-width: 69vw;
+  padding-right: 10px;
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: var(--content-color);
+  font-size: clamp(1.5rem, 5cqi + 1rem, 2.5rem);
+  font-weight: 500;
+}
+
+#nimi-lipu {
+  padding: 0px 10px;
+}
+
+#sitelen-nimi img {
+  height: 100px;
+  padding: 0px 10px;
   vertical-align: middle;
+  background-color: var(--accent-color);
+  border-radius: 32px;
 }
 
-header.home {
-  display:inline-block;
-  float:left;
-  font-size: 25px;
-}
-
-header a {
-  text-decoration:none;
-  color: white;
-  font-size: 20px;
+#sitelen-nimi:lang(tok-Zzzz){
+  font-size: 2.7rem;
   font-weight: bold;
 }
 
 nav {
-  display:inline-block;
-  float:right;
-  margin-top: 18px;
-  margin-right: 25px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 10px;
+  background-color: var(--content-color);
+  padding: 10px;
+  border-radius: 28px;
 }
 
-header ul {
-  display:inline-block;
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+nav a:lang(tok-Zzzz){
+  font-weight: bold;
+}
+
+nav ul {
+  display: inline-block;
   margin: 0px;
   padding: 0px;
   list-style-type:none;
 }
 
-header li {
-  display:inline;
+nav li {
+  display: inline;
   padding: 0px 10px;
   cursor: pointer;
 }
 
+button {
+  cursor: pointer;
+}
+
 header button {
-  background:none;
-  border:none;
-  color: white;
+  background: none;
+  color: var(--text-color);
+  border: none;
   font-size: 30px;
   font-weight: 600;
-  padding-bottom: 28px;
-  cursor: pointer;
 }
 
 .bigdropdown {
@@ -135,22 +175,24 @@ header button:focus {
 }
 
 .dropdownmenu {
-  position:absolute;
-  right:0;
-  margin-top: 59px;
+  position: absolute;
+  right: 10px;
+  top: 92px;
   z-index: 2;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  overflow: clip;
 }
 
 .smalldropdown {
   display: none;
-  background-color: var(--header-color);
+  background-color: var(--bg-color);
 }
 
 .shelf {
-  background-color: var(--content-color);
-  padding: 10px 0px;
   width: 100%;
   margin-bottom: 10px;
+  background-color: var(--content-color);
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
@@ -171,8 +213,12 @@ header button:focus {
 .shelf a {
   text-decoration: none;
   color: var(--text-color);
-  font-weight: bold;
+  font-weight: 500;
   display: block;
+}
+
+.shelf a:lang(tok-Zzzz){
+  font-weight: bold;
 }
 
 .selected {
@@ -205,11 +251,32 @@ header button:focus {
 
 .item img {
   display: block;
+  min-height: 100px;
   max-height: 100px;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 5px;
   border-radius: 4px;
+}
+
+.title {
+  background-color: var(--content-color);
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+.title h1 {
+  margin: 0px;
+}
+
+#nena-pini {
+  color: var(--text-color);
+  height: 50px;
+  position: absolute;
+  left: 10px;
+  top: 131px;
 }
 
 .bar {
@@ -251,6 +318,10 @@ header button:focus {
 .toc a {
   text-decoration: none;
   color: var(--text-color);
+  font-weight: 500;
+}
+
+.toc a:lang(tok-Zzzz){
   font-weight: bold;
 }
 
@@ -270,36 +341,38 @@ button.center {
 
 .content-scroll {
   margin: auto;
-  width: 51em;
+  width: 45em;
   max-width: 100%;
   overflow-x: auto;
 }
 
-.content {
-  margin:auto;
+main {
+  margin: auto;
   padding: 96px;
-  min-height: calc(100vh - 77px);
+  width: 100%;            
+  max-width: 45em;
+  min-height: calc(100vh - 230px);
   box-sizing: border-box;
   background-color: var(--content-color);
   transform-origin: 0 0;
 }
 
-.content h1 {
+main h1 {
   scroll-margin: 53px;
 }
 
-.content h3 {
+main h3 {
   scroll-margin: 50px;
 }
 
-.content a {
+main a {
   color: var(--link-color);
   text-decoration: none;
 }
 
-.content .translate-icon {
+main .translate-icon {
   position: relative;
-  left: 745px;
+  left: 740px;
   top: -78px;
   display: block;
   width: 37px;
@@ -309,8 +382,20 @@ button.center {
   background-color: var(--dropdown-color);
   color: var(--text-color);
   font-variant: small-caps;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 22px;
+}
+
+#kamapona {
+  text-align:center;
+  font-size:70px;
+  margin: auto;
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: 400;
+  width: fit-content;
+  padding: 0px 15px;
+  border-radius: 15px;
 }
 
 #nimi {
@@ -367,7 +452,7 @@ table.formatted, table.formatted2 {
 }
 
 .formatted th {
-  background-color: var(--header-color);
+  background-color: var(--accent-color);
   color: white;
 }
  
@@ -412,13 +497,17 @@ img.left {
   text-indent: 0px;
 }
 
-x-pos {
+.pos {
   text-transform: lowercase;
   font-variant: small-caps;
 }
 
-x-b {
-  font-weight: 400;
+b {
+  font-weight: 500;
+}
+
+b:lang(tok-Zzzz) {
+  font-weight: bold;
 }
 
 abbr {
@@ -438,11 +527,10 @@ hr.pagebreak {
   margin: 0px;
 }
 
-.content footer {
+main footer {
   position:absolute;
   background-color: var(--content-color);
   margin-bottom: 8px;
-  word-break: break-all;
   max-width: 624px;
 }
 
@@ -455,16 +543,16 @@ hr.pagebreak {
   font-family: "linja pona";
 }
 
-:not(html)[lang="tok-Zzzz"]{
+[lang="tok-Zzzz"].alt{
   display: none;
 }
 
 :lang(tok-Zzzz) header a {
-  font-size: 27px;
+  font-size: 1.5rem;
 }
 
 :lang(tok-Zzzz) .dropdownmenu li {
-  font-size: 27px;
+  font-size: 1.5rem;
 }
 
 :lang(tok-Zzzz) h1 {
@@ -480,63 +568,32 @@ hr.pagebreak {
 }
 
 :lang(tok-Zzzz) .page a {
-  font-family: "Open Sans";
-  font-size: 19px;
+  font-family: "Teachers";
+  font-size: 1rem;
 }
 
 :lang(tok-Zzzz) [lang|=en], :lang(tok-Zzzz) [lang|=en] *, :lang(tok-Zzzz) [lang|=fr], :lang(tok-Zzzz) [lang|=fr] * {
-    font-family: "Open Sans";
+    font-family: "Teachers";
     font-size: revert;
 }
 
-x-sp {
-  display: none;
-  font-family: "linja pona";
+:lang(tok-Latn){
+  font-family: "Teachers";
 }
 
-.linjapona, .linjapona * {
-  font-family: "linja pona";
+.sptoggle [lang="tok-Latn"].alt {
+  font-size: 1rem;
 }
 
-.linjapona header a {
-  font-size: 27px;
+.sptoggle [lang="tok-Zzzz"].alt {
+  font-size: 1.5rem;
 }
 
-.linjapona .dropdownmenu li {
-  font-size: 27px;
-}
-
-.linjapona h1 {
-  font-size: 43px;
-}
-
-.linjapona h3 {
-  font-size: 29px;
-}
-
-.linjapona a, .linjapona p {
-  font-size: 26px;
-}
-
-.linjapona .page a {
-  font-family: "Open Sans";
-  font-size: 19px;
-}
-
-.linjapona [lang|=en], .linjapona [lang|=en] *, .linjapona [lang|=fr], .linjapona [lang|=fr] * {
-    font-family: "Open Sans";
-    font-size: revert;
-}
-
-/*Media Queries*/
-@media only screen and (min-width: 51em) {
-  .content {
-    width: 51em;
+@media only screen and (max-width: 45em) {
+  body {
+    margin: 0px;
   }
-}
-
-@media only screen and (max-width: 51em) {
-  .content {
+  main {
     padding: 11.622%;
     padding-bottom: 16.7vh;
   }
@@ -560,14 +617,14 @@ x-sp {
 }
 
 @media only screen and (max-width: 939px) {
-  .content .translate-icon {
+  main .translate-icon {
     position: initial;
     float: right;
   }
 }
 
-@media only screen and (max-width: 593px) {
-  header li {
+@media only screen and (max-width: 748px) {
+  nav li {
     display:none;
   }
   
@@ -579,7 +636,7 @@ x-sp {
     display:block;
   }
   
-  @media hover:none {
+  @media (hover:none) {
     .dropdown {
       position:relative;
       top: 20px;
@@ -589,7 +646,7 @@ x-sp {
 
 /*Printed Page*/
 @media print {
-  header, .shelf, .bar, .content .translate-icon {
+  header, .shelf, .bar, main .translate-icon {
     display: none;
   }
   hr.pagebreak {
@@ -597,8 +654,8 @@ x-sp {
     border: none;
     background-color: none;
   }
-  .content {
-    padding-top: 0px;
+  main {
+    padding: initial;
   }
   .page {
     padding-bottom: 0px;

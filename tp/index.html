@@ -6,47 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="toki pona, what is toki pona, how many words does toki pona have, how many words are in toki pona, when was toki pona made, who invented toki pona, jan Ne, lipu">
   <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="shortcut icon" href="/janNe.png">
+  <link rel="shortcut icon" href="/janNelaso.svg">
 <body>
   <header>
-      <a href="/"><img src="/janNe.png" alt="jan Ne" height="77"></a>
-      <a class="home" href="/"><span lang="tok-Latn">lipu pi jan Ne</span><span lang="tok-Zzzz">lipu pi jan [_nena_esun]</span></a>
+      <a id="sitelen-nimi" href="/">
+        <img src="/janNe.svg" alt="jan Ne" height="77">
+        <span id="nimi-lipu">
+          <span lang="tok-Latn" class="alt">lipu pi jan Ne</span><span lang="tok-Zzzz" class="alt">lipu pi jan [_nena_esun]</span>
+        </span>
+      </a>
     <nav>
       <ul>
-        <li><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz">toki-pona</span></a></li>
+        <li><a href="/tp"><span lang="tok-Latn" class="alt">toki pona</span><span lang="tok-Zzzz" class="alt">toki-pona</span></a></li>
         <li><a href="/lipu">lipu</a></li>
         <li><a href="/ijo">ijo</a></li>
       </ul>
       <span class="dropdown">
-        <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
+        <button lang="tok-Zzzz" onclick="menuClick()" id="settings">ante</button>
         <ul class="dropdownmenu">
-          <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz">toki-pona</span></a></li>
+          <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang="tok-Latn" class="alt">toki pona</span><span lang="tok-Zzzz" class="alt">toki-pona</span></a></li>
           <li class="smalldropdown" style="display: none;"><a href="/lipu">lipu</a></li>
           <li class="smalldropdown" style="display: none;"><a href="/ijo">ijo</a></li>
           <li class="bigdropdown" onclick="modeToggle()" id="modeBtn" style="display: none;">pimeja</li>
-          <li class="bigdropdown" onclick="sitelenpona()" style="display: none;"><span lang="tok-Latn" style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</span><span lang="tok-Zzzz" style="font-size: 22px; display: contents;">sitelen-pona</span></li>
+          <li class="bigdropdown sptoggle" onclick="sitelenpona()"><span lang="tok-Latn" class="alt">sitelen Lasina</span><span lang="tok-Zzzz" class="alt">sitelen-pona</span></li>
         </ul>
       </span>
     </nav>
+    <div lang="en" class="shelf">
+      <ul>
+        <li><a href="dictionary">Official Dictionary</a></li>
+        <li><a href="etymology">Etymology</a></li>
+        <li><a href="otherwords">Other Words</a></li>
+      </ul>
+      <ul>
+        <li><a href="names">Place Names and Language Names</a></li>
+        <li><a href="tpize">Phonetic Guidelines</a></li>
+        <li><a href="transliterator">Transliterator</a></li>
+      </ul>
+      <ul>
+        <li><a href="sp">sitelen pona</a></li>
+        <li><a href="ss">sitelen sitelen</a></li>
+        <li><a href="tpl">toki pona luka</a></li>
+      </ul>
+    </div>
   </header>
-  <div lang="en" class="shelf">
-    <ul>
-      <li><a href="dictionary">Official Dictionary</a></li>
-      <li><a href="etymology">Etymology</a></li>
-      <li><a href="otherwords">Other Words</a></li>
-    </ul>
-    <ul>
-      <li><a href="names">Place Names and Language Names</a></li>
-      <li><a href="tpize">Phonetic Guidelines</a></li>
-      <li><a href="transliterator">Transliterator</a></li>
-    </ul>
-    <ul>
-      <li><a href="sp">sitelen pona</a></li>
-      <li><a href="ss">sitelen sitelen</a></li>
-      <li><a href="tpl">toki pona luka</a></li>
-    </ul>
-  </div>
-  <main lang="en" class="content" style="min-height: calc(100vh - 207px)">
+  <main lang="en" class="content">
     <img src="tokiponalogo.png" alt="toki pona logo" width="59px" class="center">
     <h1 style="text-align:center; margin:6px 0px">What is toki pona?</h1>
     <p style="text-align:center; margin:6px 0px">toki pona is a conlang created by Sonja Lang and published as a draft online in 2001 and in her book <i>Toki Pona: The Language of Good</i> in 2014. It is a philosophical artlang based on principles of minimalism and has a vocabulary of only around 120 words.</p>

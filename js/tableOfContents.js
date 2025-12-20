@@ -9,7 +9,7 @@
       "<ul style='padding: 0px 20px;'>";
   var newLine, el, title, link;
   
-  $(".content h1,.content h3").each(function() {
+  $("main h1, main h2").each(function() {
     title = $(this).text();
     latn_title = $(this).children("span[lang='tok-Latn']").text();
     sp_title = $(this).children("span[lang='tok-Zzzz']").text()
@@ -19,7 +19,7 @@
       if ($(this).is("h1")) {
         if ($(this).children("span[lang='tok-Latn']").length != 0 && $(this).children("span[lang='tok-Zzzz']").length != 0){
           newLine =
-            "<li style='font-size: larger;'><a href='" + link + "'><span lang='tok-Latn'>" + latn_title + "</span><span lang='tok-Zzzz'>" + sp_title + "</span></a></li>";
+            "<li style='font-size: larger;'><a href='" + link + "'><span lang='tok-Latn' class='alt'>" + latn_title + "</span><span lang='tok-Zzzz' class='alt'>" + sp_title + "</span></a></li>";
           ToC += newLine;
         } else {    
           newLine =
@@ -27,10 +27,10 @@
           ToC += newLine;
         }
       }
-      if ($(this).is("h3")) {
+      if ($(this).is("h2")) {
         if ($(this).children("span[lang='tok-Latn']").length != 0 && $(this).children("span[lang='tok-Zzzz']").length != 0){
           newLine =
-              "<li><a href='" + link + "'><span lang='tok-Latn'>" + latn_title + "</span><span lang='tok-Zzzz'>" + sp_title + "</span></a></li>"
+              "<li><a href='" + link + "'><span lang='tok-Latn' class='alt'>" + latn_title + "</span><span lang='tok-Zzzz' class='alt'>" + sp_title + "</span></a></li>"
           ToC += newLine;
         } else {
           newLine =

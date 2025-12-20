@@ -6,25 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="toki pona, signed toki pona, sign language, ki'u ma lo la tokiponas. tavla cu jarco lo zergri xanle'u mi, jan Ne, lipu">
   <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="shortcut icon" href="/janNe.png">
+  <link rel="shortcut icon" href="/janNelaso.svg">
 <body>
   <header>
-      <a href="/"><img src="/janNe.png" alt="jan Ne" height="77"></a>
-      <a class="home" href="/"><span lang="tok-Latn">lipu pi jan Ne</span><span lang="tok-Zzzz">lipu pi jan [_nena_esun]</span></a>
+      <a id="sitelen-nimi" href="/">
+        <img src="/janNe.svg" alt="jan Ne" height="77">
+        <span id="nimi-lipu">
+          <span lang="tok-Latn" class="alt">lipu pi jan Ne</span><span lang="tok-Zzzz" class="alt">lipu pi jan [_nena_esun]</span>
+        </span>
+      </a>
     <nav>
       <ul>
-        <li><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz">toki-pona</span></a></li>
+        <li><a href="/tp"><span lang="tok-Latn" class="alt">toki pona</span><span lang="tok-Zzzz" class="alt">toki-pona</span></a></li>
         <li><a href="/lipu">lipu</a></li>
         <li><a href="/ijo">ijo</a></li>
       </ul>
       <span class="dropdown">
-        <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
+        <button lang="tok-Zzzz" onclick="menuClick()" id="settings">ante</button>
         <ul class="dropdownmenu">
-          <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz">toki-pona</span></a></li>
+          <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang="tok-Latn" class="alt">toki pona</span><span lang="tok-Zzzz" class="alt">toki-pona</span></a></li>
           <li class="smalldropdown" style="display: none;"><a href="/lipu">lipu</a></li>
           <li class="smalldropdown" style="display: none;"><a href="/ijo">ijo</a></li>
           <li class="bigdropdown" onclick="modeToggle()" id="modeBtn" style="display: none;">pimeja</li>
-          <li class="bigdropdown" onclick="sitelenpona()" style="display: none;"><span lang="tok-Latn" style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</span><span lang="tok-Zzzz" style="font-size: 22px; display: contents;">sitelen-pona</span></li>
+          <li class="bigdropdown sptoggle" onclick="sitelenpona()"><span lang="tok-Latn" class="alt">sitelen Lasina</span><span lang="tok-Zzzz" class="alt">sitelen-pona</span></li>
         </ul>
       </span>
     </nav>
@@ -46,12 +50,12 @@
       <li class="selected"><a href="tpl">toki pona luka</a></li>
     </ul>
   </div>
-  <div lang="en" class="content" style="min-height: calc(100vh - 207px)">
+  <main lang="en" style="min-height: calc(100vh - 207px)">
     <h1 style="margin-bottom:0px">Signed Toki Pona</h1>
-    <h3 style="margin:0px"><x-b>aka</x-b> toki pona luka</h3>
+    <h2 style="margin:0px"><x-b>aka</x-b> toki pona luka</h2>
     <p style="border-left: 3px solid var(--bg-color); padding: 10px;">*Note: toki pona luka is a <a href="https://en.wikipedia.org/wiki/Manually_coded_language" target="_blank">manually-coded</a> version of toki pona, not a distinct sign language.<br>
-      For a popular constructed sign language based on toki pona, check out <a style="white-space: nowrap;" href="https://sona.pona.la/wiki/luka_pona" target="_blank">luka pona</a> by jan Olipija.</p>
-    <small>as it appears in <i>Toki Pona: The Language of Good</i> by Sonja Lang, the creator of toki pona with illustrations by Yara Hindawi</small>
+      For a popular constructed sign language based on toki pona, check out the community-made sign language <a style="white-space: nowrap;" href="https://sona.pona.la/wiki/luka_pona" target="_blank">luka pona</a>.</p>
+    <small>as it appears in <i>Toki Pona: The Language of Good</i> by Sonja Lang, the creator of toki pona; illustrations by Yara Hindawi</small>
     <hr>
     <p>Signed Toki Pona (<i>toki pona luka</i>) is a silent version of Toki Pona that uses hand gestures. This can be useful, for example:</p>
     <ul>
@@ -61,7 +65,7 @@
       <li>while taunting rival Lojbanists with gang signs.</li>
     </ul>
     <p>Each word and letter has its own sign. To form a sentence, perform each sign, one after an other, using the same grammar and word order you already know.</p>
-    <h3>Elements of a Sign</h3>
+    <h2>Elements of a Sign</h2>
     <p>Each sign can be described using four elements:</p>
     <ol>
       <li>hand shape</li>
@@ -69,7 +73,7 @@
       <li>palm orientation</li>
       <li>whether one hand or both hands</li>
     </ol>
-    <h3>Hand Shapes</h3>
+    <h2>Hand Shapes</h2>
     <p>There are nine basic hand shapes used in Signed Toki Pona. These describe the right hand.</p>
     <table>
       <tr><td><img src="handshapes/flat.png" style="max-width: 100%; max-height: 30vh; display: block; margin-left: auto; margin-right: auto; text-align: center"></td> <td><img src="handshapes/thumb_fist.png"style="max-width: 100%; max-height: 30vh; display: block; margin-left: auto; margin-right: auto;"></td> <td><img src="handshapes/bent.png" style="max-width: 100%; max-height: 30vh; display: block; margin-left: auto; margin-right: auto;"></td></tr>
@@ -79,7 +83,7 @@
       <tr><td><img src="handshapes/wiggling.png"style="max-width: 100%; max-height: 30vh; display: block; margin-left: auto; margin-right: auto;"></td> <td><img src="handshapes/l.png"style="max-width: 100%; max-height: 30vh; display: block; margin-left: auto; margin-right: auto;"></td> <td><img src="handshapes/f.png"style="max-width: 100%; max-height: 30vh; display: block; margin-left: auto; margin-right: auto;"></td></tr>
       <tr><td>wiggling hand<br>(fingers moving)</td> <td>L hand</td> <td>F hand</td></tr>
     </table>
-    <h3>Locations on the Body</h3>
+    <h2>Locations on the Body</h2>
     <p>For each sign, the right hand goes to a particular location.</p>
     <ol>
       <li>in front of chest</li>
@@ -92,7 +96,7 @@
       <li>under left slanted forearm</li>
     </ol>
     <img src="tpl_positions.png" width="275">
-    <h3>Orientations</h3>
+    <h2>Orientations</h2>
     <p>Most signs are described by the direction that the palm of the right hand faces. A few signs are described by the orientation that a particular finger points.</p>
     <ol>
       <li>left</li>
@@ -101,17 +105,17 @@
       <li>forward</li>
       <li>back</li>
     </ol>
-    <h3>One Hand or Both Hands</h3>
+    <h2>One Hand or Both Hands</h2>
     <p>By default, perform a sign by placing your right hand in the given shape, location and palm orientation.</p>
     <p>When a sign is described as "both hands", place your right hand as described. Then mirror the same gesture with your left hand.</p>
-    <h3>Examples</h3>
+    <h2>Examples</h2>
     <table>
       <tr><td><img src="examples/kasi.png" style="max-width: 100%; max-height: 30vh; display: block; margin-left: auto; margin-right: auto;"></td> <td><img src="examples/o_letter.png" style="max-width: 100%; max-height: 30vh; display: block; margin-left: auto; margin-right: auto;"></td>
       <tr><td><i>kasi</i><br>F hand on top of left fist, palm facing down</td> <td><i>o (letter)</i><br>O hand under left slanted forearm, palm facing down</td></tr>
       <tr><td><img src="examples/tomo.png" style="max-width: 100%; max-height: 30vh; display: block; margin-left: auto; margin-right: auto;"></td> <td><img src="examples/suli.png" style="max-width: 100%; max-height: 30vh; display: block; margin-left: auto; margin-right: auto;"></td></tr>
       <tr><td><i>tomo</i><br>bent hand in front of chest, palm facing left (both hands)</td> <td><i>suli</i><br>2 hand at side of forehead, palm facing forward</td>
     </table>
-    <h3>Descriptions of Signs</h3>
+    <h2>Descriptions of Signs</h2>
     <table>
       <tr><td><i>	a </i>  or <i>  kin	</i></td></tr>	<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;flat hand at side of chin, palm facing left</td></tr>
       <tr><td><i>	akesi	</i></td></tr>	<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;2 hand at left elbow, palm facing back</td></tr>
@@ -234,7 +238,7 @@
       <tr><td><i>	weka	</i></td></tr>	<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;O hand at left elbow, palm facing down</td></tr>
       <tr><td><i>	wile	</i></td></tr>	<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;O hand on stomach, palm facing up</td></tr>
     </table>
-    <h3>Alphabet</h3>
+    <h2>Alphabet</h2>
     <p>To spell out a proper name, use these letters. All letter signs are performed under the left slanted forearm.</p>
     <table>
       <tr><td><i>a</i></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;thumb-fist, palm facing back </td></tr>

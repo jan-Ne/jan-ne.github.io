@@ -6,45 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="toki pona, jan Ne, lipu, laso tu, poem, poetry">
   <link rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="shortcut icon" href="/janNe.png">
+  <link rel="shortcut icon" href="/janNelaso.svg">
 <body>
   <header>
-      <a href="/"><img src="/janNe.png" alt="jan Ne" height="77"></a>
-      <a class="home" href="/"><span lang="tok-Latn">lipu pi jan Ne</span><span lang="tok-Zzzz" style="display: inline; display: none;">lipu pi jan [_nena_esun]</span></a>
+      <a id="sitelen-nimi" href="/">
+        <img src="/janNe.svg" alt="jan Ne" height="77">
+        <span id="nimi-lipu">
+          <span lang="tok-Latn" class="alt">lipu pi jan Ne</span><span lang="tok-Zzzz" class="alt">lipu pi jan [_nena_esun]</span>
+        </span>
+      </a>
     <nav>
       <ul>
-        <li><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz" style="display: inline; display: none;">toki-pona</span></a></li>
+        <li><a href="/tp"><span lang="tok-Latn" class="alt">toki pona</span><span lang="tok-Zzzz" class="alt">toki-pona</span></a></li>
         <li><a href="/lipu">lipu</a></li>
         <li><a href="/ijo">ijo</a></li>
       </ul>
       <span class="dropdown">
-        <button class="linjapona" onclick="menuClick()" id="settings">ante</button>
+        <button lang="tok-Zzzz" onclick="menuClick()" id="settings">ante</button>
         <ul class="dropdownmenu">
-          <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang="tok-Latn">toki pona</span><span lang="tok-Zzzz">toki-pona</span></a></li>
+          <li class="smalldropdown" style="display: none;"><a href="/tp"><span lang="tok-Latn" class="alt">toki pona</span><span lang="tok-Zzzz" class="alt">toki-pona</span></a></li>
           <li class="smalldropdown" style="display: none;"><a href="/lipu">lipu</a></li>
           <li class="smalldropdown" style="display: none;"><a href="/ijo">ijo</a></li>
           <li class="bigdropdown" onclick="modeToggle()" id="modeBtn" style="display: none;">pimeja</li>
-          <li class="bigdropdown" onclick="sitelenpona()" style="display: none;"><span lang="tok-Latn" style="display: none; font-family: 'Open Sans'; font-size: 18px;">sitelen Lasina</span><span lang="tok-Zzzz" style="font-size: 22px; display: contents;">sitelen-pona</span></li>
+          <li class="bigdropdown sptoggle" onclick="sitelenpona()"><span lang="tok-Latn" class="alt">sitelen Lasina</span><span lang="tok-Zzzz" class="alt">sitelen-pona</span></li>
         </ul>
       </span>
     </nav>
+    <h1 class="title">laso tu</h1>
+    <a href="../lipu" id="nena-pini">
+      <svg viewBox="0 0 247.38541 247.38542" width="50">
+        <path style="fill:none;stroke:currentColor;stroke-width:18;" d="M 157.26386,176.6069 91.382617,123.42565 157.26386,70.773563"></path>
+      </svg>
+    </a>
   </header>
-  <div class="shelf" style="margin-bottom: 0px">
-    <a style=
-      "background-color: var(--header-color);
-      color: white;
-      padding: 0px 10px;
-      border-radius: 4px;
-      font-family: 'Open Sans';
-      font-size: 25px;
-      text-align: center;
-      width: fit-content;"
-    href="../lipu">&lt;</a>
-    <h1>laso tu</h1>
-    <div style="width: 34px;"></div>
-  </div>
   <div class="bar">
-    <a href="#top" class="linjapona" style="
+    <a href="#top" lang="tok-Zzzz" style="
       font-size: 21px;
       font-weight: bold;
       text-align: center;
@@ -53,15 +49,15 @@
       padding-bottom: 5px;
       width: 32px;
     ">ߍ</a>
-    <button class="linjapona" style="font-size: 30px" onclick="tocClick()">•••</button>
-    <button class="" style="font-size: 18px; font-weight: bold;" onclick="fontClick()"><big style="font-family: 'Open Sans';">a</big><small style="font-family: 'Open Sans';">a</small></button>
+    <button lang="tok-Zzzz" style="font-size: 30px" onclick="tocClick()">•••</button>
+    <button lang="tok-Latn" style="font-size: 18px; font-weight: 500;" onclick="fontClick()">Aa</button>
     <div class="font-menu" style="width: 160px; display: none;">
       <ul style="list-style: none; padding: 0px 20px;">
         <li style="
             display: grid;
             grid-template-columns: auto auto auto;
             justify-content: space-evenly;
-          "><button class="linjapona" onclick="increaseSize()" style="
+          "><button lang="tok-Zzzz" onclick="increaseSize()" style="
             font-size: 26px;
             font-weight: bold;
             width: 33px;
@@ -71,18 +67,18 @@
             font-size: 24px;
             font-family: 'Open Sans';
           ">│</label>
-          <button class="linjapona" onclick="decreaseSize()" style="
+          <button lang="tok-Zzzz" onclick="decreaseSize()" style="
             font-weight: bold;
             font-size: 20px;
             width: 33px;
           ">lili</button>
         </li>
         <li style="margin: 5px 0px;">
-          <button onclick="linjapona()" style="
+          <button onclick="sitelenpona()" style="
             font-weight: bold;
             font-size: 16px;
             width: -webkit-fill-available;
-          "><span lang="tok-Latn" style="display: none; font-family: &quot;Open Sans&quot;;">sitelen Lasina</span><span lang="tok-Zzzz" style="font-size: 22px; display: contents;">linja pona</span></button>
+          "><span lang="tok-Latn" class="alt" style="display: none; font-family: &quot;Open Sans&quot;;">sitelen Lasina</span><span lang="tok-Zzzz" class="alt" style="font-size: 22px; display: contents;">linja pona</span></button>
         </li>
         <li style="margin: 5px 0px;">
           <button id="fontmodeBtn" onclick="modeToggle()" style="
@@ -97,12 +93,12 @@
     
   </div>
   <div class="content-scroll">
-  <div class="content" style="padding: 0px; margin: 0px; width:49.5em">
+  <main style="padding: 0px; margin: 0px; width:49.5em">
     <div class="page" style="display: grid; align-content: center; height:24em">
       <div>  
       <img src="laso-tu/laso-tu.svg" width="300px" alt="laso tu" style="float: left; margin: 85px 48px 85px 0px;">
       <h1 style="margin:0px" class="txt-center">laso tu</h1>
-        <p style="text-indent:0px" class="txt-center">tan <span lang="tok-Latn">jan Ne</span><span lang="tok-Zzzz">jan [_nena_esun]</span></p>
+        <p style="text-indent:0px" class="txt-center">tan <span lang="tok-Latn" class="alt">jan Ne</span><span lang="tok-Zzzz" class="alt">jan [_nena_esun]</span></p>
         <div style="margin:auto;">
           <p>&nbsp;</p>
           <p style="text-indent:0px">laso sewi<br>laso anpa</p>
