@@ -294,7 +294,16 @@ header button:focus {
   background-color: var(--dropdown-color);
   color: var(--text-color);
   border: none;
-  width: fit-content;
+}
+
+#modeBtnbar, #sitelenBtnbar {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#modeBtnbar:lang(tok-Zzzz), #sitelenBtnbar span:lang(tok-Zzzz) {
+  font-size: 1.8rem!important;
 }
 
 .toc {
@@ -361,7 +370,7 @@ main h1 {
   scroll-margin: 53px;
 }
 
-main h3 {
+main h2 {
   scroll-margin: 50px;
 }
 
@@ -556,15 +565,15 @@ main footer {
 }
 
 :lang(tok-Zzzz) h1 {
-  font-size: 43px;
+  font-size: 2.4rem;
 }
 
-:lang(tok-Zzzz) h3 {
-  font-size: 29px;
+:lang(tok-Zzzz) h2 {
+  font-size: 1.6rem;
 }
 
 :lang(tok-Zzzz) a, :lang(tok-Zzzz) p {
-  font-size: 26px;
+  font-size: 1.45rem;
 }
 
 :lang(tok-Zzzz) .page a {
@@ -635,13 +644,13 @@ main footer {
   .shelf {
     display:block;
   }
-  
-  @media (hover:none) {
-    .dropdown {
-      position:relative;
-      top: 20px;
-    }
+
+  .dropdownmenu {
+    right: 0px;
+    top: 120px;
+    border-radius: 0px 0px 0px 10px;
   }
+
 }
 
 /*Printed Page*/
