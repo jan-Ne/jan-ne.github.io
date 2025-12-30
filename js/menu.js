@@ -1,6 +1,6 @@
 // Open Menu
 function menuClick() {
-  if (window.innerWidth <= 748) {
+  if (window.innerWidth <= 763) {
     $(".smalldropdown").toggle(30);
   }
   $(".bigdropdown").toggle(30);

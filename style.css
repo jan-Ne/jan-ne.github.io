@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
   font-family:"linja pona";
   src: url('https://jan-ne.github.io/linja-pona-4.2.otf')  format('opentype');
@@ -407,6 +408,12 @@ main .translate-icon {
   border-radius: 15px;
 }
 
+#name {
+  font-size: 24px;
+  background: transparent;
+  color: var(--text-color);
+}
+
 #nimi {
   font-size: 24px;
   margin: 5px auto;
@@ -443,12 +450,39 @@ code {
     padding: 0px 3px;
 }
 
-th {
+.scroll {
+  overflow-x: auto;
+}
+
+#poki-open {
+  margin: auto;
+}
+
+#poki-open th {
   padding-right: 20px;
 }
 
-.scroll {
-  overflow-x:auto;
+#poki-open a {
+  color: var(--text-color);
+}
+
+#poki-lawa h2 {
+  margin: 15px 0px 5px 0px;
+}
+
+#poki-lawa table {
+  margin: auto;
+}
+
+#poki-lawa table td {
+  max-width: clamp(100px, 24vw, 200px);
+  overflow: auto;
+}
+
+.linja-poki {
+  border: 2px solid #dedede;
+  border-radius: 3px;
+  padding: 5px;
 }
 
 table.formatted, table.formatted2 {
@@ -547,6 +581,11 @@ main footer {
   scroll-margin: 280px;
 }
 
+/*IPA*/
+:lang(und-Latn-fonipa){
+  font-family: "Noto Sans", Arial;
+}
+
 /*sitelen pona*/
 :lang(tok-Zzzz){
   font-family: "linja pona";
@@ -632,7 +671,7 @@ main footer {
   }
 }
 
-@media only screen and (max-width: 748px) {
+@media only screen and (max-width: 763px) {
   nav li {
     display:none;
   }

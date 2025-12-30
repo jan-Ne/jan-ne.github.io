@@ -1,0 +1,97 @@
+Toki Pona Transliteration Guidelines © 2025 by jan Ne (jan-ne.github.io) is licensed under CC BY-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/.
+
+Toki Pona Transliteration Guidelines
+General Guidelines
+    For transliteration, use the International Phonetic Alphabet with clear syllable boundaries.
+    Use the native colloquial pronunciation of the name.
+        In the case where there are multiple native terms, use the dominant language. 
+        In the case where there are no native terms, use an international form.
+    Toki Pona uses one form for names of languages and places where there may be many forms in the native language. 
+        It usually uses the adjective form or an unmarked form.
+    If possible, it is good to choose a different form or transliteration style of the name to avoid a homonym with a common word.
+    Proper names are always capitalized in the Latin script. 
+        Capitalization is reserved for proper names to set them apart from common words.
+
+    It is best to establish context using common words before introducing a proper name.
+    Adapting a name to Toki Pona makes it accessible to people of various language backgrounds.
+    These guidelines make specific choices about how to transliterate certain cases, 
+    but you may make different choices based on more language-specific information.
+    Names are personal. While many speakers transliterate their own name precisely,
+    some may alter it or create a new name.
+
+Phonetic Rules
+    Syllables
+        In most cases, Toki Pona preserves the syllable count of the original language.
+        An /i/ is inserted after postalveolar, palatal, and palatalized consonants at the end of a word.
+    Vowels
+        High front vowels become /i/.
+        High back vowels become /u/.
+        Mid front vowels become /e/.
+        Mid back vowels become /o/.
+        Low vowels become /a/.
+    Consonants
+        Nasals
+            Labial nasals become /m/.
+            All other nasals become /n/.
+            Nasalization on vowels becomes a coda /n/.
+            Any nasals in the coda become /n/.
+        Labials
+            Labial obstruents, flaps, and trills become /p/ (excluding [v] and [ʍ]).
+        Coronals
+            Coronal stridents become /s/ (including alveo-palatals).
+            Coronal non-stridents become /t/.
+            Dental fricatives may become either /s/ or /t/.
+                These rules use /s/ for [θ] and /t/ for [ð].
+        Dorsals
+            Dorsal and pharyngeal obstruents, taps, and trills become /k/ (including palatal occlusives).
+        Laryngeals
+            Laryngeal consonants are deleted.
+        Liquids
+            Liquid sonorants become /l/ (excluding [ɹ]).
+        Approximants
+            Palatal approximants and fricatives become /j/.
+            Other approximants become /w/.
+            [v] and [ʍ] become /w/.
+    Syllabic Consonants
+        Syllabic consonants are rewritten with a schwa in the nucleus and the consonant in the coda.
+    Schwa
+        Word-final schwa becomes [a].
+        Word initial unstressed schwa is deleted.
+        Schwas assimilate to a preceding non-schwa vowel. If there is no preceding non-schwa vowel, they assimilate to the next non-schwa vowel.
+        If there are no other non-schwa vowels to assimilate to the schwa becomes [a].
+    Metathesis
+        Nasal consonants are shifted to the coda to avoid a cluster.
+        If there is already a coda nasal, a coda consonant and an adjacent onset nasal are swapped to preserve the coda consonant.
+    Glides and Diphthongs
+        High front vowels in a diphthong are reduced to /j/.
+        High back vowels in a diphthong are reduced to /w/.
+        Clusters with glides in non-initial syllables are expanded, inserting [u] before [w], [i] before [j], or moving the first vowel in an adjacent diphthong before the glide to preserve the diphthong.
+        Non-syllabic low vowels are deleted.
+        Non-syllabic front vowels become /j/.
+        Non-syllabic back vowels become /w/.
+        Remaining diphthongs are reduced by deleting the second vowel.
+    Consonant Clusters
+        Plosives are preserved over approximants in a cluster.
+        The last consonant in the cluster is preserved. 
+    Codas
+        A coda consonant is shifted to the following empty onset in the next syllable.
+        A coda consonant in a syllable with an empty onset is shifted to the onset.
+        All remaining non-nasal coda consonants are removed.
+    Illegal sequences
+        [ti] becomes [si]
+        [wo] becomes [o]
+        [wu] becomes [u]
+        [ji] becomes [i]
+        [n.m] becomes [.m]
+        [m.n] becomes [.n]
+    Vowel hiatus
+        [w] is inserted before [a] after a non-front vowel.
+        [j] is inserted before [a] after a front vowel.
+        [w] is inserted before [e] after a back vowel.
+        [j] is inserted before [e] after a non-back vowel.
+        [w] is inserted before [i] to resolve a vowel hiatus.
+        [j] is inserted before [o] to resolve a vowel hiatus.
+        [j] is inserted before [u] to resolve a vowel hiatus.
+
+
+

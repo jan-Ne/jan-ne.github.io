@@ -52,24 +52,20 @@
   </div>
   <main lang="en" style="text-align:center">
     <h1 style="margin:0px 0px 10px 0px">ilo pi ante nimi</h1>
-    <p style="font-size: 1.3rem; font-weight: 500; margin:0px">Enter <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank">IPA</a> transcription:</p>
-    <p style="font-size: 0.8rem; margin:0px 0px 10px 0px">For most accurate results, use exact <a href="https://en.wikipedia.org/wiki/Phone_(phonetics)" target="_blank">phones</a> instead of general <a href="https://en.wikipedia.org/wiki/Phoneme" target="_blank">phonemes</a><br>and delineate syllables with <code>.</code></p>
-    <input id="name" onkeyup="transliterate()" autocomplete="off" style="
-      font-family: Arial;
-      font-size: 24px;
-      border: 2px solid #dedede;
-      border-radius: 3px;
-      padding: 5px;
-      background: transparent;
-      color: var(--text-color);
-    ">
-	<p id="nimi">&nbsp;</p>
-		<footer>
-			<small style="margin-bottom:0px">* Note: Names transliterated by a tool are never as good as those transliterated by a person.</small>
+      <h2 style="margin: 0px">Enter <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank">IPA</a> transcription:</h2>
+      <p style="font-size: 0.8rem; margin:0px 0px 10px 0px">For most accurate results, use exact <a href="https://en.wikipedia.org/wiki/Phone_(phonetics)" target="_blank">phones</a> instead of general <a href="https://en.wikipedia.org/wiki/Phoneme" target="_blank">phonemes</a><br>and delineate syllables with <code>.</code></p>
+      <input id="name" oninput="transliterator()" autocomplete="off" class="linja-poki" lang="und-Latn-fonipa">
+      <p id="nimi" lang="tok-Latn">&nbsp;</p>
+      <small style="margin-bottom:0px">* Note: Names transliterated by a tool are never as good as those transliterated by a person.</small>
 			<small style="margin:0px">Check out the <a href="tpize">phonotactics guidelines</a> to learn how to do it yourself.</small>
-		</footer>
+      <div id="poki-lawa">
+        <h2>Rules Applied</h2>
+        <div class="linja-poki"></div>
+      </div>
+    </div>
   </div>
 
+<script src="tokiponize.js"></script>
 <script src="transliterator.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="/js/loadPrefs.js"></script>
