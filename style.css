@@ -15,6 +15,7 @@
   --accent-color: #6393F9;
   --content-color: white;
   --link-color: #326DF7;
+  --warning-color: #fdc9c9;
 }
 
 body {
@@ -43,6 +44,8 @@ body.light-mode {
   --dropdown-color: WhiteSmoke;
   --accent-color: #6393F9;
   --content-color: #fdfdfd;
+  --link-color: #326DF7;
+  --warning-color: #fdc9c9;
 }
 
 body.dark-mode {
@@ -52,6 +55,7 @@ body.dark-mode {
   --accent-color: #08090c;
   --content-color: #1e1e20;
   --link-color: #6393F9;
+  --warning-color: #8a2828;
 }
 
 body.dark-mode .dark-invert {

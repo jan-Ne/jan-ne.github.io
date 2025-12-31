@@ -101,8 +101,9 @@ const rules = [
 			{ name: "Final rhotic schwa", pattern: "əw(?=[#\\s])", replacement: "a" },
 			{ name: "Final schwa", pattern: "ə(?=[#\\s])", replacement: "a" },
 			{ name: "Delete word-initial unstressed schwa", pattern: "(?<=[#\\s])(?<!['ˈˌ])ə\\.", replacement: "" },
-			{ name: "Assimilate schwas to preceding vowel", pattern: `([aeiou])([^\\s]*)\\.([^aeiou]*)ə`, replacement: "$1$2.$3$1" },
+			{ name: "Assimilate schwas to preceding vowel", pattern: "([aeiou])([^\\s]*)\\.([^aeiou]*)ə", replacement: "$1$2.$3$1" },
 			{ name: "Assimilate leading schwas to next vowel", pattern: "ə(?=[^aeiouə]*(?:\\.[^aeiouə]*ə)*\\.[^aeiou]*([aeiou]))", replacement: "$1" },
+			{ name: "Assimilate schwa in diphthong", pattern: `(?<=[^aeiou#.\\s])([aeiou])${IPA.NONSYLLABIC}?ə|ə([aeiou])${IPA.NONSYLLABIC}?`, replacement: "$1$2" },
 			{ name: "Misc schwa", pattern: "ə", replacement: "a" }
 		]
 	},
@@ -122,8 +123,8 @@ const rules = [
 			{ name: "Expand non-initial syllable with [w] using diphthong with [j]", pattern: "(?<![#\\s])([^aeiou#\\s\\.ˈ'ˌ])w([aeiou])j(?=[.#//s])", replacement: "$1$2wi" },
 			{ name: "Expand non-initial syllable with [j] using dipthong", pattern: "(?<![#\\s])([^aeiou#\\s\\.ˈ'ˌ])j([aeiou])([aeo])", replacement: "$1$2j$3" },
 			{ name: "Expand non-initial syllable with [w] using diphthong", pattern: "(?<![#\\s])([^aeiou#\\s\\.ˈ'ˌ])w([aeiou])([ae])", replacement: "$1$2w$3" },
-			{ name: "Expand non-initial syllable with [w]", pattern: "(?<![#\\s])([^aeiou#\\s\\.ˈ'ˌ])w(?=[aeiou])", replacement: "$1u.w" },
-			{ name: "Expand non-initial syllable with [j]", pattern: "(?<![#\\s])([^aeiou#\\s\\.ˈ'ˌ])j(?=[aeiou])", replacement: "$1i.j" },
+			{ name: "Expand non-initial syllable with [w]", pattern: "(?<![#\\s][ˈ'ˌ]?)(?<![^aeiou#\\s\\.ˈ'ˌ])([^aeiou#\\s\\.ˈ'ˌ]+)w(?=[aeiou])", replacement: "$1u.w" },
+			{ name: "Expand non-initial syllable with [j]", pattern: "(?<![#\\s][ˈ'ˌ]?)(?<![^aeiou#\\s\\.ˈ'ˌ])([^aeiou#\\s\\.ˈ'ˌ]+)j(?=[aeiou])", replacement: "$1i.j" },
 			{ name: "Non-syllabic low vowels", pattern: `[a]${IPA.NONSYLLABIC}`, replacement: ""},
 			{ name: "Non-syllabic front vowels", pattern: `(?<=[aeiou])[ie](${IPA.NONSYLLABIC})|[ie](${IPA.NONSYLLABIC})(?=[aeiou])`, replacement: "j"},
 			{ name: "Non-syllabic back vowels", pattern: `(?<=[aeiou])[ou](${IPA.NONSYLLABIC})|[ou](${IPA.NONSYLLABIC})(?=[aeiou])`, replacement: "w"},
@@ -141,7 +142,7 @@ const rules = [
 		category: "Consonant Clusters",
 		regex: [
 			{ name: "Preserve nasal in previous empty coda", pattern: "\\.n(?=[^aeioumn])", replacement: "n." },
-			{ name: "Preserve plosive over approximant in cluster", pattern: "(?<=[ptkn])(w|l|j)", replacement: "" },
+			{ name: "Remove glide in cluster", pattern: "(?<=[ptknmsl])(w|l|j)+", replacement: "" },
 			{ name: "Preserve last consonant in cluster", pattern: "([mnptkswlj])(?=[mnptkswlj])", replacement: "" }
 		]
 	},
@@ -189,6 +190,8 @@ function tokiponize(n){
 	n = n.replace(/[\/\[\]]/g, "");
 	//Diacritic separation
 	n = n.normalize("NFD");
+	//Fix duplicate stress markings
+	n = n.replace(/(['ˈˌ])\1+/g, "$1");
 	//Fix stress markings without boundary
 	n = n.replace(/(?<![.#\s])(['ˈˌ])/g, ".$1");
 
