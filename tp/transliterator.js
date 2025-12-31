@@ -6,7 +6,7 @@ function transliterator(){
 		<table class="linja-poki">
 			${tokiponize(input).history.map(entry => 
 				`<tr>
-				<th colspan="3" scope="colgroup" style="scroll-snap-align:start; background-color: ${entry.category === 'Warnings' ? '#f8cece' : 'var(--bg-color)'}">
+				<th colspan="3" scope="colgroup" style="scroll-snap-align:start; background-color: ${entry.category === 'Warnings' ? 'var(--warning-color)' : 'var(--bg-color)'}">
 					${entry.category}
 				</th>
 				</tr>
